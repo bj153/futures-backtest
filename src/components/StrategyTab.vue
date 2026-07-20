@@ -6,6 +6,16 @@
         <span class="strategy-fs-hint">Python · 内置变量: close, high, low, volume, ema, rsi, atr, bb ...</span>
       </div>
       <div class="strategy-fs-actions">
+        <Select
+          v-model="selectedStrategy"
+          size="small"
+          clearable
+          placeholder="选择策略文件"
+          style="width:200px"
+          @on-change="onSelectStrategy"
+        >
+          <Option v-for="s in strategyFiles" :key="s" :value="s">{{ s.replace('.py', '') }}</Option>
+        </Select>
         <Button size="small" type="success" :loading="running" @click="$emit('runBacktest')">开始回测</Button>
         <Button size="small" type="default" @click="$emit('reset')">重置</Button>
       </div>
@@ -17,7 +27,8 @@
 </template>
 
 <script setup lang="ts">
-import { Button } from 'view-ui-plus'
+import { ref, onMounted } from 'vue'
+import { Button, Select, Option, Message } from 'view-ui-plus'
 import StrategyEditor from './StrategyEditor.vue'
 
 defineProps<{
@@ -25,11 +36,41 @@ defineProps<{
   running: boolean
 }>()
 
-defineEmits<{
+const emit = defineEmits<{
   'update:modelValue': [value: string]
   runBacktest: []
   reset: []
 }>()
+
+// ---- 策略文件选择（复用 /api/files 和 /api/file 端点）----
+const strategyFiles = ref<string[]>([])
+const selectedStrategy = ref('')
+
+async function loadStrategyFiles() {
+  try {
+    const res = await fetch('/api/files?path=backend/strategies')
+    if (!res.ok) return
+    const data = await res.json()
+    strategyFiles.value = (data.children || [])
+      .filter((f: any) => !f.is_dir && f.name.endsWith('.py'))
+      .map((f: any) => f.name)
+  } catch {}
+}
+
+async function onSelectStrategy(name: string) {
+  if (!name) return
+  try {
+    const res = await fetch(`/api/file?path=${encodeURIComponent('backend/strategies/' + name)}`)
+    if (!res.ok) throw new Error('Failed')
+    const data = await res.json()
+    emit('update:modelValue', data.content)
+    Message.success(`已加载策略 ${name}`)
+  } catch {
+    Message.error('加载策略文件失败')
+  }
+}
+
+onMounted(loadStrategyFiles)
 </script>
 
 <style scoped>
