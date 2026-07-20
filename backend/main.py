@@ -626,16 +626,41 @@ async def get_kline_from_akshare(contract_code: str, frequency: str, start_date:
             
             return results
         
-        # 日线用东方财富接口
-        df = ak.futures_hist_em(
-            symbol=symbol,
-            period='daily',
-            start_date=start_date[:10].replace('-', ''),
-            end_date=end_date[:10].replace('-', '')
-        )
+        # 日线：优先东方财富，失败/无数据时回退新浪日线
+        df = None
+        try:
+            df = ak.futures_hist_em(
+                symbol=symbol,
+                period='daily',
+                start_date=start_date[:10].replace('-', ''),
+                end_date=end_date[:10].replace('-', '')
+            )
+        except Exception as e:
+            logger.warning(f"东方财富日线异常({symbol})，尝试新浪日线: {e}")
         
         if df is None or df.empty:
-            logger.warning(f"东方财富日线无数据: {symbol}")
+            logger.info(f"东方财富日线无数据({symbol})，回退新浪日线")
+            try:
+                sdf = ak.futures_zh_daily_sina(symbol=symbol)
+                if sdf is not None and not sdf.empty:
+                    sdf['date'] = pd.to_datetime(sdf['date'])
+                    start_dt = pd.Timestamp(start_date[:10])
+                    end_dt = pd.Timestamp(end_date[:10])
+                    sdf = sdf[(sdf['date'] >= start_dt) & (sdf['date'] <= end_dt)]
+                    results = []
+                    for _, row in sdf.iterrows():
+                        results.append(KlineData(
+                            time=format_time(row['date'].to_pydatetime()),
+                            open=float(row.get('open', 0) or 0),
+                            high=float(row.get('high', 0) or 0),
+                            low=float(row.get('low', 0) or 0),
+                            close=float(row.get('close', 0) or 0),
+                            volume=int(float(row.get('volume', 0) or 0)),
+                            hold=int(float(row.get('hold', 0) or 0)),
+                        ))
+                    return results
+            except Exception as e:
+                logger.warning(f"新浪日线获取失败({symbol}): {e}")
             return []
         
         results = []
