@@ -1,0 +1,92 @@
+const defaultStrategyCode = `# ========== 折线顶点趋势策略（逐K线版）==========
+# 核心: 每根K线动态识别历史顶点，根据顶点序列逐根判断
+# 做空条件: 新顶点 < 前前顶点 且 前顶点 < 前前前顶点（连续下降）
+# 内置变量: closes, highs, lows, volumes, bars, times (时间字符串列表)
+#           position, entry_price (当前持仓和开仓价)
+# 内置函数: sma(data, period), ema(data, period), rsi(data, period)
+
+signals = [{'action': 'hold'} for _ in range(len(bars))]
+channels = None
+
+if len(bars) < 30:
+    pass
+
+# ========== 顶点识别函数 ==========
+def detect_vertices(highs_sub, lows_sub, closes_sub, threshold_pct):
+    n = len(highs_sub)
+    threshold = threshold_pct / 100.0
+    verts = []
+    i = 0
+    while i < n:
+        if len(verts) == 0:
+            verts.append({'idx': i, 'price': closes_sub[0], 'type': 'low'})
+            i = 1
+            continue
+        last_type = verts[-1]['type']
+        if last_type == 'low':
+            high_idx, high_price = i, highs_sub[i]
+            found = False
+            for j in range(i, n):
+                if highs_sub[j] > high_price:
+                    high_price, high_idx = highs_sub[j], j
+                if (high_price - closes_sub[j]) / high_price >= threshold and j > high_idx:
+                    verts.append({'idx': high_idx, 'price': high_price, 'type': 'high'})
+                    i = high_idx + 1
+                    found = True
+                    break
+            if not found: break
+        else:
+            low_idx, low_price = i, lows_sub[i]
+            found = False
+            for j in range(i, n):
+                if lows_sub[j] < low_price:
+                    low_price, low_idx = lows_sub[j], j
+                if (closes_sub[j] - low_price) / low_price >= threshold and j > low_idx:
+                    verts.append({'idx': low_idx, 'price': low_price, 'type': 'low'})
+                    i = low_idx + 1
+                    found = True
+                    break
+            if not found: break
+    return verts
+
+# ========== 逐K线决策 ==========
+for k in range(len(bars)):
+    if k < 20:
+        continue
+    
+    # 用截止到 k 的数据识别顶点
+    verts = detect_vertices(
+        high_arr[:k+1], low_arr[:k+1], close_arr[:k+1], 2.0
+    )
+    
+    total_v = len(verts)
+    if total_v < 4:
+        continue
+    
+    v3 = verts[-1]  # 最新顶点
+    v2 = verts[-2]  # 前顶点
+    v1 = verts[-3]  # 前前顶点
+    v0 = verts[-4]  # 前前前顶点
+    
+    c = close_arr[k]
+    
+    # 做空判断: 新顶点 < 前前顶点 且 前顶点 < 前前前顶点
+    if v3['price'] < v1['price'] and v2['price'] < v0['price']:
+        signals[k] = {'action': 'short', 'price': c, 'reason': f'顶点下降开空 k={k} {c:.0f}'}
+
+# ========== 全量顶点折线（供前端绘制）==========
+all_verts = detect_vertices(high_arr, low_arr, close_arr, 2.0)
+total_vertices = len(all_verts)
+channels = None
+if total_vertices >= 2:
+    channels = []
+    for idx in range(total_vertices - 1):
+        v_from = all_verts[idx]
+        v_to = all_verts[idx + 1]
+        channels.append({
+            'uptime1': time_arr[v_from['idx']],
+            'upprice1': round(v_from['price'], 2),
+            'downtime1': time_arr[v_to['idx']],
+            'downprice1': round(v_to['price'], 2),
+        })
+`
