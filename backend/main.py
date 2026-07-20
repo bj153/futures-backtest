@@ -395,12 +395,28 @@ async def read_file(path: str = Query(...)):
 
 @app.post("/api/file")
 async def save_file(path: str = Query(...), body: dict = {}):
-    """保存文件"""
+    """保存文件（不存在时在已有目录内创建）"""
     abs_path = (PROJECT_ROOT / path).resolve()
-    if not abs_path.exists():
-        raise HTTPException(status_code=404, detail="文件不存在")
+    if not abs_path.is_relative_to(PROJECT_ROOT.resolve()):
+        raise HTTPException(status_code=403, detail="禁止访问项目目录外的文件")
+    if abs_path.is_dir():
+        raise HTTPException(status_code=400, detail="路径是目录，无法写入")
+    if not abs_path.exists() and not abs_path.parent.is_dir():
+        raise HTTPException(status_code=404, detail="目录不存在")
     content = body.get("content", "")
     abs_path.write_text(content, encoding="utf-8")
+    return {"success": True}
+
+
+@app.delete("/api/file")
+async def delete_file(path: str = Query(...)):
+    """删除文件（仅限项目目录内）"""
+    abs_path = (PROJECT_ROOT / path).resolve()
+    if not abs_path.is_relative_to(PROJECT_ROOT.resolve()):
+        raise HTTPException(status_code=403, detail="禁止删除项目目录外的文件")
+    if not abs_path.exists() or not abs_path.is_file():
+        raise HTTPException(status_code=404, detail="文件不存在")
+    abs_path.unlink()
     return {"success": True}
 
 
