@@ -46,6 +46,7 @@ __pycache__/
 backend.pid
 
 # Manual backups
+_archive/
 backend_bak_*/
 *.bak
 *.bak2
