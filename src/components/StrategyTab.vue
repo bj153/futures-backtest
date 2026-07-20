@@ -26,6 +26,64 @@
     <div class="strategy-fs-body">
       <StrategyEditor :model-value="modelValue" @update:model-value="$emit('update:modelValue', $event)" />
     </div>
+
+    <!-- 回测结果摘要 -->
+    <div class="bt-result" v-if="backtestResult">
+      <div class="section-label">📊 回测结果</div>
+      <div class="bt-cards">
+        <div class="bt-card">
+          <div class="bt-card-label">总收益率</div>
+          <div class="bt-card-value" :class="backtestResult.totalReturn >= 0 ? 'text-up' : 'text-down'">
+            {{ backtestResult.totalReturn >= 0 ? '+' : '' }}{{ backtestResult.totalReturn.toFixed(2) }}%
+          </div>
+        </div>
+        <div class="bt-card">
+          <div class="bt-card-label">年化收益</div>
+          <div class="bt-card-value" :class="(backtestResult.annualizedReturn || 0) >= 0 ? 'text-up' : 'text-down'">
+            {{ (backtestResult.annualizedReturn || 0) >= 0 ? '+' : '' }}{{ (backtestResult.annualizedReturn || 0).toFixed(2) }}%
+          </div>
+        </div>
+        <div class="bt-card">
+          <div class="bt-card-label">胜率</div>
+          <div class="bt-card-value">{{ backtestResult.winRate.toFixed(1) }}%</div>
+        </div>
+        <div class="bt-card">
+          <div class="bt-card-label">交易笔数</div>
+          <div class="bt-card-value">{{ backtestResult.tradeCount }}</div>
+        </div>
+        <div class="bt-card">
+          <div class="bt-card-label">最大回撤</div>
+          <div class="bt-card-value text-down">-{{ backtestResult.maxDrawdown.toFixed(2) }}%</div>
+        </div>
+        <div class="bt-card">
+          <div class="bt-card-label">期末权益</div>
+          <div class="bt-card-value" :class="backtestResult.netPnl >= 0 ? 'text-up' : 'text-down'">
+            {{ backtestResult.finalEquity?.toFixed(0) }}
+          </div>
+        </div>
+      </div>
+
+      <!-- 最近 5 笔交易 -->
+      <template v-if="backtestResult.trades?.length">
+        <div class="section-label" style="margin-top:10px">最近 {{ Math.min(backtestResult.trades.length, 5) }} 笔交易（共 {{ backtestResult.trades.length }} 笔）</div>
+        <div class="bt-trades-wrap">
+          <table class="mini-table">
+            <thead>
+              <tr><th>时间</th><th>操作</th><th>价格</th><th>数量</th><th>盈亏</th></tr>
+            </thead>
+            <tbody>
+              <tr v-for="(t, i) in backtestResult.trades.slice(-5).reverse()" :key="i" :class="t.pnl >= 0 ? 'row-up' : 'row-down'">
+                <td>{{ t.time?.slice(5, 16) }}</td>
+                <td><span class="trade-badge" :class="getActionClass(t.action)">{{ t.action }}</span></td>
+                <td>{{ t.price?.toFixed(2) }}</td>
+                <td>{{ t.quantity }}</td>
+                <td :class="t.pnl >= 0 ? 'text-up' : 'text-down'">{{ t.pnl >= 0 ? '+' : '' }}{{ t.pnl?.toFixed(2) }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </template>
+    </div>
   </div>
 
   <!-- 新建策略弹窗 -->
@@ -49,7 +107,14 @@ import StrategyEditor from './StrategyEditor.vue'
 const props = defineProps<{
   modelValue: string
   running: boolean
+  backtestResult?: any
 }>()
+
+function getActionClass(action: string) {
+  if (['buy', '开多', '买开', '买平', 'cover'].includes(action)) return 'badge-buy'
+  if (['sell', '开空', '卖开', '卖平', 'sell_short'].includes(action)) return 'badge-sell'
+  return ''
+}
 
 const emit = defineEmits<{
   'update:modelValue': [value: string]
@@ -214,6 +279,33 @@ async function deleteStrategy() {
 .strategy-fs-body :deep(.cm-editor) { flex: 1; height: 100% !important; }
 .strategy-fs-body :deep(.cm-scroller) { background: #1e1e1e; }
 .strategy-fs-body :deep(.cm-gutters) { background: #282c34; border-right-color: #3e4451; color: #636d83; }
+
+/* 回测结果摘要 */
+.bt-result { padding: 12px 16px; border-top: 1px solid #e8e8e8; flex-shrink: 0; }
+.section-label { display: flex; justify-content: space-between; align-items: center; font-size: 14px; font-weight: 600; color: #333; margin-bottom: 8px; }
+.bt-cards { display: flex; flex-wrap: wrap; gap: 8px; }
+.bt-card { background: #fafafa; border: 1px solid #f0f0f0; border-radius: 6px; padding: 10px 14px; min-width: 120px; flex: 1; }
+.bt-card-label { font-size: 12px; color: #999; margin-bottom: 4px; }
+.bt-card-value { font-size: 18px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.bt-trades-wrap { max-height: 180px; overflow-y: auto; border: 1px solid #f0f0f0; border-radius: 4px; }
+
+/* 迷你表格 */
+.mini-table { width: 100%; font-size: 13px; border-collapse: collapse; }
+.mini-table th { position: sticky; top: 0; background: #f5f5f5; color: #999; padding: 6px 8px; text-align: right; font-weight: 600; border-bottom: 2px solid #e8e8e8; z-index: 1; }
+.mini-table td { padding: 4px 8px; text-align: right; color: #333; border-bottom: 1px solid #f0f0f0; }
+.mini-table th:first-child, .mini-table td:first-child { text-align: left; }
+.mini-table tbody tr:hover td { background: #f8f8ff; }
+.row-up td { background: #f6ffed; }
+.row-down td { background: #fff2f0; }
+
+/* 红涨绿跌 */
+.text-up { color: #cf1322; font-weight: 600; }
+.text-down { color: #389e0d; font-weight: 600; }
+
+/* 交易标签 */
+.trade-badge { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 12px; font-weight: 500; }
+.badge-buy { background: #fff2f0; color: #cf1322; border: 1px solid #ffccc7; }
+.badge-sell { background: #f6ffed; color: #389e0d; border: 1px solid #b7eb8f; }
 
 @media (max-width: 768px) {
   .strategy-fs-body { min-height: 60vh; }

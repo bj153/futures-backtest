@@ -117,6 +117,7 @@
           <StrategyTab
             v-model="strategyCode"
             :running="running"
+            :backtest-result="backtestResult"
             @run-backtest="runBacktest"
             @reset="resetStrategy"
           />
