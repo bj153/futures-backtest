@@ -36,7 +36,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch, nextTick } from 'vue'
+import { ref, watch, nextTick, onMounted } from 'vue'
 import { Message } from 'view-ui-plus'
 import Highcharts from 'highcharts/highstock.js'
 import StockChart from './StockChart.vue'
@@ -195,6 +195,11 @@ function renderEquityCurve() {
 }
 
 watch(() => props.backtestResult, val => { if (val?.equityCurve) nextTick(renderEquityCurve) }, { deep: true })
+
+// 组件挂载时若已有回测结果（例如从策略 Tab 回测完成后切回图表 Tab），立即渲染收益曲线
+onMounted(() => {
+  if (props.backtestResult?.equityCurve) nextTick(renderEquityCurve)
+})
 </script>
 
 <style scoped>
