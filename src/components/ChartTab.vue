@@ -204,7 +204,7 @@ onMounted(() => {
 
 <style scoped>
 /* 图表 */
-.chart-section { height: 750px; margin-bottom: 12px; border: 1px solid #f0f0f0; border-radius: 6px; flex-shrink: 0; }
+.chart-section { height: 550px; margin-bottom: 12px; border: 1px solid #f0f0f0; border-radius: 6px; flex-shrink: 0; }
 .chart-section :deep(.stock-chart) { height: 100%; }
 .chart-section :deep(.chart-container) { height: 100%; }
 
