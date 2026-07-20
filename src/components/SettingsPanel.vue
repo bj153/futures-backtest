@@ -26,11 +26,11 @@
     <div class="param-row">
       <div class="param-item">
         <label>开始日期</label>
-        <DatePicker v-model="localStartDate" type="date" size="small" format="yyyy-MM-dd" />
+        <DatePicker v-model="localStartDate" type="date" size="small" :format="'yyyy-MM-dd' as any" />
       </div>
       <div class="param-item">
         <label>结束日期</label>
-        <DatePicker v-model="localEndDate" type="date" size="small" format="yyyy-MM-dd" />
+        <DatePicker v-model="localEndDate" type="date" size="small" :format="'yyyy-MM-dd' as any" />
       </div>
     </div>
     <div class="action-buttons">
@@ -107,8 +107,8 @@ const dataSources = [
 
 const localFrequency = ref(props.frequency)
 const localDataSource = ref(props.dataSource)
-const localStartDate = ref(props.startDate)
-const localEndDate = ref(props.endDate)
+const localStartDate = ref<any>(props.startDate)
+const localEndDate = ref<any>(props.endDate)
 const localInitialCapital = ref(props.initialCapital)
 const localCommissionRate = ref(props.commissionRate)
 const localDrawThreshold = ref(props.drawThreshold)

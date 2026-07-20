@@ -96,7 +96,7 @@ function autoDrawSegments(segments: { time: string; price: number }[][]) {
   clearSegments()
 
   const bandColors = ['#ff5722', '#4caf50', '#2196f3', '#ff9800', '#9c27b0', '#00bcd4', '#e91e63', '#3f51b5']
-  const yAxis = chart.yAxis[0]
+  const yAxis = chart.yAxis[0] as any
   const yMin = yAxis.dataMin ?? yAxis.min ?? 0
   const yMax = yAxis.dataMax ?? yAxis.max ?? 1
   if (yMin >= yMax) return
@@ -105,11 +105,11 @@ function autoDrawSegments(segments: { time: string; price: number }[][]) {
   const seriesList: any[] = []
   
   for (let s = 0; s < segments.length; s++) {
-    const seg = segments[s]
+    const seg = segments[s]!
     if (seg.length < 1) continue
     const color = bandColors[s % bandColors.length]
-    const startTime = toTs(seg[0].time)
-    const last = seg[seg.length - 1]
+    const startTime = toTs(seg[0]!.time)
+    const last = seg[seg.length - 1]!
     const endTime = toTs(last.time)
     
     // 第一段的起始竖线跳过（在最左边不好看）
@@ -155,13 +155,13 @@ function clearDrawnLines() {
   if (!chart) return
   const toRemove: number[] = []
   for (let i = 0; i < chart.series.length; i++) {
-    const name = chart.series[i].name || ''
+    const name = chart.series[i]!.name || ''
     if (name.startsWith('顶点折线') || name.startsWith('波段')) {
       toRemove.push(i)
     }
   }
   for (let i = toRemove.length - 1; i >= 0; i--) {
-    chart.series[toRemove[i]].remove()
+    chart.series[toRemove[i]!]!.remove()
   }
 }
 
@@ -169,13 +169,13 @@ function clearSegments() {
   if (!chart) return
   const toRemove: number[] = []
   for (let i = 0; i < chart.series.length; i++) {
-    const name = chart.series[i].name || ''
+    const name = chart.series[i]!.name || ''
     if (name.startsWith('波段')) {
       toRemove.push(i)
     }
   }
   for (let i = toRemove.length - 1; i >= 0; i--) {
-    chart.series[toRemove[i]].remove(false)
+    chart.series[toRemove[i]!]!.remove(false)
   }
   if (toRemove.length > 0) {
     chart.redraw()
@@ -459,7 +459,7 @@ onMounted(() => {
   // 监听收益曲线范围变化
   const syncFn = (e: any) => {
     if (chart && e.detail) {
-      chart.xAxis[0].setExtremes(e.detail.min, e.detail.max)
+      chart.xAxis[0]!.setExtremes(e.detail.min, e.detail.max)
     }
   }
   window.addEventListener('equity-extremes', syncFn)

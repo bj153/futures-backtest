@@ -119,7 +119,7 @@
             <thead><tr><th>#</th><th>时间</th><th>操作</th><th>价格</th><th>权益</th><th>盈亏</th></tr></thead>
             <tbody>
               <tr v-for="(t, i) in mlResult.trades.slice().reverse()" :key="i" :class="t.pnl >= 0 ? 'row-up' : 'row-down'">
-                <td class="td-num">{{ mlResult.trades.length - i }}</td>
+                <td class="td-num">{{ mlResult.trades.length - (i as number) }}</td>
                 <td>{{ t.time?.slice(5, 16) }}</td>
                 <td><span class="trade-badge" :class="t.action.includes('买') ? 'badge-buy' : 'badge-sell'">{{ t.action }}</span></td>
                 <td>{{ t.price?.toFixed(2) }}</td>
@@ -162,7 +162,7 @@
   </div>
 
   <!-- 删除模型确认弹窗 -->
-  <Modal v-model="mlDeleteConfirmVisible" title="删除模型" width="400" @on-ok="runDeleteModel">
+  <Modal v-model="mlDeleteConfirmVisible" title="删除模型" :width="400" @on-ok="runDeleteModel">
     <p>确定要删除模型 <strong>{{ mlDeletingName }}</strong> 吗？</p>
     <p style="color:#999;font-size:13px;margin-top:8px">此操作不可恢复。</p>
   </Modal>
