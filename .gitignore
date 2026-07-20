@@ -38,10 +38,6 @@ __screenshots__/
 # Vite
 *.timestamp-*-*.mjs
 
-# Secrets
-.env
-*.env
-
 # Backend runtime / artifacts
 backend/models/*.pkl
 backend/__pycache__/
