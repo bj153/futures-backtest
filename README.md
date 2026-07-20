@@ -30,7 +30,7 @@
 ### 后端
 
 ```bash
-pip install fastapi "uvicorn[standard]" python-dotenv psycopg2-binary akshare tushare lightgbm pandas numpy
+pip install -r backend/requirements.txt
 # 数据库连接等配置在 backend/.env（已随仓库提供，含 PG_HOST / TUSHARE_TOKEN / TQSDK 账号）
 cd backend && python main.py        # http://localhost:8001
 ```

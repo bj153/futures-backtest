@@ -1,0 +1,20 @@
+# futures-backtest 后端依赖
+# 核心服务
+fastapi==0.139.2
+uvicorn==0.51.0
+python-dotenv==1.2.2
+
+# 数据库
+psycopg2-binary==2.9.12
+
+# 数据源
+akshare==1.18.64
+tushare==1.4.29
+# tqsdk  # 天勤数据源 / run_experiment.py 需要，按需安装（体积较大）
+# scikit-learn  # run_experiment.py 的评估指标需要，按需安装
+
+# 模型与计算
+lightgbm==4.7.0
+pandas==3.0.2
+numpy==2.4.4
+requests==2.33.1
