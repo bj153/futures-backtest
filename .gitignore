@@ -57,5 +57,9 @@ data/contracts.db
 # Deploy secrets & staging (token, ssh key)
 .deploy/
 
+# Environment / secrets
+.env
+backend/.env
+
 # Windows reserved name (accidentally created)
 nul
