@@ -7,9 +7,11 @@
 import os
 import sys
 import json
+import time
+import asyncio
 from pathlib import Path
 from datetime import datetime, timedelta
-from typing import Optional, List
+from typing import Optional, List, Dict, Any
 import re
 import warnings
 import logging
@@ -44,6 +46,10 @@ class SafeEncoder(json.JSONEncoder):
 # ---- 加载 .env ----
 load_dotenv(Path(__file__).parent / ".env")
 
+# ---- 内存缓存（避免重复请求 akshare） ----
+_kline_cache: Dict[str, tuple] = {}  # key -> (data, expire_time)
+_CACHE_TTL = 300  # 缓存5分钟
+
 TUSHARE_TOKEN = os.getenv("TUSHARE_TOKEN", "")
 TQSDK_ACCOUNT = os.getenv("TQSDK_ACCOUNT", "bj153")
 TQSDK_PASSWORD = os.getenv("TQSDK_PASSWORD", "")
@@ -53,6 +59,7 @@ PG_CONFIG = {
     'database': os.getenv("PG_DATABASE", "futures_data"),
     'user': os.getenv("PG_USER", "postgres"),
     'password': os.getenv("PG_PASSWORD", "postgres"),
+    'connect_timeout': 5,
     'client_encoding': 'utf8'
 }
 
@@ -126,16 +133,17 @@ CONTRACT_EXCHANGE_MAP = {
     'p': 'DCE', 'm': 'DCE', 'y': 'DCE', 'a': 'DCE', 'c': 'DCE',
     'cs': 'DCE', 'jm': 'DCE', 'j': 'DCE', 'i': 'DCE', 'l': 'DCE',
     'v': 'DCE', 'pp': 'DCE', 'b': 'DCE', 'eg': 'DCE', 'eb': 'DCE',
+    'pg': 'DCE',
     'rb': 'SHFE', 'hc': 'SHFE', 'ss': 'SHFE', 'wr': 'SHFE',
     'cu': 'SHFE', 'al': 'SHFE', 'zn': 'SHFE', 'pb': 'SHFE',
     'ni': 'SHFE', 'sn': 'SHFE', 'au': 'SHFE', 'ag': 'SHFE',
-    'ru': 'SHFE', 'bu': 'SHFE', 'fu': 'SHFE', 'sp': 'SHFE',
+    'ru': 'SHFE', 'bu': 'SHFE', 'fu': 'SHFE', 'sp': 'SHFE', 'ao': 'SHFE',
     'if': 'CFFEX', 'ic': 'CFFEX', 'ih': 'CFFEX', 'im': 'CFFEX',
     'ts': 'CFFEX', 'tf': 'CFFEX', 't': 'CFFEX', 'tl': 'CFFEX',
     'cf': 'ZCE', 'sr': 'ZCE', 'ta': 'ZCE', 'ma': 'ZCE',
     'fg': 'ZCE', 'oi': 'ZCE', 'rm': 'ZCE', 'pm': 'ZCE',
     'wh': 'ZCE', 'ap': 'ZCE', 'cj': 'ZCE', 'ur': 'ZCE',
-    'sa': 'ZCE', 'pf': 'ZCE', 'px': 'ZCE',
+    'sa': 'ZCE', 'pf': 'ZCE', 'px': 'ZCE', 'sh': 'ZCE',
     'sc': 'INE', 'lu': 'INE', 'nr': 'INE', 'bc': 'INE', 'ec': 'INE',
     'si': 'GFEX', 'lc': 'GFEX', 'gd': 'GFEX',
 }
@@ -189,13 +197,46 @@ class Contract(BaseModel):
     current_price: Optional[float] = None
     is_main: Optional[str] = None
 
+# ---- 合约乘数映射（品种→每手单位数）----
+_FUTURES_MULTIPLIER = {
+    # 大商所 DCE
+    'jm': 60, 'j': 100, 'i': 100, 'rb': 10, 'hc': 10,
+    'p': 10, 'm': 10, 'y': 10, 'a': 10, 'b': 10, 'c': 10,
+    'cs': 10, 'l': 5, 'v': 5, 'pp': 5, 'eg': 10, 'eb': 5,
+    'pg': 20, 'rr': 10, 'fb': 10, 'bb': 10, 'jd': 10,
+    # 郑商所 CZCE
+    'ta': 5, 'ma': 10, 'sa': 20, 'ur': 20, 'fg': 20, 'zc': 100,
+    'rm': 10, 'oi': 10, 'cf': 5, 'sr': 10, 'ap': 10, 'cj': 5,
+    'pk': 5, 'pf': 5, 'cy': 5, 'jr': 10, 'lr': 10, 'ri': 10,
+    'sm': 5, 'sf': 5, 'rs': 10, 'wh': 20, 'pm': 10,
+    # 上期所 SHFE
+    'cu': 5, 'al': 5, 'zn': 5, 'ni': 1, 'sn': 1, 'pb': 5,
+    'au': 1000, 'ag': 15, 'ss': 5, 'ao': 20,
+    'ru': 10, 'bu': 10, 'fu': 10, 'sp': 10, 'wr': 10,
+    # 中金所 CFFEX
+    'if': 300, 'ic': 200, 'ih': 300, 'im': 200,
+    't': 10000, 'tf': 10000, 'ts': 20000, 'tl': 10000,
+    # 能源中心 INE
+    'sc': 1000, 'nr': 10, 'lu': 10, 'bc': 5,
+}
+
+def _get_multiplier(contract_code: str) -> float:
+    """根据合约代码自动识别乘数"""
+    import re
+    prefix = re.sub(r'[\d_]', '', contract_code).lower()
+    for i in range(len(prefix), 0, -1):
+        key = prefix[:i]
+        if key in _FUTURES_MULTIPLIER:
+            return float(_FUTURES_MULTIPLIER[key])
+    return 10.0
+
 class BacktestRequest(BaseModel):
     strategy: str
     contract_code: str
     frequency: str = "1m"
     start_date: str
     end_date: str
-    initial_capital: float = 10000
+    initial_capital: float = 100000
     commission: float = 0.0001
     margin_ratio: float = 0.1
     source: str = "akshare"
@@ -203,6 +244,9 @@ class BacktestRequest(BaseModel):
     multiplier: float = 1.0  # 合约乘数（1手=multiplier吨/克/桶等）
     ema_fast: int = 10  # EMA快线周期
     ema_slow: int = 40  # EMA慢线周期
+    strategy_params: Optional[Dict[str, Any]] = None  # 通用策略参数袋，原样合入 engine context
+    use_full_position: bool = False  # 满仓模式：按可用资金自动算手数，代替每次固定1手
+    max_risk_pct: float = 0.2  # 满仓模式下单笔最大亏损占本金比例（默认20%）
 
 # ---- 数据库初始化 ----
 def init_db():
@@ -259,16 +303,38 @@ def seed_default_contracts():
     finally:
         conn.close()
 
-init_db()
-seed_default_contracts()
+try:
+    init_db()
+except Exception as e:
+    logger.warning(f"init_db 跳过（数据库不可用，回测不受影响）: {e}")
+try:
+    seed_default_contracts()
+except Exception as e:
+    # 远程库不可用时不再致命：akshare 数据源的回测不依赖本地 PG
+    logger.warning(f"seed_default_contracts 跳过（数据库不可用）: {e}")
 
 # ---- 数据库操作函数 ----
 def get_contracts_from_db() -> List[dict]:
-    with get_db() as conn:
-        cursor = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
-        cursor.execute('SELECT code, name, exchange FROM futures_contracts ORDER BY code')
-        rows = cursor.fetchall()
-        return [{'code': row['code'], 'name': row['name'], 'exchange': row['exchange'] or ''} for row in rows]
+    try:
+        with get_db() as conn:
+            cursor = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+            cursor.execute('SELECT code, name, exchange FROM futures_contracts ORDER BY code')
+            rows = cursor.fetchall()
+            return [{'code': row['code'], 'name': row['name'], 'exchange': row['exchange'] or ''} for row in rows]
+    except Exception as e:
+        logger.warning(f"数据库不可用，使用内置合约列表: {e}")
+        return [
+            {'code': 'ma2609', 'name': '甲醇2609', 'exchange': 'ZCE'},
+            {'code': 'jm2609', 'name': '焦煤2609', 'exchange': 'DCE'},
+            {'code': 'eg2609', 'name': '乙二醇2609', 'exchange': 'DCE'},
+            {'code': 'fu2609', 'name': '燃油2609', 'exchange': 'SHFE'},
+            {'code': 'rb2610', 'name': '螺纹钢2610', 'exchange': 'SHFE'},
+            {'code': 'ta2609', 'name': 'PTA2609', 'exchange': 'ZCE'},
+            {'code': 'fg2609', 'name': '玻璃2609', 'exchange': 'ZCE'},
+            {'code': 'sa2609', 'name': '纯碱2609', 'exchange': 'ZCE'},
+            {'code': 'i2609', 'name': '铁矿石2609', 'exchange': 'DCE'},
+            {'code': 'p2609', 'name': '棕榈油2609', 'exchange': 'DCE'},
+        ]
 
 def update_contracts_from_akshare() -> dict:
     try:
@@ -431,12 +497,46 @@ async def get_kline(
     source: str = Query(default="akshare")
 ):
     contract_code = contract_code.lower()
+    # 命中内存缓存（5分钟TTL）
+    cache_key = f"{contract_code}:{frequency}:{start_date}:{end_date}:{source}"
+    if cache_key in _kline_cache:
+        data, expire = _kline_cache[cache_key]
+        if time.time() < expire:
+            return data
+        del _kline_cache[cache_key]
+
     if source == "tushare":
-        return await get_kline_from_tushare(contract_code, frequency, start_date, end_date)
+        result = await get_kline_from_tushare(contract_code, frequency, start_date, end_date)
     elif source == "tqsdk":
-        return await get_kline_from_tqsdk(contract_code, frequency, start_date, end_date)
+        result = await get_kline_from_tqsdk(contract_code, frequency, start_date, end_date)
+    elif source == "cache":
+        result = get_kline_from_cache(contract_code, frequency, start_date, end_date)
     else:
-        return await get_kline_from_akshare(contract_code, frequency, start_date, end_date)
+        result = await asyncio.to_thread(get_kline_from_akshare, contract_code, frequency, start_date, end_date)
+
+    _kline_cache[cache_key] = (result, time.time() + _CACHE_TTL)
+    return result
+
+
+def get_kline_from_cache(contract_code: str, frequency: str, start_date: str, end_date: str) -> List[KlineData]:
+    """从本地缓存 data/klines/{code}_{freq}.csv 读取K线（由 cache_klines.py 生成）"""
+    cache_dir = Path(__file__).parent.parent / "data" / "klines"
+    # 郑商所文件名是大写（FG609_15m.csv），其余小写
+    candidates = [cache_dir / f"{contract_code}_{frequency}.csv",
+                  cache_dir / f"{contract_code.upper()}_{frequency}.csv"]
+    path = next((p for p in candidates if p.exists()), None)
+    if path is None:
+        logger.warning(f"缓存不存在: {contract_code} {frequency}")
+        return []
+    df = pd.read_csv(path, parse_dates=['time'])
+    mask = (df['time'] >= start_date) & (df['time'] <= end_date + ' 23:59:59')
+    df = df[mask]
+    return [KlineData(
+        time=format_time(row['time']),
+        open=float(row['open']), high=float(row['high']),
+        low=float(row['low']), close=float(row['close']),
+        volume=int(row['volume']),
+    ) for _, row in df.iterrows()]
 
 
 async def get_kline_from_tushare(contract_code: str, frequency: str, start_date: str, end_date: str) -> List[KlineData]:
@@ -533,7 +633,11 @@ async def get_kline_from_tqsdk(contract_code: str, frequency: str, start_date: s
         variety = contract_code.rstrip('0123456789')
         ex = CONTRACT_EXCHANGE_MAP.get(variety, 'DCE')
 
-        tq_symbol = f"{ex}.{contract_code.upper()}"
+        # 天勤代码规则：郑商所(ZCE/CZCE) 大写+3位年月（FG609），其他交易所小写+4位（rb2610）
+        if ex in ('CZCE', 'ZCE'):
+            tq_symbol = f"CZCE.{contract_code.upper()}"
+        else:
+            tq_symbol = f"{ex}.{contract_code.lower()}"
         api = TqApi(auth=TqAuth(TQSDK_ACCOUNT, TQSDK_PASSWORD))
 
         freq_map = {
@@ -544,17 +648,16 @@ async def get_kline_from_tqsdk(contract_code: str, frequency: str, start_date: s
 
         klines = api.get_kline_serial(tq_symbol, sec, data_length=max(200, int((pd.to_datetime(end_date) - pd.to_datetime(start_date)).total_seconds() / sec) + 100))
 
-        import asyncio
-        for _ in range(20):
-            api.update()
-            await asyncio.sleep(0.1)
+        api.wait_update()
 
         df = pd.DataFrame(klines)
         if df.empty:
             api.close()
             return []
 
-        df['datetime'] = pd.to_datetime(df['datetime'], unit='s') + pd.Timedelta(hours=8)
+        # 天勤 datetime 为纳秒时间戳（UTC），转为北京时间
+        df['datetime'] = pd.to_datetime(df['datetime'], unit='ns', utc=True).dt.tz_convert('Asia/Shanghai').dt.tz_localize(None)
+        df = df.dropna(subset=['close'])
         mask = (df['datetime'] >= start_date) & (df['datetime'] <= end_date + ' 23:59:59')
         df = df[mask]
 
@@ -576,8 +679,8 @@ async def get_kline_from_tqsdk(contract_code: str, frequency: str, start_date: s
         return []
 
 
-async def get_kline_from_akshare(contract_code: str, frequency: str, start_date: str, end_date: str) -> List[KlineData]:
-    """从AKShare获取K线数据
+def get_kline_from_akshare(contract_code: str, frequency: str, start_date: str, end_date: str) -> List[KlineData]:
+    """从AKShare获取K线数据（同步，由调用方通过 asyncio.to_thread 放到线程池）
     - 分钟级(1m/5m/15m/30m/60m): 新浪接口 futures_zh_minute_sina
     - 日线: 东方财富 futures_hist_em
     """
@@ -697,9 +800,12 @@ class BacktestEngine:
     """期货回测引擎"""
 
     def __init__(self, data: List[dict], strategy_code: str, contract_code: str,
-                 initial_capital: float = 10000, commission: float = 0.0001,
+                 initial_capital: float = 100000, commission: float = 0.0001,
                  margin_ratio: float = 0.1, multiplier: float = 1.0,
-                 ema_fast: int = 10, ema_slow: int = 40):
+                 ema_fast: int = 10, ema_slow: int = 40,
+                 strategy_params: Optional[Dict[str, Any]] = None,
+                 use_full_position: bool = False,
+                 max_risk_pct: float = 0.2):
         self.data = data
         self.strategy_code = strategy_code
         self.contract_code = contract_code
@@ -719,6 +825,35 @@ class BacktestEngine:
         self._threshold_value = 5.0
         self.ema_fast = ema_fast
         self.ema_slow = ema_slow
+        self.strategy_params = strategy_params or {}
+        self.use_full_position = use_full_position
+        self.max_risk_pct = max_risk_pct
+
+    def _calc_contracts(self, price: float, context: dict = None) -> int:
+        """满仓/风控仓位：按止损距离反算手数，每次最多亏 max_risk_pct%"""
+        if not self.use_full_position:
+            return 1
+        stop_price = context.get('stop') if context else None
+        if stop_price is not None and stop_price != price:
+            # 按风险算手数：最多亏 max_risk_pct% 本金
+            risk_pct = getattr(self, 'max_risk_pct', 0.2)
+            stop_dist = abs(price - stop_price)
+            if stop_dist > 0:
+                max_loss = self.capital * risk_pct
+                contracts = int(max_loss / (stop_dist * self.multiplier))
+            else:
+                contracts = 9999
+        else:
+            # 没有止损价，用保证金反算（保守：30%仓位）
+            margin_per_lot = price * self.multiplier * self.margin_ratio
+            if margin_per_lot <= 0:
+                return 1
+            contracts = int(self.capital * 0.3 / margin_per_lot)
+        # 保证金上限
+        margin_per_lot = price * self.multiplier * self.margin_ratio
+        max_by_margin = int(self.capital / margin_per_lot) if margin_per_lot > 0 else 1
+        contracts = min(contracts, max_by_margin)
+        return max(contracts, 1)
 
     def run(self) -> dict:
         if not self.data:
@@ -744,6 +879,10 @@ class BacktestEngine:
                 'ema_fast': self.ema_fast,
                 'ema_slow': self.ema_slow,
             }
+            # 通用策略参数袋：原样合入 context（不覆盖引擎核心键）
+            for k, v in self.strategy_params.items():
+                if k not in context:
+                    context[k] = v
 
             # 内置函数
             builtin_funcs = {
@@ -813,50 +952,7 @@ class BacktestEngine:
                 # 记录权益
                 self._record_equity(i)
 
-            # channels 传回前端（引擎自动画折线）
-            try:
-                closes = [bar['close'] for bar in self.data]
-                highs = [bar['high'] for bar in self.data]
-                lows = [bar['low'] for bar in self.data]
-                times = [bar['time'] for bar in self.data]
-                verts = []
-                i = 0
-                n = len(closes)
-                threshold = getattr(self, '_threshold_value', 2.0)
-                while i < n:
-                    if len(verts) == 0:
-                        verts.append({'idx': 0, 'price': closes[0], 'type': 'low'})
-                        i = 1
-                        continue
-                    if verts[-1].get('type') == 'low':
-                        high_idx, high_price = i, highs[i]
-                        found = False
-                        for j in range(i, n):
-                            if highs[j] > high_price:
-                                high_price, high_idx = highs[j], j
-                            if (high_price - closes[j]) >= threshold and j > high_idx:
-                                verts.append({'idx': high_idx, 'price': high_price, 'type': 'high'})
-                                i = high_idx + 1
-                                found = True
-                                break
-                        if not found: break
-                    else:
-                        low_idx, low_price = i, lows[i]
-                        found = False
-                        for j in range(i, n):
-                            if lows[j] < low_price:
-                                low_price, low_idx = lows[j], j
-                            if (closes[j] - low_price) >= threshold and j > low_idx:
-                                verts.append({'idx': low_idx, 'price': low_price, 'type': 'low'})
-                                i = low_idx + 1
-                                found = True
-                                break
-                        if not found: break
-                if len(verts) >= 2:
-                    pts = [{'time': times[v['idx']], 'price': round(v['price'], 2)} for v in verts]
-                    self.channels = [{'points': pts}]
-            except Exception:
-                self.channels = None
+            # channels 传回前端（已取消蓝色折线）
 
         except Exception as e:
             logger.error(f"策略执行失败: {e}")
@@ -870,51 +966,55 @@ class BacktestEngine:
         self.total_commission = context.get('total_commission', 0)
 
         m = self.multiplier
+        lots = self._calc_contracts(price, context)  # 满仓/风控模式动态手数
+
         if action == 'buy' and self.position == 0:
-            self.position = 1
+            self.position = lots
             self.entry_price = price
-            fee = price * m * self.commission_rate
+            fee = price * m * lots * self.commission_rate
             self.capital -= fee
             self.total_commission += fee
             self.trades.append({
                 'time': bar['time'], 'action': '买开', 'price': price,
-                'quantity': int(m), 'equity': round(self._calc_equity(price), 2),
+                'quantity': lots, 'equity': round(self._calc_equity(price), 2),
                 'pnl': round(-fee, 2), 'reason': reason
             })
 
         elif action == 'sell' and self.position > 0:
-            pnl = self.position * (price - self.entry_price) * m
-            fee = price * m * self.commission_rate
+            old_lots = self.position
+            pnl = old_lots * (price - self.entry_price) * m
+            fee = price * m * old_lots * self.commission_rate
             self.capital += pnl - fee
             self.total_commission += fee
             self.trades.append({
                 'time': bar['time'], 'action': '卖平', 'price': price,
-                'quantity': int(m), 'equity': round(self.capital, 2),
+                'quantity': old_lots, 'equity': round(self.capital, 2),
                 'pnl': round(pnl - fee, 2), 'reason': reason
             })
             self.position = 0
             self.entry_price = 0
 
         elif action == 'short' and self.position == 0:
-            self.position = -1
+            self.position = -lots
             self.entry_price = price
-            fee = price * m * self.commission_rate
+            fee = price * m * lots * self.commission_rate
             self.capital -= fee
             self.total_commission += fee
             self.trades.append({
                 'time': bar['time'], 'action': '卖开', 'price': price,
-                'quantity': int(m), 'equity': round(self._calc_equity(price), 2),
+                'quantity': lots, 'equity': round(self._calc_equity(price), 2),
                 'pnl': round(-fee, 2), 'reason': reason
             })
 
         elif action == 'cover' and self.position < 0:
-            pnl = (self.entry_price - price) * m  # 空单盈利 = (开仓价-平仓价)*乘数
-            fee = price * m * self.commission_rate
+            old_lots = abs(self.position)
+            pnl = old_lots * (self.entry_price - price) * m  # 空单盈利 = (开仓价-平仓价)*乘数
+            fee = price * m * old_lots * self.commission_rate
             self.capital += pnl - fee
             self.total_commission += fee
             self.trades.append({
                 'time': bar['time'], 'action': '买平', 'price': price,
-                'quantity': int(m), 'equity': round(self.capital, 2),
+                'quantity': old_lots, 'equity': round(self.capital, 2),
                 'pnl': round(pnl - fee, 2), 'reason': reason
             })
             self.position = 0
@@ -922,45 +1022,49 @@ class BacktestEngine:
 
         # 翻转操作：同一根K线平多+开空
         if action == 'flip_short':
-            if self.position > 0:
-                pnl = (price - self.entry_price) * m
-                fee = price * m * self.commission_rate
+            old_lots = self.position if self.position > 0 else 0
+            if old_lots > 0:
+                pnl = old_lots * (price - self.entry_price) * m
+                fee = price * m * old_lots * self.commission_rate
                 self.capital += pnl - fee
                 self.total_commission += fee
                 self.trades.append({
                     'time': bar['time'], 'action': '卖平', 'price': price,
-                    'quantity': int(m), 'equity': round(self.capital, 2),
+                    'quantity': old_lots, 'equity': round(self.capital, 2),
                     'pnl': round(pnl - fee, 2), 'reason': reason + '先平多'
                 })
-            self.position = -1
+            new_lots = self._calc_contracts(price, context)
+            self.position = -new_lots
             self.entry_price = price
-            fee2 = price * m * self.commission_rate
+            fee2 = price * m * new_lots * self.commission_rate
             self.capital -= fee2
             self.total_commission += fee2
             self.trades.append({
                 'time': bar['time'], 'action': '卖开', 'price': price,
-                'quantity': int(m), 'equity': round(self._calc_equity(price), 2),
+                'quantity': new_lots, 'equity': round(self._calc_equity(price), 2),
                 'pnl': round(-fee2, 2), 'reason': reason
             })
         elif action == 'flip_long':
-            if self.position < 0:
-                pnl = (self.entry_price - price) * m
-                fee = price * m * self.commission_rate
+            old_lots = abs(self.position) if self.position < 0 else 0
+            if old_lots > 0:
+                pnl = old_lots * (self.entry_price - price) * m
+                fee = price * m * old_lots * self.commission_rate
                 self.capital += pnl - fee
                 self.total_commission += fee
                 self.trades.append({
                     'time': bar['time'], 'action': '买平', 'price': price,
-                    'quantity': int(m), 'equity': round(self.capital, 2),
+                    'quantity': old_lots, 'equity': round(self.capital, 2),
                     'pnl': round(pnl - fee, 2), 'reason': reason + '先平空'
                 })
-            self.position = 1
+            new_lots = self._calc_contracts(price, context)
+            self.position = new_lots
             self.entry_price = price
-            fee2 = price * m * self.commission_rate
+            fee2 = price * m * new_lots * self.commission_rate
             self.capital -= fee2
             self.total_commission += fee2
             self.trades.append({
                 'time': bar['time'], 'action': '买开', 'price': price,
-                'quantity': int(m), 'equity': round(self._calc_equity(price), 2),
+                'quantity': new_lots, 'equity': round(self._calc_equity(price), 2),
                 'pnl': round(-fee2, 2), 'reason': reason
             })
 
@@ -991,7 +1095,7 @@ class BacktestEngine:
 
     def _calc_equity(self, current_price: float) -> float:
         if self.position != 0:
-            unrealized = self.position * (current_price - self.entry_price)
+            unrealized = self.position * (current_price - self.entry_price) * self.multiplier
         else:
             unrealized = 0
         return self.capital + unrealized
@@ -1145,9 +1249,12 @@ class BacktestEngine:
 
     @staticmethod
     def _ema(values: List[float], period: int) -> List[float]:
-        result = [values[0]] * len(values)
+        result = [0.0] * len(values)
         k = 2 / (period + 1)
-        for i in range(1, len(values)):
+        # SMA 预热：用前 period 根均线作为种子，避免冷启动偏差
+        seed_cnt = min(period, len(values))
+        result[seed_cnt - 1] = sum(values[:seed_cnt]) / seed_cnt
+        for i in range(seed_cnt, len(values)):
             result[i] = values[i] * k + result[i-1] * (1 - k)
         return result
 
@@ -1202,7 +1309,12 @@ class BacktestEngine:
         days_range = (datetime.strptime(self.data[-1]['time'][:10], '%Y-%m-%d') -
                       datetime.strptime(self.data[0]['time'][:10], '%Y-%m-%d')).days
         years = max(days_range / 365, 1 / 365)
-        annualized_return = ((1 + total_return / 100) ** (1 / years) - 1) * 100
+        # 年化收益（保护：total_return < -100% 时底数为负会出 complex）
+        base = 1 + total_return / 100
+        if base <= 0:
+            annualized_return = float('-inf')
+        else:
+            annualized_return = float((base ** (1 / years) - 1) * 100)
 
         # 2. 胜率
         closed_trades = [t for t in self.trades if t['pnl'] != 0]
@@ -1250,22 +1362,30 @@ class BacktestEngine:
         avg_loss = np.mean(loss_trades) if loss_trades else 0
         profit_loss_ratio = avg_profit / avg_loss if avg_loss > 0 else 0
 
+        # 安全取整：处理 complex / NaN / inf
+        def _sr(v):
+            try:
+                fv = float(v) if isinstance(v, complex) else v
+                return round(fv, 2) if np.isfinite(fv) else 0
+            except Exception:
+                return 0
+
         return json.loads(json.dumps({
             'initialEquity': self.initial_capital,
-            'finalEquity': round(final_equity, 2) if np.isfinite(final_equity) else 0,
-            'pnl': round(final_equity - self.initial_capital + self.total_commission, 2) if np.isfinite(final_equity) else 0,
-            'netPnl': round(final_equity - self.initial_capital, 2) if np.isfinite(final_equity) else 0,
-            'totalCommission': round(self.total_commission, 2),
-            'totalReturn': round(total_return, 2) if np.isfinite(total_return) else 0,
-            'annualizedReturn': round(annualized_return, 2) if np.isfinite(annualized_return) else 0,
-            'winRate': round(win_rate, 2) if np.isfinite(win_rate) else 0,
+            'finalEquity': _sr(final_equity),
+            'pnl': _sr(final_equity - self.initial_capital + self.total_commission),
+            'netPnl': _sr(final_equity - self.initial_capital),
+            'totalCommission': _sr(self.total_commission),
+            'totalReturn': _sr(total_return),
+            'annualizedReturn': _sr(annualized_return),
+            'winRate': _sr(win_rate),
             'tradeCount': len(closed_trades),
-            'maxDrawdown': round(max_dd, 2) if np.isfinite(max_dd) else 0,
-            'sharpeRatio': round(sharpe_ratio, 2) if np.isfinite(sharpe_ratio) else 0,
-            'profitLossRatio': round(profit_loss_ratio, 2) if np.isfinite(profit_loss_ratio) else 0,
-            'avgProfit': round(avg_profit, 2) if np.isfinite(avg_profit) else 0,
-            'avgLoss': round(avg_loss, 2) if np.isfinite(avg_loss) else 0,
-            'peakEquity': round(peak_equity, 2) if np.isfinite(peak_equity) else 0,
+            'maxDrawdown': _sr(max_dd),
+            'sharpeRatio': _sr(sharpe_ratio),
+            'profitLossRatio': _sr(profit_loss_ratio),
+            'avgProfit': _sr(avg_profit),
+            'avgLoss': _sr(avg_loss),
+            'peakEquity': _sr(peak_equity),
             'peakTime': self.equity_curve[peak_idx]['time'] if self.equity_curve else None,
             'equityCurve': [{'time': e['time'], 'value': e['value'], 'max_eq': e.get('max_eq', 0)} if isinstance(e, dict) else e for e in self.equity_curve],
             'trades': [{'time': t['time'], 'action': t['action'], 'price': t['price'], 'quantity': t['quantity'], 'pnl': t['pnl'], 'equity': t['equity'], 'reason': t.get('reason', '')} if isinstance(t, dict) else t for t in self.trades],
@@ -1339,9 +1459,12 @@ async def run_backtest(req: BacktestRequest):
             initial_capital=req.initial_capital,
             commission=req.commission,
             margin_ratio=req.margin_ratio,
-            multiplier=req.multiplier,
+            multiplier=_get_multiplier(req.contract_code),
             ema_fast=req.ema_fast,
             ema_slow=req.ema_slow,
+            strategy_params=req.strategy_params,
+            use_full_position=req.use_full_position,
+            max_risk_pct=req.max_risk_pct,
         )
         if hasattr(engine, '_threshold_value'):
             engine._threshold_value = req.threshold
@@ -1359,13 +1482,13 @@ async def run_backtest(req: BacktestRequest):
 # ============================================================
 # ML 预测 API v2（训练/回测分离）
 # ============================================================
-from ml_api import router as ml_router
+from backend.ml_api import router as ml_router
 app.include_router(ml_router)
 
 # ============================================================
 # 多因子动态评分模型 API
 # ============================================================
-from factor_api import router as factor_router
+from backend.factor_api import router as factor_router
 app.include_router(factor_router)
 
 

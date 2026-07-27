@@ -1,0 +1,974 @@
+{
+  "1d": [
+    {
+      "total_ret": -0.9,
+      "max_dd": -10.9,
+      "sharpe": -0.11,
+      "trades": 2,
+      "bars": 132,
+      "code": "CF609"
+    },
+    {
+      "total_ret": 13.5,
+      "max_dd": -7.6,
+      "sharpe": 1.54,
+      "trades": 1,
+      "bars": 132,
+      "code": "FG609"
+    },
+    {
+      "total_ret": -1.7,
+      "max_dd": -29.2,
+      "sharpe": 0.13,
+      "trades": 4,
+      "bars": 132,
+      "code": "MA609"
+    },
+    {
+      "total_ret": 2.3,
+      "max_dd": -14.5,
+      "sharpe": 0.33,
+      "trades": 3,
+      "bars": 132,
+      "code": "SA609"
+    },
+    {
+      "total_ret": 9.9,
+      "max_dd": -14.5,
+      "sharpe": 0.95,
+      "trades": 2,
+      "bars": 132,
+      "code": "SH609"
+    },
+    {
+      "total_ret": -0.2,
+      "max_dd": -6.9,
+      "sharpe": -0.02,
+      "trades": 3,
+      "bars": 132,
+      "code": "SR609"
+    },
+    {
+      "total_ret": 16.1,
+      "max_dd": -18.6,
+      "sharpe": 0.95,
+      "trades": 2,
+      "bars": 132,
+      "code": "TA609"
+    },
+    {
+      "total_ret": 22.9,
+      "max_dd": -16.7,
+      "sharpe": 1.21,
+      "trades": 2,
+      "bars": 132,
+      "code": "bu2609"
+    },
+    {
+      "total_ret": 0.9,
+      "max_dd": -8.7,
+      "sharpe": 0.25,
+      "trades": 3,
+      "bars": 132,
+      "code": "c2609"
+    },
+    {
+      "total_ret": 50.9,
+      "max_dd": -32.8,
+      "sharpe": 1.46,
+      "trades": 1,
+      "bars": 132,
+      "code": "ec2608"
+    },
+    {
+      "total_ret": 13.6,
+      "max_dd": -17.4,
+      "sharpe": 0.82,
+      "trades": 2,
+      "bars": 132,
+      "code": "eg2609"
+    },
+    {
+      "total_ret": 30.6,
+      "max_dd": -27.8,
+      "sharpe": 1.2,
+      "trades": 3,
+      "bars": 132,
+      "code": "fu2609"
+    },
+    {
+      "total_ret": -1.8,
+      "max_dd": -8.1,
+      "sharpe": -0.32,
+      "trades": 5,
+      "bars": 132,
+      "code": "m2609"
+    },
+    {
+      "total_ret": 10.1,
+      "max_dd": -9.7,
+      "sharpe": 1.08,
+      "trades": 2,
+      "bars": 132,
+      "code": "p2609"
+    },
+    {
+      "total_ret": 22.9,
+      "max_dd": -34.7,
+      "sharpe": 1.01,
+      "trades": 4,
+      "bars": 132,
+      "code": "pg2608"
+    },
+    {
+      "total_ret": -4.9,
+      "max_dd": -9.4,
+      "sharpe": -1.13,
+      "trades": 4,
+      "bars": 132,
+      "code": "rb2610"
+    },
+    {
+      "total_ret": 34.4,
+      "max_dd": -23.3,
+      "sharpe": 1.26,
+      "trades": 2,
+      "bars": 132,
+      "code": "sc2609"
+    },
+    {
+      "total_ret": 5.1,
+      "max_dd": -5.1,
+      "sharpe": 0.84,
+      "trades": 2,
+      "bars": 132,
+      "code": "sp2609"
+    },
+    {
+      "total_ret": 3.7,
+      "max_dd": -23.7,
+      "sharpe": 0.38,
+      "trades": 2,
+      "bars": 132,
+      "code": "v2609"
+    },
+    {
+      "total_ret": 4.1,
+      "max_dd": -5.9,
+      "sharpe": 0.73,
+      "trades": 2,
+      "bars": 132,
+      "code": "y2609"
+    }
+  ],
+  "1h": [
+    {
+      "total_ret": -2.7,
+      "max_dd": -9.6,
+      "sharpe": -0.31,
+      "trades": 21,
+      "bars": 912,
+      "code": "CF609"
+    },
+    {
+      "total_ret": -14.3,
+      "max_dd": -20.9,
+      "sharpe": -1.26,
+      "trades": 22,
+      "bars": 912,
+      "code": "FG609"
+    },
+    {
+      "total_ret": -6.3,
+      "max_dd": -36.4,
+      "sharpe": -0.11,
+      "trades": 21,
+      "bars": 912,
+      "code": "MA609"
+    },
+    {
+      "total_ret": -16.0,
+      "max_dd": -20.6,
+      "sharpe": -1.5,
+      "trades": 23,
+      "bars": 912,
+      "code": "SA609"
+    },
+    {
+      "total_ret": 1.0,
+      "max_dd": -13.9,
+      "sharpe": 0.2,
+      "trades": 19,
+      "bars": 912,
+      "code": "SH609"
+    },
+    {
+      "total_ret": -2.7,
+      "max_dd": -5.6,
+      "sharpe": -0.49,
+      "trades": 23,
+      "bars": 912,
+      "code": "SR609"
+    },
+    {
+      "total_ret": -20.0,
+      "max_dd": -26.2,
+      "sharpe": -1.09,
+      "trades": 32,
+      "bars": 912,
+      "code": "TA609"
+    },
+    {
+      "total_ret": 20.1,
+      "max_dd": -20.6,
+      "sharpe": 1.16,
+      "trades": 20,
+      "bars": 912,
+      "code": "bu2609"
+    },
+    {
+      "total_ret": -11.1,
+      "max_dd": -14.9,
+      "sharpe": -3.03,
+      "trades": 24,
+      "bars": 912,
+      "code": "c2609"
+    },
+    {
+      "total_ret": 3.3,
+      "max_dd": -40.7,
+      "sharpe": 0.41,
+      "trades": 15,
+      "bars": 658,
+      "code": "ec2608"
+    },
+    {
+      "total_ret": -12.9,
+      "max_dd": -47.0,
+      "sharpe": -0.46,
+      "trades": 28,
+      "bars": 912,
+      "code": "eg2609"
+    },
+    {
+      "total_ret": 59.5,
+      "max_dd": -23.7,
+      "sharpe": 1.87,
+      "trades": 23,
+      "bars": 912,
+      "code": "fu2609"
+    },
+    {
+      "total_ret": -12.0,
+      "max_dd": -18.8,
+      "sharpe": -1.94,
+      "trades": 26,
+      "bars": 912,
+      "code": "m2609"
+    },
+    {
+      "total_ret": -8.8,
+      "max_dd": -18.3,
+      "sharpe": -0.78,
+      "trades": 24,
+      "bars": 912,
+      "code": "p2609"
+    },
+    {
+      "total_ret": 19.3,
+      "max_dd": -31.5,
+      "sharpe": 0.94,
+      "trades": 22,
+      "bars": 912,
+      "code": "pg2608"
+    },
+    {
+      "total_ret": -6.6,
+      "max_dd": -7.3,
+      "sharpe": -1.46,
+      "trades": 24,
+      "bars": 912,
+      "code": "rb2610"
+    },
+    {
+      "total_ret": -50.9,
+      "max_dd": -57.2,
+      "sharpe": -2.26,
+      "trades": 38,
+      "bars": 1420,
+      "code": "sc2609"
+    },
+    {
+      "total_ret": -2.4,
+      "max_dd": -8.1,
+      "sharpe": -0.29,
+      "trades": 25,
+      "bars": 912,
+      "code": "sp2609"
+    },
+    {
+      "total_ret": 3.2,
+      "max_dd": -10.9,
+      "sharpe": 0.35,
+      "trades": 25,
+      "bars": 912,
+      "code": "v2609"
+    },
+    {
+      "total_ret": -14.3,
+      "max_dd": -19.2,
+      "sharpe": -2.08,
+      "trades": 33,
+      "bars": 912,
+      "code": "y2609"
+    }
+  ],
+  "30m": [
+    {
+      "total_ret": -2.0,
+      "max_dd": -12.4,
+      "sharpe": -0.2,
+      "trades": 38,
+      "bars": 1561,
+      "code": "CF609"
+    },
+    {
+      "total_ret": -20.8,
+      "max_dd": -25.2,
+      "sharpe": -1.94,
+      "trades": 38,
+      "bars": 1561,
+      "code": "FG609"
+    },
+    {
+      "total_ret": -4.1,
+      "max_dd": -31.2,
+      "sharpe": -0.01,
+      "trades": 41,
+      "bars": 1561,
+      "code": "MA609"
+    },
+    {
+      "total_ret": -11.6,
+      "max_dd": -20.8,
+      "sharpe": -0.98,
+      "trades": 34,
+      "bars": 1561,
+      "code": "SA609"
+    },
+    {
+      "total_ret": 0.5,
+      "max_dd": -10.9,
+      "sharpe": 0.15,
+      "trades": 33,
+      "bars": 1561,
+      "code": "SH609"
+    },
+    {
+      "total_ret": -3.7,
+      "max_dd": -8.2,
+      "sharpe": -0.71,
+      "trades": 39,
+      "bars": 1561,
+      "code": "SR609"
+    },
+    {
+      "total_ret": -38.6,
+      "max_dd": -44.4,
+      "sharpe": -2.38,
+      "trades": 50,
+      "bars": 1561,
+      "code": "TA609"
+    },
+    {
+      "total_ret": 15.5,
+      "max_dd": -15.0,
+      "sharpe": 0.98,
+      "trades": 41,
+      "bars": 1561,
+      "code": "bu2609"
+    },
+    {
+      "total_ret": -18.3,
+      "max_dd": -19.8,
+      "sharpe": -5.13,
+      "trades": 43,
+      "bars": 1561,
+      "code": "c2609"
+    },
+    {
+      "total_ret": -37.1,
+      "max_dd": -56.9,
+      "sharpe": -1.11,
+      "trades": 25,
+      "bars": 1053,
+      "code": "ec2608"
+    },
+    {
+      "total_ret": -2.4,
+      "max_dd": -36.6,
+      "sharpe": 0.08,
+      "trades": 40,
+      "bars": 1561,
+      "code": "eg2609"
+    },
+    {
+      "total_ret": 22.2,
+      "max_dd": -32.1,
+      "sharpe": 0.99,
+      "trades": 35,
+      "bars": 1561,
+      "code": "fu2609"
+    },
+    {
+      "total_ret": -14.8,
+      "max_dd": -16.8,
+      "sharpe": -2.32,
+      "trades": 42,
+      "bars": 1561,
+      "code": "m2609"
+    },
+    {
+      "total_ret": 4.0,
+      "max_dd": -10.7,
+      "sharpe": 0.47,
+      "trades": 43,
+      "bars": 1561,
+      "code": "p2609"
+    },
+    {
+      "total_ret": -21.5,
+      "max_dd": -40.2,
+      "sharpe": -0.7,
+      "trades": 42,
+      "bars": 1561,
+      "code": "pg2608"
+    },
+    {
+      "total_ret": -2.4,
+      "max_dd": -7.4,
+      "sharpe": -0.5,
+      "trades": 34,
+      "bars": 1561,
+      "code": "rb2610"
+    },
+    {
+      "total_ret": -71.9,
+      "max_dd": -72.6,
+      "sharpe": -4.01,
+      "trades": 65,
+      "bars": 2450,
+      "code": "sc2609"
+    },
+    {
+      "total_ret": 0.8,
+      "max_dd": -7.1,
+      "sharpe": 0.18,
+      "trades": 33,
+      "bars": 1561,
+      "code": "sp2609"
+    },
+    {
+      "total_ret": -16.0,
+      "max_dd": -21.5,
+      "sharpe": -1.1,
+      "trades": 45,
+      "bars": 1561,
+      "code": "v2609"
+    },
+    {
+      "total_ret": -11.6,
+      "max_dd": -17.9,
+      "sharpe": -1.65,
+      "trades": 50,
+      "bars": 1561,
+      "code": "y2609"
+    }
+  ],
+  "15m": [
+    {
+      "total_ret": -10.5,
+      "max_dd": -13.5,
+      "sharpe": -1.43,
+      "trades": 82,
+      "bars": 2990,
+      "code": "CF609"
+    },
+    {
+      "total_ret": -39.3,
+      "max_dd": -42.7,
+      "sharpe": -4.08,
+      "trades": 69,
+      "bars": 2990,
+      "code": "FG609"
+    },
+    {
+      "total_ret": -20.0,
+      "max_dd": -20.4,
+      "sharpe": -0.93,
+      "trades": 80,
+      "bars": 2990,
+      "code": "MA609"
+    },
+    {
+      "total_ret": -43.5,
+      "max_dd": -45.9,
+      "sharpe": -4.89,
+      "trades": 73,
+      "bars": 2990,
+      "code": "SA609"
+    },
+    {
+      "total_ret": -15.4,
+      "max_dd": -20.3,
+      "sharpe": -1.25,
+      "trades": 77,
+      "bars": 2990,
+      "code": "SH609"
+    },
+    {
+      "total_ret": -13.2,
+      "max_dd": -15.2,
+      "sharpe": -2.72,
+      "trades": 81,
+      "bars": 2990,
+      "code": "SR609"
+    },
+    {
+      "total_ret": -7.4,
+      "max_dd": -26.9,
+      "sharpe": -0.2,
+      "trades": 82,
+      "bars": 2990,
+      "code": "TA609"
+    },
+    {
+      "total_ret": -21.8,
+      "max_dd": -33.3,
+      "sharpe": -1.17,
+      "trades": 79,
+      "bars": 2990,
+      "code": "bu2609"
+    },
+    {
+      "total_ret": -23.2,
+      "max_dd": -24.1,
+      "sharpe": -6.49,
+      "trades": 74,
+      "bars": 2990,
+      "code": "c2609"
+    },
+    {
+      "total_ret": -47.3,
+      "max_dd": -50.4,
+      "sharpe": -1.33,
+      "trades": 52,
+      "bars": 1974,
+      "code": "ec2608"
+    },
+    {
+      "total_ret": 14.0,
+      "max_dd": -22.6,
+      "sharpe": 0.81,
+      "trades": 71,
+      "bars": 2990,
+      "code": "eg2609"
+    },
+    {
+      "total_ret": -1.1,
+      "max_dd": -36.2,
+      "sharpe": 0.22,
+      "trades": 70,
+      "bars": 2990,
+      "code": "fu2609"
+    },
+    {
+      "total_ret": -27.9,
+      "max_dd": -29.1,
+      "sharpe": -4.91,
+      "trades": 91,
+      "bars": 2990,
+      "code": "m2609"
+    },
+    {
+      "total_ret": 4.2,
+      "max_dd": -6.5,
+      "sharpe": 0.49,
+      "trades": 67,
+      "bars": 2990,
+      "code": "p2609"
+    },
+    {
+      "total_ret": -5.9,
+      "max_dd": -37.1,
+      "sharpe": 0.01,
+      "trades": 68,
+      "bars": 2990,
+      "code": "pg2608"
+    },
+    {
+      "total_ret": -13.7,
+      "max_dd": -17.5,
+      "sharpe": -3.19,
+      "trades": 74,
+      "bars": 2990,
+      "code": "rb2610"
+    },
+    {
+      "total_ret": -83.4,
+      "max_dd": -83.8,
+      "sharpe": -5.87,
+      "trades": 115,
+      "bars": 4768,
+      "code": "sc2609"
+    },
+    {
+      "total_ret": -20.0,
+      "max_dd": -20.5,
+      "sharpe": -3.12,
+      "trades": 80,
+      "bars": 2990,
+      "code": "sp2609"
+    },
+    {
+      "total_ret": -30.0,
+      "max_dd": -35.1,
+      "sharpe": -2.4,
+      "trades": 95,
+      "bars": 2990,
+      "code": "v2609"
+    },
+    {
+      "total_ret": -9.8,
+      "max_dd": -13.2,
+      "sharpe": -1.38,
+      "trades": 76,
+      "bars": 2990,
+      "code": "y2609"
+    }
+  ],
+  "5m": [
+    {
+      "total_ret": -13.3,
+      "max_dd": -15.8,
+      "sharpe": -2.11,
+      "trades": 218,
+      "bars": 8000,
+      "code": "CF609"
+    },
+    {
+      "total_ret": -77.0,
+      "max_dd": -77.2,
+      "sharpe": -12.38,
+      "trades": 194,
+      "bars": 8000,
+      "code": "FG609"
+    },
+    {
+      "total_ret": -49.1,
+      "max_dd": -49.5,
+      "sharpe": -3.36,
+      "trades": 197,
+      "bars": 8000,
+      "code": "MA609"
+    },
+    {
+      "total_ret": -77.0,
+      "max_dd": -77.0,
+      "sharpe": -12.99,
+      "trades": 208,
+      "bars": 8000,
+      "code": "SA609"
+    },
+    {
+      "total_ret": -50.6,
+      "max_dd": -52.2,
+      "sharpe": -6.0,
+      "trades": 203,
+      "bars": 8000,
+      "code": "SH609"
+    },
+    {
+      "total_ret": -28.0,
+      "max_dd": -28.8,
+      "sharpe": -6.48,
+      "trades": 202,
+      "bars": 8000,
+      "code": "SR609"
+    },
+    {
+      "total_ret": -36.1,
+      "max_dd": -42.0,
+      "sharpe": -2.27,
+      "trades": 210,
+      "bars": 8000,
+      "code": "TA609"
+    },
+    {
+      "total_ret": -47.0,
+      "max_dd": -50.3,
+      "sharpe": -3.33,
+      "trades": 204,
+      "bars": 8000,
+      "code": "bu2609"
+    },
+    {
+      "total_ret": -45.0,
+      "max_dd": -45.1,
+      "sharpe": -13.38,
+      "trades": 181,
+      "bars": 8000,
+      "code": "c2609"
+    },
+    {
+      "total_ret": -50.0,
+      "max_dd": -52.3,
+      "sharpe": -1.4,
+      "trades": 158,
+      "bars": 5920,
+      "code": "ec2608"
+    },
+    {
+      "total_ret": -32.1,
+      "max_dd": -39.3,
+      "sharpe": -1.73,
+      "trades": 211,
+      "bars": 8000,
+      "code": "eg2609"
+    },
+    {
+      "total_ret": -28.8,
+      "max_dd": -42.9,
+      "sharpe": -1.03,
+      "trades": 193,
+      "bars": 8000,
+      "code": "fu2609"
+    },
+    {
+      "total_ret": -45.2,
+      "max_dd": -45.2,
+      "sharpe": -9.67,
+      "trades": 208,
+      "bars": 8000,
+      "code": "m2609"
+    },
+    {
+      "total_ret": -19.5,
+      "max_dd": -22.8,
+      "sharpe": -2.16,
+      "trades": 208,
+      "bars": 8000,
+      "code": "p2609"
+    },
+    {
+      "total_ret": -20.6,
+      "max_dd": -33.5,
+      "sharpe": -0.79,
+      "trades": 176,
+      "bars": 8000,
+      "code": "pg2608"
+    },
+    {
+      "total_ret": -42.9,
+      "max_dd": -43.0,
+      "sharpe": -12.31,
+      "trades": 211,
+      "bars": 8000,
+      "code": "rb2610"
+    },
+    {
+      "total_ret": -95.4,
+      "max_dd": -95.5,
+      "sharpe": -21.38,
+      "trades": 205,
+      "bars": 8000,
+      "code": "sc2609"
+    },
+    {
+      "total_ret": -27.3,
+      "max_dd": -28.2,
+      "sharpe": -4.93,
+      "trades": 209,
+      "bars": 8000,
+      "code": "sp2609"
+    },
+    {
+      "total_ret": -24.4,
+      "max_dd": -28.6,
+      "sharpe": -2.01,
+      "trades": 217,
+      "bars": 8000,
+      "code": "v2609"
+    },
+    {
+      "total_ret": -28.5,
+      "max_dd": -29.7,
+      "sharpe": -4.79,
+      "trades": 234,
+      "bars": 8000,
+      "code": "y2609"
+    }
+  ],
+  "1m": [
+    {
+      "total_ret": -7.6,
+      "max_dd": -8.0,
+      "sharpe": -6.16,
+      "trades": 182,
+      "bars": 8000,
+      "code": "CF609"
+    },
+    {
+      "total_ret": -55.1,
+      "max_dd": -55.8,
+      "sharpe": -27.88,
+      "trades": 90,
+      "bars": 8000,
+      "code": "FG609"
+    },
+    {
+      "total_ret": -46.5,
+      "max_dd": -48.4,
+      "sharpe": -20.41,
+      "trades": 202,
+      "bars": 8000,
+      "code": "MA609"
+    },
+    {
+      "total_ret": -63.9,
+      "max_dd": -64.7,
+      "sharpe": -35.68,
+      "trades": 128,
+      "bars": 8000,
+      "code": "SA609"
+    },
+    {
+      "total_ret": -59.0,
+      "max_dd": -59.3,
+      "sharpe": -39.26,
+      "trades": 192,
+      "bars": 8000,
+      "code": "SH609"
+    },
+    {
+      "total_ret": -27.9,
+      "max_dd": -28.1,
+      "sharpe": -33.69,
+      "trades": 194,
+      "bars": 8000,
+      "code": "SR609"
+    },
+    {
+      "total_ret": -27.4,
+      "max_dd": -29.7,
+      "sharpe": -11.08,
+      "trades": 209,
+      "bars": 8000,
+      "code": "TA609"
+    },
+    {
+      "total_ret": -17.7,
+      "max_dd": -18.4,
+      "sharpe": -6.46,
+      "trades": 192,
+      "bars": 8000,
+      "code": "bu2609"
+    },
+    {
+      "total_ret": -29.0,
+      "max_dd": -29.3,
+      "sharpe": -28.13,
+      "trades": 97,
+      "bars": 8000,
+      "code": "c2609"
+    },
+    {
+      "total_ret": -51.1,
+      "max_dd": -53.4,
+      "sharpe": -7.17,
+      "trades": 214,
+      "bars": 8000,
+      "code": "ec2608"
+    },
+    {
+      "total_ret": -33.1,
+      "max_dd": -34.2,
+      "sharpe": -13.45,
+      "trades": 212,
+      "bars": 8000,
+      "code": "eg2609"
+    },
+    {
+      "total_ret": -34.8,
+      "max_dd": -40.0,
+      "sharpe": -10.58,
+      "trades": 197,
+      "bars": 8000,
+      "code": "fu2609"
+    },
+    {
+      "total_ret": -37.9,
+      "max_dd": -38.5,
+      "sharpe": -33.35,
+      "trades": 175,
+      "bars": 8000,
+      "code": "m2609"
+    },
+    {
+      "total_ret": -14.3,
+      "max_dd": -17.6,
+      "sharpe": -11.11,
+      "trades": 220,
+      "bars": 8000,
+      "code": "p2609"
+    },
+    {
+      "total_ret": -24.4,
+      "max_dd": -26.4,
+      "sharpe": -7.22,
+      "trades": 200,
+      "bars": 8000,
+      "code": "pg2608"
+    },
+    {
+      "total_ret": -34.0,
+      "max_dd": -34.2,
+      "sharpe": -36.61,
+      "trades": 155,
+      "bars": 8000,
+      "code": "rb2610"
+    },
+    {
+      "total_ret": -96.1,
+      "max_dd": -96.1,
+      "sharpe": -71.18,
+      "trades": 207,
+      "bars": 8000,
+      "code": "sc2609"
+    },
+    {
+      "total_ret": -27.6,
+      "max_dd": -28.9,
+      "sharpe": -20.38,
+      "trades": 180,
+      "bars": 8000,
+      "code": "sp2609"
+    },
+    {
+      "total_ret": -25.0,
+      "max_dd": -25.6,
+      "sharpe": -14.96,
+      "trades": 202,
+      "bars": 8000,
+      "code": "v2609"
+    },
+    {
+      "total_ret": -20.4,
+      "max_dd": -21.6,
+      "sharpe": -25.13,
+      "trades": 229,
+      "bars": 8000,
+      "code": "y2609"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "contract": "m2609",
+  "frequency": "15m",
+  "strategy": "ladder_double_k",
+  "summary": {
+    "netPnl": -3944.11,
+    "finalEquity": 6055.89,
+    "totalReturn": -39.44,
+    "winRate": 21.99,
+    "maxDrawdown": 51.06,
+    "tradeCount": 241,
+    "sharpeRatio": -0.31,
+    "profitLossRatio": 2.57,
+    "totalCommission": 2124.11
+  },
+  "monthly": {
+    "2025-09": -244.38999999999996,
+    "2025-10": -325.27000000000004,
+    "2025-11": -899.29,
+    "2025-12": -912.29,
+    "2026-01": -262.44,
+    "2026-02": -402.01000000000005,
+    "2026-03": 1696.7799999999997,
+    "2026-04": -1431.58,
+    "2026-05": -1568.47,
+    "2026-06": -424.38000000000017,
+    "2026-07": 829.2999999999997
+  },
+  "sma_sensitivity": [
+    {
+      "sma": 12,
+      "pnl": -3464.27,
+      "trades": 251,
+      "winRate": 22.31,
+      "maxDrawdown": 46.36
+    },
+    {
+      "sma": 18,
+      "pnl": -2097.32,
+      "trades": 237,
+      "winRate": 23.21,
+      "maxDrawdown": 32.43
+    },
+    {
+      "sma": 24,
+      "pnl": -2279.58,
+      "trades": 253,
+      "winRate": 23.72,
+      "maxDrawdown": 30.19
+    },
+    {
+      "sma": 30,
+      "pnl": -2127.6,
+      "trades": 265,
+      "winRate": 23.77,
+      "maxDrawdown": 27.14
+    },
+    {
+      "sma": 40,
+      "pnl": -5073.21,
+      "trades": 291,
+      "winRate": 22.34,
+      "maxDrawdown": 55.78
+    },
+    {
+      "sma": 50,
+      "pnl": -5256.62,
+      "trades": 301,
+      "winRate": 21.93,
+      "maxDrawdown": 59.69
+    },
+    {
+      "sma": 60,
+      "pnl": -5819.03,
+      "trades": 277,
+      "winRate": 20.58,
+      "maxDrawdown": 69.94
+    },
+    {
+      "sma": 72,
+      "pnl": -6084.02,
+      "trades": 293,
+      "winRate": 21.16,
+      "maxDrawdown": 73.28
+    },
+    {
+      "sma": 90,
+      "pnl": -4757.98,
+      "trades": 273,
+      "winRate": 21.98,
+      "maxDrawdown": 61.29
+    }
+  ],
+  "diagnosis": [
+    "胜率 22% 偏低，策略入场择时不够精准",
+    "最大连亏 19 笔，对心态是极大考验",
+    "手续费 2124 元，占交易成本较高",
+    "9/11 个月亏损，大部分月份不赚钱",
+    "最大回撤 51%，超出可接受范围"
+  ]
+}

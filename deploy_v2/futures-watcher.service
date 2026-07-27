@@ -1,0 +1,15 @@
+[Unit]
+Description=futures-backtest deploy watcher (pull-based)
+
+[Service]
+Type=oneshot
+User=fbapp
+Group=fbapp
+ExecStart=/opt/futures-backtest/venv/bin/python /opt/futures-backtest/deploy_watcher.py
+# 注意：本单元不能开 NoNewPrivileges=true——sudoers 白名单提权依赖 setuid，
+# 开了会导致 sudo systemctl restart futures-backend 永远失败。
+# watcher 的提权面已由 sudoers 收敛到仅此一条命令。
+ProtectSystem=full
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/opt/futures-backtest

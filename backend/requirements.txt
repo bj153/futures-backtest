@@ -10,7 +10,7 @@ psycopg2-binary==2.9.12
 # 数据源
 akshare==1.18.64
 tushare==1.4.29
-# tqsdk  # 天勤数据源 / run_experiment.py 需要，按需安装（体积较大）
+tqsdk  # 天勤数据源（后端 source='tqsdk' 需要；远端 venv 是安装时建的，需远端手动 pip install 才会生效）
 # scikit-learn  # run_experiment.py 的评估指标需要，按需安装
 
 # 模型与计算

@@ -1,0 +1,189 @@
+[
+ {
+  "key": "rb2610_1d",
+  "contract": "rb2610",
+  "freq": "1d",
+  "bars": 185,
+  "totalReturn": 0.96,
+  "winRate": 37.5,
+  "tradeCount": 8,
+  "maxDrawdown": 0.27,
+  "finalEquity": 201924.99
+ },
+ {
+  "key": "i2609_1d",
+  "contract": "i2609",
+  "freq": "1d",
+  "bars": 202,
+  "totalReturn": -1.7,
+  "winRate": 21.05,
+  "tradeCount": 19,
+  "maxDrawdown": 5.67,
+  "finalEquity": 196604.63
+ },
+ {
+  "key": "ma2609_1d",
+  "contract": "ma2609",
+  "freq": "1d",
+  "bars": 202,
+  "totalReturn": -1.51,
+  "winRate": 20.0,
+  "tradeCount": 15,
+  "maxDrawdown": 3.01,
+  "finalEquity": 196980.98
+ },
+ {
+  "key": "p2609_1d",
+  "contract": "p2609",
+  "freq": "1d",
+  "bars": 202,
+  "totalReturn": 1.64,
+  "winRate": 33.33,
+  "tradeCount": 9,
+  "maxDrawdown": 2.28,
+  "finalEquity": 203271.11
+ },
+ {
+  "key": "ag2608_1d",
+  "contract": "ag2608",
+  "freq": "1d",
+  "bars": 222,
+  "totalReturn": 45.66,
+  "winRate": 33.33,
+  "tradeCount": 9,
+  "maxDrawdown": 7.88,
+  "finalEquity": 291321.09
+ },
+ {
+  "key": "rb2610_1h",
+  "contract": "rb2610",
+  "freq": "1h",
+  "bars": 1023,
+  "totalReturn": -0.76,
+  "winRate": 23.08,
+  "tradeCount": 91,
+  "maxDrawdown": 1.23,
+  "finalEquity": 198482.64
+ },
+ {
+  "key": "i2609_1h",
+  "contract": "i2609",
+  "freq": "1h",
+  "bars": 1023,
+  "totalReturn": -5.41,
+  "winRate": 18.39,
+  "tradeCount": 87,
+  "maxDrawdown": 6.36,
+  "finalEquity": 189187.58
+ },
+ {
+  "key": "ma2609_1h",
+  "contract": "ma2609",
+  "freq": "1h",
+  "bars": 1023,
+  "totalReturn": 5.57,
+  "winRate": 30.95,
+  "tradeCount": 84,
+  "maxDrawdown": 0.99,
+  "finalEquity": 211136.72
+ },
+ {
+  "key": "p2609_1h",
+  "contract": "p2609",
+  "freq": "1h",
+  "bars": 1023,
+  "totalReturn": 2.02,
+  "winRate": 25.29,
+  "tradeCount": 87,
+  "maxDrawdown": 5.4,
+  "finalEquity": 204043.06
+ },
+ {
+  "key": "ag2608_1h",
+  "contract": "ag2608",
+  "freq": "1h",
+  "bars": 1023,
+  "totalReturn": 61.92,
+  "winRate": 33.33,
+  "tradeCount": 72,
+  "maxDrawdown": 13.92,
+  "finalEquity": 323838.95
+ },
+ {
+  "key": "rb2610_30m",
+  "contract": "rb2610",
+  "freq": "30m",
+  "bars": 1023,
+  "totalReturn": 0.73,
+  "winRate": 27.59,
+  "tradeCount": 87,
+  "maxDrawdown": 0.35,
+  "finalEquity": 201456.63
+ },
+ {
+  "key": "i2609_30m",
+  "contract": "i2609",
+  "freq": "30m",
+  "bars": 1023,
+  "totalReturn": -0.13,
+  "winRate": 22.64,
+  "tradeCount": 53,
+  "maxDrawdown": 2.24,
+  "finalEquity": 199739.81
+ },
+ {
+  "key": "ma2609_30m",
+  "contract": "ma2609",
+  "freq": "30m",
+  "bars": 1023,
+  "totalReturn": 4.43,
+  "winRate": 32.0,
+  "tradeCount": 50,
+  "maxDrawdown": 0.41,
+  "finalEquity": 208857.17
+ },
+ {
+  "key": "p2609_30m",
+  "contract": "p2609",
+  "freq": "30m",
+  "bars": 1023,
+  "totalReturn": 2.52,
+  "winRate": 28.43,
+  "tradeCount": 102,
+  "maxDrawdown": 4.82,
+  "finalEquity": 205049.68
+ },
+ {
+  "key": "ag2608_30m",
+  "contract": "ag2608",
+  "freq": "30m",
+  "bars": 1023,
+  "totalReturn": -11.62,
+  "winRate": 22.11,
+  "tradeCount": 95,
+  "maxDrawdown": 29.87,
+  "finalEquity": 176760.0
+ },
+ {
+  "key": "ma2609_15m",
+  "contract": "ma2609",
+  "freq": "15m",
+  "bars": 1023,
+  "totalReturn": -0.39,
+  "winRate": 19.81,
+  "tradeCount": 106,
+  "maxDrawdown": 1.59,
+  "finalEquity": 199224.08
+ },
+ {
+  "key": "ma2609_5m",
+  "contract": "ma2609",
+  "freq": "5m",
+  "bars": 1023,
+  "totalReturn": -0.71,
+  "winRate": 20.73,
+  "tradeCount": 82,
+  "maxDrawdown": 1.36,
+  "finalEquity": 198585.26
+ }
+]

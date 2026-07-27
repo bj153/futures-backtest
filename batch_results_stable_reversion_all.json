@@ -1,0 +1,23 @@
+[
+  {"code": "MA609", "pnl": 3819, "trades": 91, "winRate": 34.1, "maxDD": 0.6, "sharpe": 0.58},
+  {"code": "jm2609", "pnl": 2364, "trades": 113, "winRate": 30.1, "maxDD": 0.4, "sharpe": 0.52},
+  {"code": "eg2609", "pnl": 2327, "trades": 48, "winRate": 27.1, "maxDD": 1.7, "sharpe": 0.19},
+  {"code": "fu2609", "pnl": 1468, "trades": 66, "winRate": 27.3, "maxDD": 1.9, "sharpe": 0.15},
+  {"code": "ao2609", "pnl": 982, "trades": 129, "winRate": 26.4, "maxDD": 1.0, "sharpe": 0.16},
+  {"code": "pg2608", "pnl": 790, "trades": 46, "winRate": 32.6, "maxDD": 3.9, "sharpe": 0.07},
+  {"code": "SR609", "pnl": 647, "trades": 65, "winRate": 32.3, "maxDD": 0.5, "sharpe": 0.20},
+  {"code": "sp2609", "pnl": 591, "trades": 88, "winRate": 26.1, "maxDD": 1.7, "sharpe": 0.09},
+  {"code": "SH609", "pnl": 419, "trades": 73, "winRate": 26.0, "maxDD": 0.6, "sharpe": 0.11},
+  {"code": "v2609", "pnl": 285, "trades": 60, "winRate": 23.3, "maxDD": 1.6, "sharpe": 0.03},
+  {"code": "FG609", "pnl": 210, "trades": 80, "winRate": 26.2, "maxDD": 0.7, "sharpe": 0.10},
+  {"code": "SA609", "pnl": 70, "trades": 90, "winRate": 26.7, "maxDD": 0.8, "sharpe": 0.03},
+  {"code": "c2609", "pnl": -229, "trades": 72, "winRate": 26.4, "maxDD": 0.4, "sharpe": -0.15},
+  {"code": "i2609", "pnl": -240, "trades": 118, "winRate": 22.9, "maxDD": 0.4, "sharpe": -0.19},
+  {"code": "m2609", "pnl": -746, "trades": 87, "winRate": 25.3, "maxDD": 1.6, "sharpe": -0.23},
+  {"code": "rb2610", "pnl": -1071, "trades": 82, "winRate": 23.2, "maxDD": 1.7, "sharpe": -0.42},
+  {"code": "TA609", "pnl": -1234, "trades": 96, "winRate": 25.0, "maxDD": 4.7, "sharpe": -0.06},
+  {"code": "y2609", "pnl": -1435, "trades": 69, "winRate": 23.2, "maxDD": 4.2, "sharpe": -0.17},
+  {"code": "bu2609", "pnl": -2036, "trades": 72, "winRate": 23.6, "maxDD": 2.9, "sharpe": -0.31},
+  {"code": "p2609", "pnl": -3351, "trades": 70, "winRate": 20.0, "maxDD": 5.0, "sharpe": -0.30},
+  {"code": "CF609", "pnl": -5211, "trades": 87, "winRate": 25.3, "maxDD": 7.0, "sharpe": -0.31}
+]

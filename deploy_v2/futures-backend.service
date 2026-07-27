@@ -1,0 +1,23 @@
+[Unit]
+Description=futures-backtest FastAPI backend
+After=network.target
+
+[Service]
+Type=simple
+User=fbapp
+Group=fbapp
+WorkingDirectory=/opt/futures-backtest/current/backend
+ExecStart=/opt/futures-backtest/venv/bin/python main.py
+Restart=always
+RestartSec=3
+Environment=PYTHONUNBUFFERED=1
+
+# ---- 安全加固 ----
+NoNewPrivileges=true
+ProtectSystem=full
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/opt/futures-backtest/current/backend /opt/futures-backtest/data
+
+[Install]
+WantedBy=multi-user.target

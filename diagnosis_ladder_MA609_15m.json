@@ -1,0 +1,80 @@
+{
+  "contract": "MA609(甲醇2609)",
+  "frequency": "15m",
+  "strategy": "ladder_double_k",
+  "base_result": {
+    "pnl": 6877.05,
+    "trades": 247,
+    "winRate": 25.51,
+    "finalEquity": 16877.05,
+    "maxDrawdown": 33.3
+  },
+  "sma_scan": [
+    {
+      "sma": 8,
+      "pnl": 6877.05,
+      "winRate": 25.51,
+      "maxDrawdown": 33.3
+    },
+    {
+      "sma": 12,
+      "pnl": 6877.05,
+      "winRate": 25.51,
+      "maxDrawdown": 33.3
+    },
+    {
+      "sma": 16,
+      "pnl": 6877.05,
+      "winRate": 25.51,
+      "maxDrawdown": 33.3
+    },
+    {
+      "sma": 20,
+      "pnl": 6877.05,
+      "winRate": 25.51,
+      "maxDrawdown": 33.3
+    },
+    {
+      "sma": 24,
+      "pnl": 6877.05,
+      "winRate": 25.51,
+      "maxDrawdown": 33.3
+    },
+    {
+      "sma": 28,
+      "pnl": 6877.05,
+      "winRate": 25.51,
+      "maxDrawdown": 33.3
+    },
+    {
+      "sma": 32,
+      "pnl": 6877.05,
+      "winRate": 25.51,
+      "maxDrawdown": 33.3
+    },
+    {
+      "sma": 36,
+      "pnl": 6877.05,
+      "winRate": 25.51,
+      "maxDrawdown": 33.3
+    },
+    {
+      "sma": 40,
+      "pnl": 6877.05,
+      "winRate": 25.51,
+      "maxDrawdown": 33.3
+    },
+    {
+      "sma": 50,
+      "pnl": 6877.05,
+      "winRate": 25.51,
+      "maxDrawdown": 33.3
+    },
+    {
+      "sma": 60,
+      "pnl": 6877.05,
+      "winRate": 25.51,
+      "maxDrawdown": 33.3
+    }
+  ]
+}

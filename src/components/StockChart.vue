@@ -232,7 +232,11 @@ function buildSeries(ohlcData: any[], volumeData: any[], props: any) {
       },
       yAxis: 0,
       stickyTracking: false,
-      enableMouseTracking: true
+      enableMouseTracking: true,
+      tooltip: {
+        headerFormat: '',
+        pointFormat: '<b>买开</b><br/>时间: {point.formattedTime}<br/>价格: {point.y:.2f}<br/>数量: {point.quantity}手'
+      }
     },
     {
       type: 'scatter',
@@ -248,83 +252,15 @@ function buildSeries(ohlcData: any[], volumeData: any[], props: any) {
       },
       yAxis: 0,
       stickyTracking: false,
-      enableMouseTracking: true
+      enableMouseTracking: true,
+      tooltip: {
+        headerFormat: '',
+        pointFormat: '<b>卖平</b><br/>时间: {point.formattedTime}<br/>价格: {point.y:.2f}<br/>数量: {point.quantity}手<br/>盈亏: {point.pnl:+.0f}'
+      }
     }
   ]
 
-  // channels 趋势线（后端传过来的）
-  if (props.channels) {
-    if (Array.isArray(props.channels)) {
-      for (const seg of props.channels) {
-        // 支持 points 字段：多个顶点画一条折线
-        if (seg.points && seg.points.length >= 2) {
-          const data = seg.points.map((p: any) => [toTs(p.time), p.price])
-          series.push({
-            type: 'line',
-            name: '通道回溯折线',
-            data: data,
-            color: '#2196f3',
-            lineWidth: 2,
-            marker: { enabled: true, radius: 4, fillColor: '#2196f3', lineColor: '#fff', lineWidth: 1 },
-            enableMouseTracking: true,
-            showInLegend: false,
-            zIndex: 5,
-            dataLabels: {
-              enabled: true,
-              formatter: function(this: any) {
-                const idx = this.point && this.point.index != null ? this.point.index : 0
-                return (idx + 1).toString()
-              },
-              style: { color: '#2196f3', fontWeight: 'bold', fontSize: '11px', textOutline: '2px #fff' },
-              y: -12,
-              allowOverlap: true
-            }
-          })
-        } else if (seg.uptime1 && seg.upprice1 != null && seg.downtime1 && seg.downprice1 != null) {
-          // 老格式：两个点连成一条线段
-          series.push({
-            type: 'line',
-            name: '通道回溯折线',
-            data: [[toTs(seg.uptime1), seg.upprice1], [toTs(seg.downtime1), seg.downprice1]],
-            color: '#2196f3',
-            lineWidth: 2,
-            marker: { enabled: true, radius: 4, fillColor: '#2196f3', lineColor: '#fff', lineWidth: 1 },
-            enableMouseTracking: false,
-            showInLegend: false
-          })
-        }
-        if (seg.uptime2 && seg.upprice2 != null && seg.downtime2 && seg.downprice2 != null) {
-          series.push({
-            type: 'line',
-            name: '通道回溯折线',
-            data: [[toTs(seg.uptime2), seg.upprice2], [toTs(seg.downtime2), seg.downprice2]],
-            color: '#2196f3',
-            lineWidth: 2,
-            dashStyle: 'Dash' as any,
-            marker: { enabled: true, radius: 4, fillColor: '#2196f3', lineColor: '#fff', lineWidth: 1 },
-            enableMouseTracking: false,
-            showInLegend: false
-          })
-        }
-      }
-    } else {
-      const ch = props.channels
-      series.push({
-        type: 'line',
-        name: '通道上轨',
-        data: [[toTs(ch.upper.time1), ch.upper.price1], [toTs(ch.upper.time2), ch.upper.price2]],
-        color: '#ff9800', lineWidth: 1, dashStyle: 'Dash' as any,
-        marker: { enabled: false }, enableMouseTracking: false, showInLegend: false
-      })
-      series.push({
-        type: 'line',
-        name: '通道下轨',
-        data: [[toTs(ch.lower.time1), ch.lower.price1], [toTs(ch.lower.time2), ch.lower.price2]],
-        color: '#ff9800', lineWidth: 1, dashStyle: 'Dash' as any,
-        marker: { enabled: false }, enableMouseTracking: false, showInLegend: false
-      })
-    }
-  }
+  // channels 趋势线（已取消蓝色折线）
 
   return series
 }
@@ -339,13 +275,14 @@ function buildTradeMarkers(trades: any[]) {
     const action = t.action || ''
     const quantity = t.quantity || 1
     const pnl = t.pnl || 0
+    const formattedTime = t.time.length >= 16 ? t.time.slice(5, 16) : t.time
     const reason = t.reason || ''
 
     const isBuy = action === '买开' || action === '买平'
     if (isBuy) {
-      buyPoints.push({ x: timestamp, y: t.price, action, quantity, pnl, reason })
+      buyPoints.push({ x: timestamp, y: t.price, action, quantity, pnl, reason, formattedTime })
     } else {
-      sellPoints.push({ x: timestamp, y: t.price, action, quantity, pnl, reason })
+      sellPoints.push({ x: timestamp, y: t.price, action, quantity, pnl, reason, formattedTime })
     }
   }
 
@@ -420,7 +357,7 @@ function renderChart() {
       shared: true
     },
     plotOptions: {
-      scatter: { tooltip: { pointFormat: '{series.name}: {point.y:.2f}' } },
+      scatter: { },
       candlestick: {
         color: '#00aa00', upColor: '#ff4444', lineColor: '#00aa00', upLineColor: '#ff4444',
         pointPadding: 0.1, groupPadding: 0.1

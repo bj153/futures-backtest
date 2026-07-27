@@ -53,3 +53,9 @@ backend_bak_*/
 
 # Local data cache
 data/contracts.db
+
+# Deploy secrets & staging (token, ssh key)
+.deploy/
+
+# Windows reserved name (accidentally created)
+nul

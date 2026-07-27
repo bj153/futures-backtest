@@ -1,0 +1,6856 @@
+[
+ {
+  "key": "trend_atr|base|ao2609|1h",
+  "strategy": "trend_atr",
+  "tag": "base",
+  "freq": "1h",
+  "contract": "ao2609",
+  "sector": "黑色",
+  "params": {},
+  "bars": 1788,
+  "totalReturn": -1.37,
+  "winRate": 14.29,
+  "tradeCount": 84,
+  "maxDrawdown": 2.45,
+  "finalEquity": 197264.26
+ },
+ {
+  "key": "trend_atr|base|jm2609|1h",
+  "strategy": "trend_atr",
+  "tag": "base",
+  "freq": "1h",
+  "contract": "jm2609",
+  "sector": "黑色",
+  "params": {},
+  "bars": 1404,
+  "totalReturn": -7.34,
+  "winRate": 12.07,
+  "tradeCount": 58,
+  "maxDrawdown": 8.09,
+  "finalEquity": 185329.56
+ },
+ {
+  "key": "trend_atr|base|i2609|1h",
+  "strategy": "trend_atr",
+  "tag": "base",
+  "freq": "1h",
+  "contract": "i2609",
+  "sector": "黑色",
+  "params": {},
+  "bars": 1404,
+  "totalReturn": 0.44,
+  "winRate": 21.82,
+  "tradeCount": 55,
+  "maxDrawdown": 2.27,
+  "finalEquity": 200885.52
+ },
+ {
+  "key": "trend_atr|base|rb2610|1h",
+  "strategy": "trend_atr",
+  "tag": "base",
+  "freq": "1h",
+  "contract": "rb2610",
+  "sector": "黑色",
+  "params": {},
+  "bars": 1287,
+  "totalReturn": -0.79,
+  "winRate": 10.53,
+  "tradeCount": 57,
+  "maxDrawdown": 1.25,
+  "finalEquity": 198424.11
+ },
+ {
+  "key": "trend_atr|base|fg609|1h",
+  "strategy": "trend_atr",
+  "tag": "base",
+  "freq": "1h",
+  "contract": "fg609",
+  "sector": "化工",
+  "params": {},
+  "bars": 1404,
+  "totalReturn": 0.5,
+  "winRate": 15.38,
+  "tradeCount": 65,
+  "maxDrawdown": 0.86,
+  "finalEquity": 200991.56
+ },
+ {
+  "key": "trend_atr|base|sa609|1h",
+  "strategy": "trend_atr",
+  "tag": "base",
+  "freq": "1h",
+  "contract": "sa609",
+  "sector": "化工",
+  "params": {},
+  "bars": 1404,
+  "totalReturn": 1.1,
+  "winRate": 23.53,
+  "tradeCount": 51,
+  "maxDrawdown": 0.5,
+  "finalEquity": 202193.49
+ },
+ {
+  "key": "trend_atr|base|sh609|1h",
+  "strategy": "trend_atr",
+  "tag": "base",
+  "freq": "1h",
+  "contract": "sh609",
+  "sector": "化工",
+  "params": {},
+  "bars": 1404,
+  "totalReturn": -0.4,
+  "winRate": 11.67,
+  "tradeCount": 60,
+  "maxDrawdown": 2.8,
+  "finalEquity": 199208.78
+ },
+ {
+  "key": "trend_atr|base|ma609|1h",
+  "strategy": "trend_atr",
+  "tag": "base",
+  "freq": "1h",
+  "contract": "ma609",
+  "sector": "化工",
+  "params": {},
+  "bars": 1404,
+  "totalReturn": -2.53,
+  "winRate": 14.71,
+  "tradeCount": 68,
+  "maxDrawdown": 3.72,
+  "finalEquity": 194942.6
+ },
+ {
+  "key": "trend_atr|base|eg2609|1h",
+  "strategy": "trend_atr",
+  "tag": "base",
+  "freq": "1h",
+  "contract": "eg2609",
+  "sector": "化工",
+  "params": {},
+  "bars": 1341,
+  "totalReturn": 3.35,
+  "winRate": 23.33,
+  "tradeCount": 60,
+  "maxDrawdown": 3.15,
+  "finalEquity": 206700.39
+ },
+ {
+  "key": "trend_atr|base|ta609|1h",
+  "strategy": "trend_atr",
+  "tag": "base",
+  "freq": "1h",
+  "contract": "ta609",
+  "sector": "化工",
+  "params": {},
+  "bars": 1404,
+  "totalReturn": 1.17,
+  "winRate": 20.0,
+  "tradeCount": 40,
+  "maxDrawdown": 1.54,
+  "finalEquity": 202339.58
+ },
+ {
+  "key": "trend_atr|base|v2609|1h",
+  "strategy": "trend_atr",
+  "tag": "base",
+  "freq": "1h",
+  "contract": "v2609",
+  "sector": "化工",
+  "params": {},
+  "bars": 1404,
+  "totalReturn": -0.18,
+  "winRate": 23.08,
+  "tradeCount": 52,
+  "maxDrawdown": 1.4,
+  "finalEquity": 199649.06
+ },
+ {
+  "key": "trend_atr|base|ec2608|1h",
+  "strategy": "trend_atr",
+  "tag": "base",
+  "freq": "1h",
+  "contract": "ec2608",
+  "sector": "能源",
+  "params": {},
+  "bars": 1080,
+  "totalReturn": -6.03,
+  "winRate": 22.22,
+  "tradeCount": 45,
+  "maxDrawdown": 15.31,
+  "finalEquity": 187938.63
+ },
+ {
+  "key": "trend_atr|base|sc2609|1h",
+  "strategy": "trend_atr",
+  "tag": "base",
+  "freq": "1h",
+  "contract": "sc2609",
+  "sector": "能源",
+  "params": {},
+  "bars": 2623,
+  "totalReturn": -11.02,
+  "winRate": 21.52,
+  "tradeCount": 158,
+  "maxDrawdown": 62.47,
+  "finalEquity": 177964.31
+ },
+ {
+  "key": "trend_atr|base|fu2609|1h",
+  "strategy": "trend_atr",
+  "tag": "base",
+  "freq": "1h",
+  "contract": "fu2609",
+  "sector": "能源",
+  "params": {},
+  "bars": 1474,
+  "totalReturn": 3.83,
+  "winRate": 20.0,
+  "tradeCount": 80,
+  "maxDrawdown": 2.71,
+  "finalEquity": 207658.35
+ },
+ {
+  "key": "trend_atr|base|bu2609|1h",
+  "strategy": "trend_atr",
+  "tag": "base",
+  "freq": "1h",
+  "contract": "bu2609",
+  "sector": "能源",
+  "params": {},
+  "bars": 1682,
+  "totalReturn": 2.67,
+  "winRate": 20.0,
+  "tradeCount": 90,
+  "maxDrawdown": 1.95,
+  "finalEquity": 205345.02
+ },
+ {
+  "key": "trend_atr|base|pg2608|1h",
+  "strategy": "trend_atr",
+  "tag": "base",
+  "freq": "1h",
+  "contract": "pg2608",
+  "sector": "能源",
+  "params": {},
+  "bars": 1489,
+  "totalReturn": 11.39,
+  "winRate": 22.0,
+  "tradeCount": 100,
+  "maxDrawdown": 8.6,
+  "finalEquity": 222782.35
+ },
+ {
+  "key": "trend_atr|base|p2609|1h",
+  "strategy": "trend_atr",
+  "tag": "base",
+  "freq": "1h",
+  "contract": "p2609",
+  "sector": "农产品",
+  "params": {},
+  "bars": 1404,
+  "totalReturn": -0.3,
+  "winRate": 21.43,
+  "tradeCount": 56,
+  "maxDrawdown": 1.85,
+  "finalEquity": 199402.94
+ },
+ {
+  "key": "trend_atr|base|y2609|1h",
+  "strategy": "trend_atr",
+  "tag": "base",
+  "freq": "1h",
+  "contract": "y2609",
+  "sector": "农产品",
+  "params": {},
+  "bars": 1404,
+  "totalReturn": -1.65,
+  "winRate": 18.97,
+  "tradeCount": 58,
+  "maxDrawdown": 2.7,
+  "finalEquity": 196702.28
+ },
+ {
+  "key": "trend_atr|base|m2609|1h",
+  "strategy": "trend_atr",
+  "tag": "base",
+  "freq": "1h",
+  "contract": "m2609",
+  "sector": "农产品",
+  "params": {},
+  "bars": 1404,
+  "totalReturn": -0.42,
+  "winRate": 15.69,
+  "tradeCount": 51,
+  "maxDrawdown": 0.84,
+  "finalEquity": 199158.41
+ },
+ {
+  "key": "trend_atr|base|c2609|1h",
+  "strategy": "trend_atr",
+  "tag": "base",
+  "freq": "1h",
+  "contract": "c2609",
+  "sector": "农产品",
+  "params": {},
+  "bars": 1404,
+  "totalReturn": -0.27,
+  "winRate": 15.87,
+  "tradeCount": 63,
+  "maxDrawdown": 0.4,
+  "finalEquity": 199456.16
+ },
+ {
+  "key": "trend_atr|base|sr609|1h",
+  "strategy": "trend_atr",
+  "tag": "base",
+  "freq": "1h",
+  "contract": "sr609",
+  "sector": "农产品",
+  "params": {},
+  "bars": 1404,
+  "totalReturn": 0.05,
+  "winRate": 22.22,
+  "tradeCount": 54,
+  "maxDrawdown": 1.13,
+  "finalEquity": 200096.96
+ },
+ {
+  "key": "trend_atr|base|cf609|1h",
+  "strategy": "trend_atr",
+  "tag": "base",
+  "freq": "1h",
+  "contract": "cf609",
+  "sector": "农产品",
+  "params": {},
+  "bars": 1404,
+  "totalReturn": -2.85,
+  "winRate": 16.67,
+  "tradeCount": 60,
+  "maxDrawdown": 3.85,
+  "finalEquity": 194298.09
+ },
+ {
+  "key": "trend_atr|base|sp2609|1h",
+  "strategy": "trend_atr",
+  "tag": "base",
+  "freq": "1h",
+  "contract": "sp2609",
+  "sector": "农产品",
+  "params": {},
+  "bars": 1397,
+  "totalReturn": 0.52,
+  "winRate": 19.64,
+  "tradeCount": 56,
+  "maxDrawdown": 2.16,
+  "finalEquity": 201047.32
+ },
+ {
+  "key": "trend_atr|dc40_adx25|ao2609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "1h",
+  "contract": "ao2609",
+  "sector": "黑色",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 1788,
+  "totalReturn": -0.69,
+  "winRate": 17.24,
+  "tradeCount": 58,
+  "maxDrawdown": 1.69,
+  "finalEquity": 198616.62
+ },
+ {
+  "key": "trend_atr|dc40_adx25|jm2609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "1h",
+  "contract": "jm2609",
+  "sector": "黑色",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 1404,
+  "totalReturn": -8.32,
+  "winRate": 13.04,
+  "tradeCount": 46,
+  "maxDrawdown": 8.32,
+  "finalEquity": 183355.82
+ },
+ {
+  "key": "trend_atr|dc40_adx25|i2609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "1h",
+  "contract": "i2609",
+  "sector": "黑色",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 1404,
+  "totalReturn": -0.73,
+  "winRate": 20.45,
+  "tradeCount": 44,
+  "maxDrawdown": 1.96,
+  "finalEquity": 198547.28
+ },
+ {
+  "key": "trend_atr|dc40_adx25|rb2610|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "1h",
+  "contract": "rb2610",
+  "sector": "黑色",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 1287,
+  "totalReturn": -0.31,
+  "winRate": 15.79,
+  "tradeCount": 38,
+  "maxDrawdown": 0.6,
+  "finalEquity": 199379.71
+ },
+ {
+  "key": "trend_atr|dc40_adx25|fg609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "1h",
+  "contract": "fg609",
+  "sector": "化工",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 1404,
+  "totalReturn": 1.02,
+  "winRate": 18.6,
+  "tradeCount": 43,
+  "maxDrawdown": 0.63,
+  "finalEquity": 202038.69
+ },
+ {
+  "key": "trend_atr|dc40_adx25|sa609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "1h",
+  "contract": "sa609",
+  "sector": "化工",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 1404,
+  "totalReturn": 1.23,
+  "winRate": 24.24,
+  "tradeCount": 33,
+  "maxDrawdown": 0.65,
+  "finalEquity": 202457.22
+ },
+ {
+  "key": "trend_atr|dc40_adx25|sh609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "1h",
+  "contract": "sh609",
+  "sector": "化工",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 1404,
+  "totalReturn": 1.77,
+  "winRate": 16.67,
+  "tradeCount": 36,
+  "maxDrawdown": 1.2,
+  "finalEquity": 203538.76
+ },
+ {
+  "key": "trend_atr|dc40_adx25|ma609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "1h",
+  "contract": "ma609",
+  "sector": "化工",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 1404,
+  "totalReturn": -1.14,
+  "winRate": 15.91,
+  "tradeCount": 44,
+  "maxDrawdown": 2.02,
+  "finalEquity": 197716.02
+ },
+ {
+  "key": "trend_atr|dc40_adx25|eg2609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "1h",
+  "contract": "eg2609",
+  "sector": "化工",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 1341,
+  "totalReturn": 1.77,
+  "winRate": 20.83,
+  "tradeCount": 48,
+  "maxDrawdown": 3.59,
+  "finalEquity": 203546.97
+ },
+ {
+  "key": "trend_atr|dc40_adx25|ta609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "1h",
+  "contract": "ta609",
+  "sector": "化工",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 1404,
+  "totalReturn": 1.81,
+  "winRate": 25.0,
+  "tradeCount": 32,
+  "maxDrawdown": 0.92,
+  "finalEquity": 203626.09
+ },
+ {
+  "key": "trend_atr|dc40_adx25|v2609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "1h",
+  "contract": "v2609",
+  "sector": "化工",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 1404,
+  "totalReturn": 0.16,
+  "winRate": 21.05,
+  "tradeCount": 38,
+  "maxDrawdown": 0.67,
+  "finalEquity": 200314.44
+ },
+ {
+  "key": "trend_atr|dc40_adx25|ec2608|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "1h",
+  "contract": "ec2608",
+  "sector": "能源",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 1080,
+  "totalReturn": 5.53,
+  "winRate": 24.14,
+  "tradeCount": 29,
+  "maxDrawdown": 4.83,
+  "finalEquity": 211064.93
+ },
+ {
+  "key": "trend_atr|dc40_adx25|sc2609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "1h",
+  "contract": "sc2609",
+  "sector": "能源",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 2623,
+  "totalReturn": -27.0,
+  "winRate": 18.18,
+  "tradeCount": 132,
+  "maxDrawdown": 55.54,
+  "finalEquity": 146005.47
+ },
+ {
+  "key": "trend_atr|dc40_adx25|fu2609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "1h",
+  "contract": "fu2609",
+  "sector": "能源",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 1474,
+  "totalReturn": 3.63,
+  "winRate": 17.86,
+  "tradeCount": 56,
+  "maxDrawdown": 1.46,
+  "finalEquity": 207267.78
+ },
+ {
+  "key": "trend_atr|dc40_adx25|bu2609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "1h",
+  "contract": "bu2609",
+  "sector": "能源",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 1682,
+  "totalReturn": 3.4,
+  "winRate": 24.19,
+  "tradeCount": 62,
+  "maxDrawdown": 0.55,
+  "finalEquity": 206806.12
+ },
+ {
+  "key": "trend_atr|dc40_adx25|pg2608|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "1h",
+  "contract": "pg2608",
+  "sector": "能源",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 1489,
+  "totalReturn": 11.4,
+  "winRate": 21.05,
+  "tradeCount": 76,
+  "maxDrawdown": 5.11,
+  "finalEquity": 222806.89
+ },
+ {
+  "key": "trend_atr|dc40_adx25|p2609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "1h",
+  "contract": "p2609",
+  "sector": "农产品",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 1404,
+  "totalReturn": 0.03,
+  "winRate": 17.65,
+  "tradeCount": 34,
+  "maxDrawdown": 2.57,
+  "finalEquity": 200058.7
+ },
+ {
+  "key": "trend_atr|dc40_adx25|y2609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "1h",
+  "contract": "y2609",
+  "sector": "农产品",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 1404,
+  "totalReturn": -0.18,
+  "winRate": 16.67,
+  "tradeCount": 30,
+  "maxDrawdown": 1.24,
+  "finalEquity": 199647.69
+ },
+ {
+  "key": "trend_atr|dc40_adx25|m2609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "1h",
+  "contract": "m2609",
+  "sector": "农产品",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 1404,
+  "totalReturn": 0.1,
+  "winRate": 14.81,
+  "tradeCount": 27,
+  "maxDrawdown": 0.4,
+  "finalEquity": 200205.79
+ },
+ {
+  "key": "trend_atr|dc40_adx25|c2609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "1h",
+  "contract": "c2609",
+  "sector": "农产品",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 1404,
+  "totalReturn": -0.3,
+  "winRate": 18.37,
+  "tradeCount": 49,
+  "maxDrawdown": 0.35,
+  "finalEquity": 199405.82
+ },
+ {
+  "key": "trend_atr|dc40_adx25|sr609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "1h",
+  "contract": "sr609",
+  "sector": "农产品",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 1404,
+  "totalReturn": 0.19,
+  "winRate": 26.32,
+  "tradeCount": 38,
+  "maxDrawdown": 0.88,
+  "finalEquity": 200386.9
+ },
+ {
+  "key": "trend_atr|dc40_adx25|cf609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "1h",
+  "contract": "cf609",
+  "sector": "农产品",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 1404,
+  "totalReturn": -1.75,
+  "winRate": 16.67,
+  "tradeCount": 42,
+  "maxDrawdown": 2.35,
+  "finalEquity": 196496.27
+ },
+ {
+  "key": "trend_atr|dc40_adx25|sp2609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "1h",
+  "contract": "sp2609",
+  "sector": "农产品",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 1397,
+  "totalReturn": 0.36,
+  "winRate": 17.65,
+  "tradeCount": 34,
+  "maxDrawdown": 0.94,
+  "finalEquity": 200724.15
+ },
+ {
+  "key": "trend_atr|dc40_adx25_atr2.5|ao2609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25_atr2.5",
+  "freq": "1h",
+  "contract": "ao2609",
+  "sector": "黑色",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25,
+   "init_sl_atr": 2.5,
+   "trail_atr": 2.5
+  },
+  "bars": 1788,
+  "totalReturn": -1.65,
+  "winRate": 20.31,
+  "tradeCount": 64,
+  "maxDrawdown": 2.06,
+  "finalEquity": 196701.48
+ },
+ {
+  "key": "trend_atr|dc40_adx25_atr2.5|jm2609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25_atr2.5",
+  "freq": "1h",
+  "contract": "jm2609",
+  "sector": "黑色",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25,
+   "init_sl_atr": 2.5,
+   "trail_atr": 2.5
+  },
+  "bars": 1404,
+  "totalReturn": -5.94,
+  "winRate": 10.87,
+  "tradeCount": 46,
+  "maxDrawdown": 6.0,
+  "finalEquity": 188117.45
+ },
+ {
+  "key": "trend_atr|dc40_adx25_atr2.5|i2609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25_atr2.5",
+  "freq": "1h",
+  "contract": "i2609",
+  "sector": "黑色",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25,
+   "init_sl_atr": 2.5,
+   "trail_atr": 2.5
+  },
+  "bars": 1404,
+  "totalReturn": -0.11,
+  "winRate": 20.83,
+  "tradeCount": 48,
+  "maxDrawdown": 1.34,
+  "finalEquity": 199789.51
+ },
+ {
+  "key": "trend_atr|dc40_adx25_atr2.5|rb2610|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25_atr2.5",
+  "freq": "1h",
+  "contract": "rb2610",
+  "sector": "黑色",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25,
+   "init_sl_atr": 2.5,
+   "trail_atr": 2.5
+  },
+  "bars": 1287,
+  "totalReturn": -0.7,
+  "winRate": 17.39,
+  "tradeCount": 46,
+  "maxDrawdown": 0.76,
+  "finalEquity": 198594.76
+ },
+ {
+  "key": "trend_atr|dc40_adx25_atr2.5|fg609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25_atr2.5",
+  "freq": "1h",
+  "contract": "fg609",
+  "sector": "化工",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25,
+   "init_sl_atr": 2.5,
+   "trail_atr": 2.5
+  },
+  "bars": 1404,
+  "totalReturn": 0.32,
+  "winRate": 20.75,
+  "tradeCount": 53,
+  "maxDrawdown": 0.53,
+  "finalEquity": 200640.63
+ },
+ {
+  "key": "trend_atr|dc40_adx25_atr2.5|sa609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25_atr2.5",
+  "freq": "1h",
+  "contract": "sa609",
+  "sector": "化工",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25,
+   "init_sl_atr": 2.5,
+   "trail_atr": 2.5
+  },
+  "bars": 1404,
+  "totalReturn": 0.64,
+  "winRate": 18.6,
+  "tradeCount": 43,
+  "maxDrawdown": 0.46,
+  "finalEquity": 201277.71
+ },
+ {
+  "key": "trend_atr|dc40_adx25_atr2.5|sh609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25_atr2.5",
+  "freq": "1h",
+  "contract": "sh609",
+  "sector": "化工",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25,
+   "init_sl_atr": 2.5,
+   "trail_atr": 2.5
+  },
+  "bars": 1404,
+  "totalReturn": 0.06,
+  "winRate": 15.91,
+  "tradeCount": 44,
+  "maxDrawdown": 2.64,
+  "finalEquity": 200120.53
+ },
+ {
+  "key": "trend_atr|dc40_adx25_atr2.5|ma609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25_atr2.5",
+  "freq": "1h",
+  "contract": "ma609",
+  "sector": "化工",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25,
+   "init_sl_atr": 2.5,
+   "trail_atr": 2.5
+  },
+  "bars": 1404,
+  "totalReturn": -2.49,
+  "winRate": 14.81,
+  "tradeCount": 54,
+  "maxDrawdown": 3.0,
+  "finalEquity": 195023.76
+ },
+ {
+  "key": "trend_atr|dc40_adx25_atr2.5|eg2609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25_atr2.5",
+  "freq": "1h",
+  "contract": "eg2609",
+  "sector": "化工",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25,
+   "init_sl_atr": 2.5,
+   "trail_atr": 2.5
+  },
+  "bars": 1341,
+  "totalReturn": -0.99,
+  "winRate": 16.13,
+  "tradeCount": 62,
+  "maxDrawdown": 3.9,
+  "finalEquity": 198013.37
+ },
+ {
+  "key": "trend_atr|dc40_adx25_atr2.5|ta609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25_atr2.5",
+  "freq": "1h",
+  "contract": "ta609",
+  "sector": "化工",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25,
+   "init_sl_atr": 2.5,
+   "trail_atr": 2.5
+  },
+  "bars": 1404,
+  "totalReturn": 1.3,
+  "winRate": 21.05,
+  "tradeCount": 38,
+  "maxDrawdown": 0.87,
+  "finalEquity": 202604.16
+ },
+ {
+  "key": "trend_atr|dc40_adx25_atr2.5|v2609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25_atr2.5",
+  "freq": "1h",
+  "contract": "v2609",
+  "sector": "化工",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25,
+   "init_sl_atr": 2.5,
+   "trail_atr": 2.5
+  },
+  "bars": 1404,
+  "totalReturn": -1.06,
+  "winRate": 16.0,
+  "tradeCount": 50,
+  "maxDrawdown": 1.28,
+  "finalEquity": 197871.07
+ },
+ {
+  "key": "trend_atr|dc40_adx25_atr2.5|ec2608|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25_atr2.5",
+  "freq": "1h",
+  "contract": "ec2608",
+  "sector": "能源",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25,
+   "init_sl_atr": 2.5,
+   "trail_atr": 2.5
+  },
+  "bars": 1080,
+  "totalReturn": 7.96,
+  "winRate": 19.35,
+  "tradeCount": 31,
+  "maxDrawdown": 3.2,
+  "finalEquity": 215917.28
+ },
+ {
+  "key": "trend_atr|dc40_adx25_atr2.5|sc2609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25_atr2.5",
+  "freq": "1h",
+  "contract": "sc2609",
+  "sector": "能源",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25,
+   "init_sl_atr": 2.5,
+   "trail_atr": 2.5
+  },
+  "bars": 2623,
+  "totalReturn": -13.4,
+  "winRate": 17.65,
+  "tradeCount": 136,
+  "maxDrawdown": 54.38,
+  "finalEquity": 173207.07
+ },
+ {
+  "key": "trend_atr|dc40_adx25_atr2.5|fu2609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25_atr2.5",
+  "freq": "1h",
+  "contract": "fu2609",
+  "sector": "能源",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25,
+   "init_sl_atr": 2.5,
+   "trail_atr": 2.5
+  },
+  "bars": 1474,
+  "totalReturn": 3.72,
+  "winRate": 20.0,
+  "tradeCount": 60,
+  "maxDrawdown": 1.4,
+  "finalEquity": 207444.42
+ },
+ {
+  "key": "trend_atr|dc40_adx25_atr2.5|bu2609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25_atr2.5",
+  "freq": "1h",
+  "contract": "bu2609",
+  "sector": "能源",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25,
+   "init_sl_atr": 2.5,
+   "trail_atr": 2.5
+  },
+  "bars": 1682,
+  "totalReturn": 3.41,
+  "winRate": 30.3,
+  "tradeCount": 66,
+  "maxDrawdown": 0.58,
+  "finalEquity": 206811.29
+ },
+ {
+  "key": "trend_atr|dc40_adx25_atr2.5|pg2608|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25_atr2.5",
+  "freq": "1h",
+  "contract": "pg2608",
+  "sector": "能源",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25,
+   "init_sl_atr": 2.5,
+   "trail_atr": 2.5
+  },
+  "bars": 1489,
+  "totalReturn": 1.83,
+  "winRate": 20.24,
+  "tradeCount": 84,
+  "maxDrawdown": 6.15,
+  "finalEquity": 203662.92
+ },
+ {
+  "key": "trend_atr|dc40_adx25_atr2.5|p2609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25_atr2.5",
+  "freq": "1h",
+  "contract": "p2609",
+  "sector": "农产品",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25,
+   "init_sl_atr": 2.5,
+   "trail_atr": 2.5
+  },
+  "bars": 1404,
+  "totalReturn": -0.71,
+  "winRate": 21.05,
+  "tradeCount": 38,
+  "maxDrawdown": 3.24,
+  "finalEquity": 198572.92
+ },
+ {
+  "key": "trend_atr|dc40_adx25_atr2.5|y2609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25_atr2.5",
+  "freq": "1h",
+  "contract": "y2609",
+  "sector": "农产品",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25,
+   "init_sl_atr": 2.5,
+   "trail_atr": 2.5
+  },
+  "bars": 1404,
+  "totalReturn": -0.14,
+  "winRate": 20.59,
+  "tradeCount": 34,
+  "maxDrawdown": 1.13,
+  "finalEquity": 199726.75
+ },
+ {
+  "key": "trend_atr|dc40_adx25_atr2.5|m2609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25_atr2.5",
+  "freq": "1h",
+  "contract": "m2609",
+  "sector": "农产品",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25,
+   "init_sl_atr": 2.5,
+   "trail_atr": 2.5
+  },
+  "bars": 1404,
+  "totalReturn": -0.28,
+  "winRate": 20.0,
+  "tradeCount": 35,
+  "maxDrawdown": 0.39,
+  "finalEquity": 199437.45
+ },
+ {
+  "key": "trend_atr|dc40_adx25_atr2.5|c2609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25_atr2.5",
+  "freq": "1h",
+  "contract": "c2609",
+  "sector": "农产品",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25,
+   "init_sl_atr": 2.5,
+   "trail_atr": 2.5
+  },
+  "bars": 1404,
+  "totalReturn": -0.32,
+  "winRate": 20.0,
+  "tradeCount": 55,
+  "maxDrawdown": 0.4,
+  "finalEquity": 199363.1
+ },
+ {
+  "key": "trend_atr|dc40_adx25_atr2.5|sr609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25_atr2.5",
+  "freq": "1h",
+  "contract": "sr609",
+  "sector": "农产品",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25,
+   "init_sl_atr": 2.5,
+   "trail_atr": 2.5
+  },
+  "bars": 1404,
+  "totalReturn": 0.3,
+  "winRate": 27.5,
+  "tradeCount": 40,
+  "maxDrawdown": 0.85,
+  "finalEquity": 200606.48
+ },
+ {
+  "key": "trend_atr|dc40_adx25_atr2.5|cf609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25_atr2.5",
+  "freq": "1h",
+  "contract": "cf609",
+  "sector": "农产品",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25,
+   "init_sl_atr": 2.5,
+   "trail_atr": 2.5
+  },
+  "bars": 1404,
+  "totalReturn": -0.86,
+  "winRate": 18.75,
+  "tradeCount": 48,
+  "maxDrawdown": 1.11,
+  "finalEquity": 198282.97
+ },
+ {
+  "key": "trend_atr|dc40_adx25_atr2.5|sp2609|1h",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25_atr2.5",
+  "freq": "1h",
+  "contract": "sp2609",
+  "sector": "农产品",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25,
+   "init_sl_atr": 2.5,
+   "trail_atr": 2.5
+  },
+  "bars": 1397,
+  "totalReturn": 0.03,
+  "winRate": 20.0,
+  "tradeCount": 40,
+  "maxDrawdown": 0.8,
+  "finalEquity": 200067.59
+ },
+ {
+  "key": "trend_atr|dc40_adx25|ao2609|30m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "30m",
+  "contract": "ao2609",
+  "sector": "黑色",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 3173,
+  "totalReturn": -1.55,
+  "winRate": 18.29,
+  "tradeCount": 82,
+  "maxDrawdown": 1.8,
+  "finalEquity": 196901.34
+ },
+ {
+  "key": "trend_atr|dc40_adx25|jm2609|30m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "30m",
+  "contract": "jm2609",
+  "sector": "黑色",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 2404,
+  "totalReturn": -3.77,
+  "winRate": 18.06,
+  "tradeCount": 72,
+  "maxDrawdown": 5.76,
+  "finalEquity": 192457.47
+ },
+ {
+  "key": "trend_atr|dc40_adx25|i2609|30m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "30m",
+  "contract": "i2609",
+  "sector": "黑色",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 2404,
+  "totalReturn": 0.48,
+  "winRate": 28.12,
+  "tradeCount": 64,
+  "maxDrawdown": 1.07,
+  "finalEquity": 200969.52
+ },
+ {
+  "key": "trend_atr|dc40_adx25|rb2610|30m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "30m",
+  "contract": "rb2610",
+  "sector": "黑色",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 2204,
+  "totalReturn": -0.39,
+  "winRate": 14.93,
+  "tradeCount": 67,
+  "maxDrawdown": 0.49,
+  "finalEquity": 199212.32
+ },
+ {
+  "key": "trend_atr|dc40_adx25|fg609|30m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "30m",
+  "contract": "fg609",
+  "sector": "化工",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 2404,
+  "totalReturn": -0.3,
+  "winRate": 16.88,
+  "tradeCount": 77,
+  "maxDrawdown": 0.86,
+  "finalEquity": 199396.46
+ },
+ {
+  "key": "trend_atr|dc40_adx25|sa609|30m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "30m",
+  "contract": "sa609",
+  "sector": "化工",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 2404,
+  "totalReturn": -0.99,
+  "winRate": 10.96,
+  "tradeCount": 73,
+  "maxDrawdown": 1.34,
+  "finalEquity": 198019.82
+ },
+ {
+  "key": "trend_atr|dc40_adx25|sh609|30m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "30m",
+  "contract": "sh609",
+  "sector": "化工",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 2404,
+  "totalReturn": 0.99,
+  "winRate": 18.06,
+  "tradeCount": 72,
+  "maxDrawdown": 1.69,
+  "finalEquity": 201971.35
+ },
+ {
+  "key": "trend_atr|dc40_adx25|ma609|30m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "30m",
+  "contract": "ma609",
+  "sector": "化工",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 2404,
+  "totalReturn": -0.51,
+  "winRate": 15.38,
+  "tradeCount": 78,
+  "maxDrawdown": 1.14,
+  "finalEquity": 198989.87
+ },
+ {
+  "key": "trend_atr|dc40_adx25|eg2609|30m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "30m",
+  "contract": "eg2609",
+  "sector": "化工",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 2295,
+  "totalReturn": 0.47,
+  "winRate": 18.37,
+  "tradeCount": 98,
+  "maxDrawdown": 3.08,
+  "finalEquity": 200935.95
+ },
+ {
+  "key": "trend_atr|dc40_adx25|ta609|30m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "30m",
+  "contract": "ta609",
+  "sector": "化工",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 2404,
+  "totalReturn": 0.59,
+  "winRate": 18.33,
+  "tradeCount": 60,
+  "maxDrawdown": 1.15,
+  "finalEquity": 201174.04
+ },
+ {
+  "key": "trend_atr|dc40_adx25|v2609|30m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "30m",
+  "contract": "v2609",
+  "sector": "化工",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 2404,
+  "totalReturn": -1.05,
+  "winRate": 17.5,
+  "tradeCount": 80,
+  "maxDrawdown": 1.55,
+  "finalEquity": 197908.94
+ },
+ {
+  "key": "trend_atr|dc40_adx25|ec2608|30m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "30m",
+  "contract": "ec2608",
+  "sector": "能源",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 1728,
+  "totalReturn": 9.01,
+  "winRate": 24.32,
+  "tradeCount": 37,
+  "maxDrawdown": 6.18,
+  "finalEquity": 218016.38
+ },
+ {
+  "key": "trend_atr|dc40_adx25|sc2609|30m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "30m",
+  "contract": "sc2609",
+  "sector": "能源",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 4527,
+  "totalReturn": -29.24,
+  "winRate": 16.81,
+  "tradeCount": 238,
+  "maxDrawdown": 68.46,
+  "finalEquity": 141524.52
+ },
+ {
+  "key": "trend_atr|dc40_adx25|fu2609|30m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "30m",
+  "contract": "fu2609",
+  "sector": "能源",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 2524,
+  "totalReturn": 2.3,
+  "winRate": 22.32,
+  "tradeCount": 112,
+  "maxDrawdown": 1.68,
+  "finalEquity": 204597.42
+ },
+ {
+  "key": "trend_atr|dc40_adx25|bu2609|30m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "30m",
+  "contract": "bu2609",
+  "sector": "能源",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 2880,
+  "totalReturn": 3.09,
+  "winRate": 24.04,
+  "tradeCount": 104,
+  "maxDrawdown": 0.54,
+  "finalEquity": 206187.79
+ },
+ {
+  "key": "trend_atr|dc40_adx25|pg2608|30m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "30m",
+  "contract": "pg2608",
+  "sector": "能源",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 2549,
+  "totalReturn": 1.43,
+  "winRate": 20.25,
+  "tradeCount": 158,
+  "maxDrawdown": 8.89,
+  "finalEquity": 202851.33
+ },
+ {
+  "key": "trend_atr|dc40_adx25|p2609|30m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "30m",
+  "contract": "p2609",
+  "sector": "农产品",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 2404,
+  "totalReturn": -1.7,
+  "winRate": 18.75,
+  "tradeCount": 64,
+  "maxDrawdown": 3.89,
+  "finalEquity": 196601.32
+ },
+ {
+  "key": "trend_atr|dc40_adx25|y2609|30m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "30m",
+  "contract": "y2609",
+  "sector": "农产品",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 2404,
+  "totalReturn": -4.19,
+  "winRate": 14.86,
+  "tradeCount": 74,
+  "maxDrawdown": 4.27,
+  "finalEquity": 191622.53
+ },
+ {
+  "key": "trend_atr|dc40_adx25|m2609|30m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "30m",
+  "contract": "m2609",
+  "sector": "农产品",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 2404,
+  "totalReturn": -0.79,
+  "winRate": 10.14,
+  "tradeCount": 69,
+  "maxDrawdown": 0.79,
+  "finalEquity": 198414.26
+ },
+ {
+  "key": "trend_atr|dc40_adx25|c2609|30m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "30m",
+  "contract": "c2609",
+  "sector": "农产品",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 2404,
+  "totalReturn": -0.42,
+  "winRate": 14.46,
+  "tradeCount": 83,
+  "maxDrawdown": 0.56,
+  "finalEquity": 199162.96
+ },
+ {
+  "key": "trend_atr|dc40_adx25|sr609|30m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "30m",
+  "contract": "sr609",
+  "sector": "农产品",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 2404,
+  "totalReturn": -0.01,
+  "winRate": 20.51,
+  "tradeCount": 78,
+  "maxDrawdown": 0.6,
+  "finalEquity": 199979.07
+ },
+ {
+  "key": "trend_atr|dc40_adx25|cf609|30m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "30m",
+  "contract": "cf609",
+  "sector": "农产品",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 2404,
+  "totalReturn": -1.9,
+  "winRate": 15.85,
+  "tradeCount": 82,
+  "maxDrawdown": 2.18,
+  "finalEquity": 196200.01
+ },
+ {
+  "key": "trend_atr|dc40_adx25|sp2609|30m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "30m",
+  "contract": "sp2609",
+  "sector": "农产品",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 2392,
+  "totalReturn": -0.04,
+  "winRate": 16.67,
+  "tradeCount": 78,
+  "maxDrawdown": 1.69,
+  "finalEquity": 199924.96
+ },
+ {
+  "key": "trend_atr|dc40_adx25|ao2609|15m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "15m",
+  "contract": "ao2609",
+  "sector": "黑色",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 6145,
+  "totalReturn": -0.49,
+  "winRate": 18.45,
+  "tradeCount": 206,
+  "maxDrawdown": 2.29,
+  "finalEquity": 199015.02
+ },
+ {
+  "key": "trend_atr|dc40_adx25|jm2609|15m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "15m",
+  "contract": "jm2609",
+  "sector": "黑色",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 4606,
+  "totalReturn": -4.94,
+  "winRate": 15.07,
+  "tradeCount": 146,
+  "maxDrawdown": 5.5,
+  "finalEquity": 190114.05
+ },
+ {
+  "key": "trend_atr|dc40_adx25|i2609|15m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "15m",
+  "contract": "i2609",
+  "sector": "黑色",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 4606,
+  "totalReturn": -0.77,
+  "winRate": 21.09,
+  "tradeCount": 128,
+  "maxDrawdown": 3.11,
+  "finalEquity": 198464.86
+ },
+ {
+  "key": "trend_atr|dc40_adx25|rb2610|15m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "15m",
+  "contract": "rb2610",
+  "sector": "黑色",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 4223,
+  "totalReturn": -0.52,
+  "winRate": 14.53,
+  "tradeCount": 117,
+  "maxDrawdown": 0.67,
+  "finalEquity": 198957.63
+ },
+ {
+  "key": "trend_atr|dc40_adx25|fg609|15m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "15m",
+  "contract": "fg609",
+  "sector": "化工",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 4606,
+  "totalReturn": 0.26,
+  "winRate": 20.0,
+  "tradeCount": 135,
+  "maxDrawdown": 0.82,
+  "finalEquity": 200513.24
+ },
+ {
+  "key": "trend_atr|dc40_adx25|sa609|15m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "15m",
+  "contract": "sa609",
+  "sector": "化工",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 4606,
+  "totalReturn": -1.74,
+  "winRate": 14.89,
+  "tradeCount": 141,
+  "maxDrawdown": 2.26,
+  "finalEquity": 196523.87
+ },
+ {
+  "key": "trend_atr|dc40_adx25|sh609|15m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "15m",
+  "contract": "sh609",
+  "sector": "化工",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 4606,
+  "totalReturn": -3.68,
+  "winRate": 17.06,
+  "tradeCount": 170,
+  "maxDrawdown": 3.79,
+  "finalEquity": 192641.51
+ },
+ {
+  "key": "trend_atr|dc40_adx25|ma609|15m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "15m",
+  "contract": "ma609",
+  "sector": "化工",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 4606,
+  "totalReturn": -1.23,
+  "winRate": 17.57,
+  "tradeCount": 148,
+  "maxDrawdown": 1.74,
+  "finalEquity": 197536.21
+ },
+ {
+  "key": "trend_atr|dc40_adx25|eg2609|15m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "15m",
+  "contract": "eg2609",
+  "sector": "化工",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 4397,
+  "totalReturn": -0.3,
+  "winRate": 19.0,
+  "tradeCount": 200,
+  "maxDrawdown": 2.5,
+  "finalEquity": 199403.35
+ },
+ {
+  "key": "trend_atr|dc40_adx25|ta609|15m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "15m",
+  "contract": "ta609",
+  "sector": "化工",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 4606,
+  "totalReturn": -1.65,
+  "winRate": 18.24,
+  "tradeCount": 148,
+  "maxDrawdown": 2.04,
+  "finalEquity": 196704.89
+ },
+ {
+  "key": "trend_atr|dc40_adx25|v2609|15m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "15m",
+  "contract": "v2609",
+  "sector": "化工",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 4605,
+  "totalReturn": -1.35,
+  "winRate": 16.46,
+  "tradeCount": 164,
+  "maxDrawdown": 1.43,
+  "finalEquity": 197309.95
+ },
+ {
+  "key": "trend_atr|dc40_adx25|ec2608|15m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "15m",
+  "contract": "ec2608",
+  "sector": "能源",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 3240,
+  "totalReturn": -3.33,
+  "winRate": 13.4,
+  "tradeCount": 97,
+  "maxDrawdown": 13.92,
+  "finalEquity": 193337.87
+ },
+ {
+  "key": "trend_atr|dc40_adx25|sc2609|15m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "15m",
+  "contract": "sc2609",
+  "sector": "能源",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 7944,
+  "totalReturn": -5.09,
+  "winRate": 19.34,
+  "tradeCount": 424,
+  "maxDrawdown": 51.13,
+  "finalEquity": 189810.58
+ },
+ {
+  "key": "trend_atr|dc40_adx25|fu2609|15m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "15m",
+  "contract": "fu2609",
+  "sector": "能源",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 4836,
+  "totalReturn": 6.23,
+  "winRate": 19.07,
+  "tradeCount": 194,
+  "maxDrawdown": 1.07,
+  "finalEquity": 212463.63
+ },
+ {
+  "key": "trend_atr|dc40_adx25|bu2609|15m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "15m",
+  "contract": "bu2609",
+  "sector": "能源",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 5518,
+  "totalReturn": 1.49,
+  "winRate": 21.64,
+  "tradeCount": 268,
+  "maxDrawdown": 2.27,
+  "finalEquity": 202981.8
+ },
+ {
+  "key": "trend_atr|dc40_adx25|pg2608|15m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "15m",
+  "contract": "pg2608",
+  "sector": "能源",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 4883,
+  "totalReturn": 18.5,
+  "winRate": 22.22,
+  "tradeCount": 288,
+  "maxDrawdown": 1.97,
+  "finalEquity": 236996.2
+ },
+ {
+  "key": "trend_atr|dc40_adx25|p2609|15m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "15m",
+  "contract": "p2609",
+  "sector": "农产品",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 4606,
+  "totalReturn": -6.69,
+  "winRate": 13.69,
+  "tradeCount": 168,
+  "maxDrawdown": 7.9,
+  "finalEquity": 186619.74
+ },
+ {
+  "key": "trend_atr|dc40_adx25|y2609|15m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "15m",
+  "contract": "y2609",
+  "sector": "农产品",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 4605,
+  "totalReturn": -3.5,
+  "winRate": 14.94,
+  "tradeCount": 154,
+  "maxDrawdown": 4.28,
+  "finalEquity": 192995.91
+ },
+ {
+  "key": "trend_atr|dc40_adx25|m2609|15m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "15m",
+  "contract": "m2609",
+  "sector": "农产品",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 4606,
+  "totalReturn": -0.89,
+  "winRate": 13.99,
+  "tradeCount": 143,
+  "maxDrawdown": 1.08,
+  "finalEquity": 198210.24
+ },
+ {
+  "key": "trend_atr|dc40_adx25|c2609|15m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "15m",
+  "contract": "c2609",
+  "sector": "农产品",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 4606,
+  "totalReturn": -0.41,
+  "winRate": 19.42,
+  "tradeCount": 139,
+  "maxDrawdown": 0.7,
+  "finalEquity": 199182.19
+ },
+ {
+  "key": "trend_atr|dc40_adx25|sr609|15m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "15m",
+  "contract": "sr609",
+  "sector": "农产品",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 4606,
+  "totalReturn": -0.0,
+  "winRate": 20.45,
+  "tradeCount": 132,
+  "maxDrawdown": 0.76,
+  "finalEquity": 199999.26
+ },
+ {
+  "key": "trend_atr|dc40_adx25|cf609|15m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "15m",
+  "contract": "cf609",
+  "sector": "农产品",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 4606,
+  "totalReturn": -1.08,
+  "winRate": 16.18,
+  "tradeCount": 136,
+  "maxDrawdown": 2.59,
+  "finalEquity": 197836.12
+ },
+ {
+  "key": "trend_atr|dc40_adx25|sp2609|15m",
+  "strategy": "trend_atr",
+  "tag": "dc40_adx25",
+  "freq": "15m",
+  "contract": "sp2609",
+  "sector": "农产品",
+  "params": {
+   "donchian_len": 40,
+   "adx_threshold": 25
+  },
+  "bars": 4583,
+  "totalReturn": -1.93,
+  "winRate": 15.82,
+  "tradeCount": 158,
+  "maxDrawdown": 2.81,
+  "finalEquity": 196136.35
+ },
+ {
+  "key": "trend_atr_v2|er03|ao2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er03",
+  "freq": "1h",
+  "contract": "ao2609",
+  "sector": "黑色",
+  "params": {
+   "use_adx": 0,
+   "use_er": 1
+  },
+  "bars": 1788,
+  "totalReturn": -0.33,
+  "winRate": 15.38,
+  "tradeCount": 52,
+  "maxDrawdown": 1.94,
+  "finalEquity": 199346.12
+ },
+ {
+  "key": "trend_atr_v2|er03|jm2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er03",
+  "freq": "1h",
+  "contract": "jm2609",
+  "sector": "黑色",
+  "params": {
+   "use_adx": 0,
+   "use_er": 1
+  },
+  "bars": 1404,
+  "totalReturn": -2.95,
+  "winRate": 16.67,
+  "tradeCount": 48,
+  "maxDrawdown": 4.42,
+  "finalEquity": 194091.47
+ },
+ {
+  "key": "trend_atr_v2|er03|i2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er03",
+  "freq": "1h",
+  "contract": "i2609",
+  "sector": "黑色",
+  "params": {
+   "use_adx": 0,
+   "use_er": 1
+  },
+  "bars": 1404,
+  "totalReturn": -1.37,
+  "winRate": 22.92,
+  "tradeCount": 48,
+  "maxDrawdown": 1.8,
+  "finalEquity": 197259.7
+ },
+ {
+  "key": "trend_atr_v2|er03|rb2610|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er03",
+  "freq": "1h",
+  "contract": "rb2610",
+  "sector": "黑色",
+  "params": {
+   "use_adx": 0,
+   "use_er": 1
+  },
+  "bars": 1287,
+  "totalReturn": -0.02,
+  "winRate": 21.88,
+  "tradeCount": 32,
+  "maxDrawdown": 0.72,
+  "finalEquity": 199965.54
+ },
+ {
+  "key": "trend_atr_v2|er03|fg609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er03",
+  "freq": "1h",
+  "contract": "fg609",
+  "sector": "化工",
+  "params": {
+   "use_adx": 0,
+   "use_er": 1
+  },
+  "bars": 1404,
+  "totalReturn": 1.81,
+  "winRate": 20.51,
+  "tradeCount": 39,
+  "maxDrawdown": 0.45,
+  "finalEquity": 203621.52
+ },
+ {
+  "key": "trend_atr_v2|er03|sa609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er03",
+  "freq": "1h",
+  "contract": "sa609",
+  "sector": "化工",
+  "params": {
+   "use_adx": 0,
+   "use_er": 1
+  },
+  "bars": 1404,
+  "totalReturn": 0.61,
+  "winRate": 17.07,
+  "tradeCount": 41,
+  "maxDrawdown": 1.03,
+  "finalEquity": 201215.84
+ },
+ {
+  "key": "trend_atr_v2|er03|sh609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er03",
+  "freq": "1h",
+  "contract": "sh609",
+  "sector": "化工",
+  "params": {
+   "use_adx": 0,
+   "use_er": 1
+  },
+  "bars": 1404,
+  "totalReturn": 2.48,
+  "winRate": 17.39,
+  "tradeCount": 46,
+  "maxDrawdown": 1.41,
+  "finalEquity": 204956.39
+ },
+ {
+  "key": "trend_atr_v2|er03|ma609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er03",
+  "freq": "1h",
+  "contract": "ma609",
+  "sector": "化工",
+  "params": {
+   "use_adx": 0,
+   "use_er": 1
+  },
+  "bars": 1404,
+  "totalReturn": -2.88,
+  "winRate": 12.96,
+  "tradeCount": 54,
+  "maxDrawdown": 3.26,
+  "finalEquity": 194244.31
+ },
+ {
+  "key": "trend_atr_v2|er03|eg2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er03",
+  "freq": "1h",
+  "contract": "eg2609",
+  "sector": "化工",
+  "params": {
+   "use_adx": 0,
+   "use_er": 1
+  },
+  "bars": 1341,
+  "totalReturn": 1.92,
+  "winRate": 20.45,
+  "tradeCount": 44,
+  "maxDrawdown": 3.47,
+  "finalEquity": 203839.22
+ },
+ {
+  "key": "trend_atr_v2|er03|ta609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er03",
+  "freq": "1h",
+  "contract": "ta609",
+  "sector": "化工",
+  "params": {
+   "use_adx": 0,
+   "use_er": 1
+  },
+  "bars": 1404,
+  "totalReturn": 1.36,
+  "winRate": 20.59,
+  "tradeCount": 34,
+  "maxDrawdown": 0.96,
+  "finalEquity": 202719.5
+ },
+ {
+  "key": "trend_atr_v2|er03|v2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er03",
+  "freq": "1h",
+  "contract": "v2609",
+  "sector": "化工",
+  "params": {
+   "use_adx": 0,
+   "use_er": 1
+  },
+  "bars": 1404,
+  "totalReturn": -1.05,
+  "winRate": 15.22,
+  "tradeCount": 46,
+  "maxDrawdown": 1.59,
+  "finalEquity": 197908.06
+ },
+ {
+  "key": "trend_atr_v2|er03|ec2608|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er03",
+  "freq": "1h",
+  "contract": "ec2608",
+  "sector": "能源",
+  "params": {
+   "use_adx": 0,
+   "use_er": 1
+  },
+  "bars": 1080,
+  "totalReturn": 4.82,
+  "winRate": 25.71,
+  "tradeCount": 35,
+  "maxDrawdown": 5.9,
+  "finalEquity": 209635.12
+ },
+ {
+  "key": "trend_atr_v2|er03|sc2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er03",
+  "freq": "1h",
+  "contract": "sc2609",
+  "sector": "能源",
+  "params": {
+   "use_adx": 0,
+   "use_er": 1
+  },
+  "bars": 2623,
+  "totalReturn": -43.15,
+  "winRate": 20.0,
+  "tradeCount": 130,
+  "maxDrawdown": 77.87,
+  "finalEquity": 113709.93
+ },
+ {
+  "key": "trend_atr_v2|er03|fu2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er03",
+  "freq": "1h",
+  "contract": "fu2609",
+  "sector": "能源",
+  "params": {
+   "use_adx": 0,
+   "use_er": 1
+  },
+  "bars": 1474,
+  "totalReturn": 1.16,
+  "winRate": 18.06,
+  "tradeCount": 72,
+  "maxDrawdown": 3.27,
+  "finalEquity": 202320.05
+ },
+ {
+  "key": "trend_atr_v2|er03|bu2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er03",
+  "freq": "1h",
+  "contract": "bu2609",
+  "sector": "能源",
+  "params": {
+   "use_adx": 0,
+   "use_er": 1
+  },
+  "bars": 1682,
+  "totalReturn": 2.33,
+  "winRate": 22.73,
+  "tradeCount": 66,
+  "maxDrawdown": 1.19,
+  "finalEquity": 204653.85
+ },
+ {
+  "key": "trend_atr_v2|er03|pg2608|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er03",
+  "freq": "1h",
+  "contract": "pg2608",
+  "sector": "能源",
+  "params": {
+   "use_adx": 0,
+   "use_er": 1
+  },
+  "bars": 1489,
+  "totalReturn": 13.69,
+  "winRate": 16.28,
+  "tradeCount": 86,
+  "maxDrawdown": 6.37,
+  "finalEquity": 227385.83
+ },
+ {
+  "key": "trend_atr_v2|er03|p2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er03",
+  "freq": "1h",
+  "contract": "p2609",
+  "sector": "农产品",
+  "params": {
+   "use_adx": 0,
+   "use_er": 1
+  },
+  "bars": 1404,
+  "totalReturn": -2.72,
+  "winRate": 14.0,
+  "tradeCount": 50,
+  "maxDrawdown": 5.3,
+  "finalEquity": 194566.88
+ },
+ {
+  "key": "trend_atr_v2|er03|y2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er03",
+  "freq": "1h",
+  "contract": "y2609",
+  "sector": "农产品",
+  "params": {
+   "use_adx": 0,
+   "use_er": 1
+  },
+  "bars": 1404,
+  "totalReturn": -1.6,
+  "winRate": 11.54,
+  "tradeCount": 52,
+  "maxDrawdown": 2.06,
+  "finalEquity": 196803.72
+ },
+ {
+  "key": "trend_atr_v2|er03|m2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er03",
+  "freq": "1h",
+  "contract": "m2609",
+  "sector": "农产品",
+  "params": {
+   "use_adx": 0,
+   "use_er": 1
+  },
+  "bars": 1404,
+  "totalReturn": -0.58,
+  "winRate": 12.2,
+  "tradeCount": 41,
+  "maxDrawdown": 0.99,
+  "finalEquity": 198846.05
+ },
+ {
+  "key": "trend_atr_v2|er03|c2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er03",
+  "freq": "1h",
+  "contract": "c2609",
+  "sector": "农产品",
+  "params": {
+   "use_adx": 0,
+   "use_er": 1
+  },
+  "bars": 1404,
+  "totalReturn": -0.26,
+  "winRate": 14.89,
+  "tradeCount": 47,
+  "maxDrawdown": 0.34,
+  "finalEquity": 199473.52
+ },
+ {
+  "key": "trend_atr_v2|er03|sr609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er03",
+  "freq": "1h",
+  "contract": "sr609",
+  "sector": "农产品",
+  "params": {
+   "use_adx": 0,
+   "use_er": 1
+  },
+  "bars": 1404,
+  "totalReturn": 0.91,
+  "winRate": 25.0,
+  "tradeCount": 44,
+  "maxDrawdown": 0.67,
+  "finalEquity": 201815.57
+ },
+ {
+  "key": "trend_atr_v2|er03|cf609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er03",
+  "freq": "1h",
+  "contract": "cf609",
+  "sector": "农产品",
+  "params": {
+   "use_adx": 0,
+   "use_er": 1
+  },
+  "bars": 1404,
+  "totalReturn": -2.8,
+  "winRate": 14.0,
+  "tradeCount": 50,
+  "maxDrawdown": 3.7,
+  "finalEquity": 194390.42
+ },
+ {
+  "key": "trend_atr_v2|er03|sp2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er03",
+  "freq": "1h",
+  "contract": "sp2609",
+  "sector": "农产品",
+  "params": {
+   "use_adx": 0,
+   "use_er": 1
+  },
+  "bars": 1397,
+  "totalReturn": -1.2,
+  "winRate": 13.46,
+  "tradeCount": 52,
+  "maxDrawdown": 2.7,
+  "finalEquity": 197590.96
+ },
+ {
+  "key": "trend_atr_v2|er_adx_trail4|ao2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_adx_trail4",
+  "freq": "1h",
+  "contract": "ao2609",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1788,
+  "totalReturn": -1.37,
+  "winRate": 21.05,
+  "tradeCount": 38,
+  "maxDrawdown": 3.64,
+  "finalEquity": 197261.5
+ },
+ {
+  "key": "trend_atr_v2|er_adx_trail4|jm2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_adx_trail4",
+  "freq": "1h",
+  "contract": "jm2609",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": -3.13,
+  "winRate": 17.86,
+  "tradeCount": 28,
+  "maxDrawdown": 5.56,
+  "finalEquity": 193745.02
+ },
+ {
+  "key": "trend_atr_v2|er_adx_trail4|i2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_adx_trail4",
+  "freq": "1h",
+  "contract": "i2609",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": -1.9,
+  "winRate": 14.71,
+  "tradeCount": 34,
+  "maxDrawdown": 2.45,
+  "finalEquity": 196208.59
+ },
+ {
+  "key": "trend_atr_v2|er_adx_trail4|rb2610|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_adx_trail4",
+  "freq": "1h",
+  "contract": "rb2610",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1287,
+  "totalReturn": -0.59,
+  "winRate": 19.23,
+  "tradeCount": 26,
+  "maxDrawdown": 0.75,
+  "finalEquity": 198814.49
+ },
+ {
+  "key": "trend_atr_v2|er_adx_trail4|fg609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_adx_trail4",
+  "freq": "1h",
+  "contract": "fg609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": 0.67,
+  "winRate": 25.81,
+  "tradeCount": 31,
+  "maxDrawdown": 0.4,
+  "finalEquity": 201338.58
+ },
+ {
+  "key": "trend_atr_v2|er_adx_trail4|sa609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_adx_trail4",
+  "freq": "1h",
+  "contract": "sa609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": 0.7,
+  "winRate": 18.52,
+  "tradeCount": 27,
+  "maxDrawdown": 0.66,
+  "finalEquity": 201407.94
+ },
+ {
+  "key": "trend_atr_v2|er_adx_trail4|sh609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_adx_trail4",
+  "freq": "1h",
+  "contract": "sh609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": 0.98,
+  "winRate": 17.86,
+  "tradeCount": 28,
+  "maxDrawdown": 2.13,
+  "finalEquity": 201953.47
+ },
+ {
+  "key": "trend_atr_v2|er_adx_trail4|ma609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_adx_trail4",
+  "freq": "1h",
+  "contract": "ma609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": -2.14,
+  "winRate": 13.89,
+  "tradeCount": 36,
+  "maxDrawdown": 2.93,
+  "finalEquity": 195711.96
+ },
+ {
+  "key": "trend_atr_v2|er_adx_trail4|eg2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_adx_trail4",
+  "freq": "1h",
+  "contract": "eg2609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1341,
+  "totalReturn": 2.5,
+  "winRate": 21.05,
+  "tradeCount": 38,
+  "maxDrawdown": 3.05,
+  "finalEquity": 205003.82
+ },
+ {
+  "key": "trend_atr_v2|er_adx_trail4|ta609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_adx_trail4",
+  "freq": "1h",
+  "contract": "ta609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": 0.76,
+  "winRate": 19.23,
+  "tradeCount": 26,
+  "maxDrawdown": 1.55,
+  "finalEquity": 201524.64
+ },
+ {
+  "key": "trend_atr_v2|er_adx_trail4|v2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_adx_trail4",
+  "freq": "1h",
+  "contract": "v2609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": 0.03,
+  "winRate": 23.33,
+  "tradeCount": 30,
+  "maxDrawdown": 0.88,
+  "finalEquity": 200056.14
+ },
+ {
+  "key": "trend_atr_v2|er_adx_trail4|ec2608|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_adx_trail4",
+  "freq": "1h",
+  "contract": "ec2608",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1080,
+  "totalReturn": 4.13,
+  "winRate": 23.81,
+  "tradeCount": 21,
+  "maxDrawdown": 5.12,
+  "finalEquity": 208250.38
+ },
+ {
+  "key": "trend_atr_v2|er_adx_trail4|sc2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_adx_trail4",
+  "freq": "1h",
+  "contract": "sc2609",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 2623,
+  "totalReturn": -32.42,
+  "winRate": 20.0,
+  "tradeCount": 90,
+  "maxDrawdown": 60.08,
+  "finalEquity": 135165.56
+ },
+ {
+  "key": "trend_atr_v2|er_adx_trail4|fu2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_adx_trail4",
+  "freq": "1h",
+  "contract": "fu2609",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1474,
+  "totalReturn": 5.43,
+  "winRate": 20.0,
+  "tradeCount": 40,
+  "maxDrawdown": 2.24,
+  "finalEquity": 210859.45
+ },
+ {
+  "key": "trend_atr_v2|er_adx_trail4|bu2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_adx_trail4",
+  "freq": "1h",
+  "contract": "bu2609",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1682,
+  "totalReturn": 3.83,
+  "winRate": 20.93,
+  "tradeCount": 43,
+  "maxDrawdown": 0.79,
+  "finalEquity": 207657.47
+ },
+ {
+  "key": "trend_atr_v2|er_adx_trail4|pg2608|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_adx_trail4",
+  "freq": "1h",
+  "contract": "pg2608",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1489,
+  "totalReturn": 6.58,
+  "winRate": 20.37,
+  "tradeCount": 54,
+  "maxDrawdown": 5.51,
+  "finalEquity": 213161.11
+ },
+ {
+  "key": "trend_atr_v2|er_adx_trail4|p2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_adx_trail4",
+  "freq": "1h",
+  "contract": "p2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": -1.49,
+  "winRate": 17.86,
+  "tradeCount": 28,
+  "maxDrawdown": 2.58,
+  "finalEquity": 197025.39
+ },
+ {
+  "key": "trend_atr_v2|er_adx_trail4|y2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_adx_trail4",
+  "freq": "1h",
+  "contract": "y2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": -0.03,
+  "winRate": 20.83,
+  "tradeCount": 24,
+  "maxDrawdown": 1.25,
+  "finalEquity": 199937.32
+ },
+ {
+  "key": "trend_atr_v2|er_adx_trail4|m2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_adx_trail4",
+  "freq": "1h",
+  "contract": "m2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": -0.8,
+  "winRate": 14.29,
+  "tradeCount": 21,
+  "maxDrawdown": 0.95,
+  "finalEquity": 198403.87
+ },
+ {
+  "key": "trend_atr_v2|er_adx_trail4|c2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_adx_trail4",
+  "freq": "1h",
+  "contract": "c2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": 0.07,
+  "winRate": 9.68,
+  "tradeCount": 31,
+  "maxDrawdown": 0.34,
+  "finalEquity": 200140.91
+ },
+ {
+  "key": "trend_atr_v2|er_adx_trail4|sr609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_adx_trail4",
+  "freq": "1h",
+  "contract": "sr609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": -0.04,
+  "winRate": 16.0,
+  "tradeCount": 25,
+  "maxDrawdown": 1.17,
+  "finalEquity": 199912.72
+ },
+ {
+  "key": "trend_atr_v2|er_adx_trail4|cf609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_adx_trail4",
+  "freq": "1h",
+  "contract": "cf609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": -0.97,
+  "winRate": 15.62,
+  "tradeCount": 32,
+  "maxDrawdown": 1.94,
+  "finalEquity": 198059.97
+ },
+ {
+  "key": "trend_atr_v2|er_adx_trail4|sp2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_adx_trail4",
+  "freq": "1h",
+  "contract": "sp2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1397,
+  "totalReturn": -0.47,
+  "winRate": 17.86,
+  "tradeCount": 28,
+  "maxDrawdown": 1.31,
+  "finalEquity": 199062.53
+ },
+ {
+  "key": "trend_atr_v2|buf05_er_trail4|ao2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "buf05_er_trail4",
+  "freq": "1h",
+  "contract": "ao2609",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "breakout_buf_atr": 0.5,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1788,
+  "totalReturn": -1.84,
+  "winRate": 15.62,
+  "tradeCount": 32,
+  "maxDrawdown": 2.6,
+  "finalEquity": 196313.56
+ },
+ {
+  "key": "trend_atr_v2|buf05_er_trail4|jm2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "buf05_er_trail4",
+  "freq": "1h",
+  "contract": "jm2609",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "breakout_buf_atr": 0.5,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": -0.92,
+  "winRate": 20.0,
+  "tradeCount": 20,
+  "maxDrawdown": 4.4,
+  "finalEquity": 198169.45
+ },
+ {
+  "key": "trend_atr_v2|buf05_er_trail4|i2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "buf05_er_trail4",
+  "freq": "1h",
+  "contract": "i2609",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "breakout_buf_atr": 0.5,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": -0.77,
+  "winRate": 20.0,
+  "tradeCount": 20,
+  "maxDrawdown": 2.32,
+  "finalEquity": 198465.55
+ },
+ {
+  "key": "trend_atr_v2|buf05_er_trail4|rb2610|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "buf05_er_trail4",
+  "freq": "1h",
+  "contract": "rb2610",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "breakout_buf_atr": 0.5,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1287,
+  "totalReturn": -0.28,
+  "winRate": 22.22,
+  "tradeCount": 18,
+  "maxDrawdown": 0.59,
+  "finalEquity": 199439.31
+ },
+ {
+  "key": "trend_atr_v2|buf05_er_trail4|fg609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "buf05_er_trail4",
+  "freq": "1h",
+  "contract": "fg609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "breakout_buf_atr": 0.5,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": 0.85,
+  "winRate": 23.81,
+  "tradeCount": 21,
+  "maxDrawdown": 0.33,
+  "finalEquity": 201701.21
+ },
+ {
+  "key": "trend_atr_v2|buf05_er_trail4|sa609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "buf05_er_trail4",
+  "freq": "1h",
+  "contract": "sa609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "breakout_buf_atr": 0.5,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": 0.89,
+  "winRate": 23.81,
+  "tradeCount": 21,
+  "maxDrawdown": 0.58,
+  "finalEquity": 201777.27
+ },
+ {
+  "key": "trend_atr_v2|buf05_er_trail4|sh609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "buf05_er_trail4",
+  "freq": "1h",
+  "contract": "sh609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "breakout_buf_atr": 0.5,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": 1.01,
+  "winRate": 18.18,
+  "tradeCount": 22,
+  "maxDrawdown": 1.7,
+  "finalEquity": 202022.94
+ },
+ {
+  "key": "trend_atr_v2|buf05_er_trail4|ma609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "buf05_er_trail4",
+  "freq": "1h",
+  "contract": "ma609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "breakout_buf_atr": 0.5,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": -1.18,
+  "winRate": 15.38,
+  "tradeCount": 26,
+  "maxDrawdown": 2.28,
+  "finalEquity": 197634.03
+ },
+ {
+  "key": "trend_atr_v2|buf05_er_trail4|eg2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "buf05_er_trail4",
+  "freq": "1h",
+  "contract": "eg2609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "breakout_buf_atr": 0.5,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1341,
+  "totalReturn": -1.48,
+  "winRate": 17.65,
+  "tradeCount": 34,
+  "maxDrawdown": 4.37,
+  "finalEquity": 197039.07
+ },
+ {
+  "key": "trend_atr_v2|buf05_er_trail4|ta609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "buf05_er_trail4",
+  "freq": "1h",
+  "contract": "ta609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "breakout_buf_atr": 0.5,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": 0.42,
+  "winRate": 18.18,
+  "tradeCount": 22,
+  "maxDrawdown": 1.93,
+  "finalEquity": 200837.93
+ },
+ {
+  "key": "trend_atr_v2|buf05_er_trail4|v2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "buf05_er_trail4",
+  "freq": "1h",
+  "contract": "v2609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "breakout_buf_atr": 0.5,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": 0.13,
+  "winRate": 26.92,
+  "tradeCount": 26,
+  "maxDrawdown": 0.32,
+  "finalEquity": 200254.55
+ },
+ {
+  "key": "trend_atr_v2|buf05_er_trail4|ec2608|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "buf05_er_trail4",
+  "freq": "1h",
+  "contract": "ec2608",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "breakout_buf_atr": 0.5,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1080,
+  "totalReturn": 4.17,
+  "winRate": 20.0,
+  "tradeCount": 15,
+  "maxDrawdown": 5.12,
+  "finalEquity": 208337.19
+ },
+ {
+  "key": "trend_atr_v2|buf05_er_trail4|sc2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "buf05_er_trail4",
+  "freq": "1h",
+  "contract": "sc2609",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "breakout_buf_atr": 0.5,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 2623,
+  "totalReturn": -63.61,
+  "winRate": 16.67,
+  "tradeCount": 78,
+  "maxDrawdown": 67.58,
+  "finalEquity": 72789.29
+ },
+ {
+  "key": "trend_atr_v2|buf05_er_trail4|fu2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "buf05_er_trail4",
+  "freq": "1h",
+  "contract": "fu2609",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "breakout_buf_atr": 0.5,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1474,
+  "totalReturn": 6.12,
+  "winRate": 25.0,
+  "tradeCount": 28,
+  "maxDrawdown": 1.78,
+  "finalEquity": 212246.62
+ },
+ {
+  "key": "trend_atr_v2|buf05_er_trail4|bu2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "buf05_er_trail4",
+  "freq": "1h",
+  "contract": "bu2609",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "breakout_buf_atr": 0.5,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1682,
+  "totalReturn": 1.48,
+  "winRate": 21.62,
+  "tradeCount": 37,
+  "maxDrawdown": 1.46,
+  "finalEquity": 202952.33
+ },
+ {
+  "key": "trend_atr_v2|buf05_er_trail4|pg2608|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "buf05_er_trail4",
+  "freq": "1h",
+  "contract": "pg2608",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "breakout_buf_atr": 0.5,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1489,
+  "totalReturn": 8.81,
+  "winRate": 20.0,
+  "tradeCount": 40,
+  "maxDrawdown": 2.41,
+  "finalEquity": 217618.9
+ },
+ {
+  "key": "trend_atr_v2|buf05_er_trail4|p2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "buf05_er_trail4",
+  "freq": "1h",
+  "contract": "p2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "breakout_buf_atr": 0.5,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": -1.31,
+  "winRate": 12.5,
+  "tradeCount": 16,
+  "maxDrawdown": 2.04,
+  "finalEquity": 197383.54
+ },
+ {
+  "key": "trend_atr_v2|buf05_er_trail4|y2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "buf05_er_trail4",
+  "freq": "1h",
+  "contract": "y2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "breakout_buf_atr": 0.5,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": 0.83,
+  "winRate": 25.0,
+  "tradeCount": 12,
+  "maxDrawdown": 0.55,
+  "finalEquity": 201666.29
+ },
+ {
+  "key": "trend_atr_v2|buf05_er_trail4|m2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "buf05_er_trail4",
+  "freq": "1h",
+  "contract": "m2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "breakout_buf_atr": 0.5,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": -0.38,
+  "winRate": 21.43,
+  "tradeCount": 14,
+  "maxDrawdown": 0.53,
+  "finalEquity": 199249.9
+ },
+ {
+  "key": "trend_atr_v2|buf05_er_trail4|c2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "buf05_er_trail4",
+  "freq": "1h",
+  "contract": "c2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "breakout_buf_atr": 0.5,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": 0.18,
+  "winRate": 10.0,
+  "tradeCount": 20,
+  "maxDrawdown": 0.27,
+  "finalEquity": 200354.48
+ },
+ {
+  "key": "trend_atr_v2|buf05_er_trail4|sr609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "buf05_er_trail4",
+  "freq": "1h",
+  "contract": "sr609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "breakout_buf_atr": 0.5,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": -0.23,
+  "winRate": 17.39,
+  "tradeCount": 23,
+  "maxDrawdown": 1.17,
+  "finalEquity": 199547.46
+ },
+ {
+  "key": "trend_atr_v2|buf05_er_trail4|cf609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "buf05_er_trail4",
+  "freq": "1h",
+  "contract": "cf609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "breakout_buf_atr": 0.5,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": 0.22,
+  "winRate": 22.22,
+  "tradeCount": 18,
+  "maxDrawdown": 0.74,
+  "finalEquity": 200446.5
+ },
+ {
+  "key": "trend_atr_v2|buf05_er_trail4|sp2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "buf05_er_trail4",
+  "freq": "1h",
+  "contract": "sp2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "breakout_buf_atr": 0.5,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1397,
+  "totalReturn": 0.12,
+  "winRate": 16.67,
+  "tradeCount": 18,
+  "maxDrawdown": 0.67,
+  "finalEquity": 200237.85
+ },
+ {
+  "key": "trend_atr_v2|er_ch10|ao2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_ch10",
+  "freq": "1h",
+  "contract": "ao2609",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "exit_mode": "channel",
+   "exit_channel_len": 10
+  },
+  "bars": 1788,
+  "totalReturn": -0.9,
+  "winRate": 15.91,
+  "tradeCount": 44,
+  "maxDrawdown": 2.96,
+  "finalEquity": 198195.4
+ },
+ {
+  "key": "trend_atr_v2|er_ch10|jm2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_ch10",
+  "freq": "1h",
+  "contract": "jm2609",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "exit_mode": "channel",
+   "exit_channel_len": 10
+  },
+  "bars": 1404,
+  "totalReturn": -12.53,
+  "winRate": 2.5,
+  "tradeCount": 40,
+  "maxDrawdown": 12.53,
+  "finalEquity": 174934.65
+ },
+ {
+  "key": "trend_atr_v2|er_ch10|i2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_ch10",
+  "freq": "1h",
+  "contract": "i2609",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "exit_mode": "channel",
+   "exit_channel_len": 10
+  },
+  "bars": 1404,
+  "totalReturn": -1.95,
+  "winRate": 11.9,
+  "tradeCount": 42,
+  "maxDrawdown": 2.11,
+  "finalEquity": 196108.19
+ },
+ {
+  "key": "trend_atr_v2|er_ch10|rb2610|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_ch10",
+  "freq": "1h",
+  "contract": "rb2610",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "exit_mode": "channel",
+   "exit_channel_len": 10
+  },
+  "bars": 1287,
+  "totalReturn": -0.3,
+  "winRate": 21.43,
+  "tradeCount": 28,
+  "maxDrawdown": 0.74,
+  "finalEquity": 199406.17
+ },
+ {
+  "key": "trend_atr_v2|er_ch10|fg609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_ch10",
+  "freq": "1h",
+  "contract": "fg609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "exit_mode": "channel",
+   "exit_channel_len": 10
+  },
+  "bars": 1404,
+  "totalReturn": 0.37,
+  "winRate": 18.92,
+  "tradeCount": 37,
+  "maxDrawdown": 0.55,
+  "finalEquity": 200730.45
+ },
+ {
+  "key": "trend_atr_v2|er_ch10|sa609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_ch10",
+  "freq": "1h",
+  "contract": "sa609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "exit_mode": "channel",
+   "exit_channel_len": 10
+  },
+  "bars": 1404,
+  "totalReturn": -0.15,
+  "winRate": 21.21,
+  "tradeCount": 33,
+  "maxDrawdown": 0.97,
+  "finalEquity": 199704.38
+ },
+ {
+  "key": "trend_atr_v2|er_ch10|sh609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_ch10",
+  "freq": "1h",
+  "contract": "sh609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "exit_mode": "channel",
+   "exit_channel_len": 10
+  },
+  "bars": 1404,
+  "totalReturn": 0.42,
+  "winRate": 13.89,
+  "tradeCount": 36,
+  "maxDrawdown": 2.05,
+  "finalEquity": 200843.39
+ },
+ {
+  "key": "trend_atr_v2|er_ch10|ma609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_ch10",
+  "freq": "1h",
+  "contract": "ma609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "exit_mode": "channel",
+   "exit_channel_len": 10
+  },
+  "bars": 1404,
+  "totalReturn": -2.38,
+  "winRate": 10.0,
+  "tradeCount": 40,
+  "maxDrawdown": 2.51,
+  "finalEquity": 195233.38
+ },
+ {
+  "key": "trend_atr_v2|er_ch10|eg2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_ch10",
+  "freq": "1h",
+  "contract": "eg2609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "exit_mode": "channel",
+   "exit_channel_len": 10
+  },
+  "bars": 1341,
+  "totalReturn": 0.68,
+  "winRate": 20.0,
+  "tradeCount": 35,
+  "maxDrawdown": 2.45,
+  "finalEquity": 201351.36
+ },
+ {
+  "key": "trend_atr_v2|er_ch10|ta609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_ch10",
+  "freq": "1h",
+  "contract": "ta609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "exit_mode": "channel",
+   "exit_channel_len": 10
+  },
+  "bars": 1404,
+  "totalReturn": 0.49,
+  "winRate": 28.57,
+  "tradeCount": 28,
+  "maxDrawdown": 0.78,
+  "finalEquity": 200988.89
+ },
+ {
+  "key": "trend_atr_v2|er_ch10|v2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_ch10",
+  "freq": "1h",
+  "contract": "v2609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "exit_mode": "channel",
+   "exit_channel_len": 10
+  },
+  "bars": 1404,
+  "totalReturn": -0.46,
+  "winRate": 20.0,
+  "tradeCount": 30,
+  "maxDrawdown": 0.98,
+  "finalEquity": 199072.53
+ },
+ {
+  "key": "trend_atr_v2|er_ch10|ec2608|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_ch10",
+  "freq": "1h",
+  "contract": "ec2608",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "exit_mode": "channel",
+   "exit_channel_len": 10
+  },
+  "bars": 1080,
+  "totalReturn": 4.44,
+  "winRate": 9.52,
+  "tradeCount": 21,
+  "maxDrawdown": 5.03,
+  "finalEquity": 208882.11
+ },
+ {
+  "key": "trend_atr_v2|er_ch10|sc2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_ch10",
+  "freq": "1h",
+  "contract": "sc2609",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "exit_mode": "channel",
+   "exit_channel_len": 10
+  },
+  "bars": 2623,
+  "totalReturn": -30.83,
+  "winRate": 15.74,
+  "tradeCount": 108,
+  "maxDrawdown": 51.55,
+  "finalEquity": 138346.14
+ },
+ {
+  "key": "trend_atr_v2|er_ch10|fu2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_ch10",
+  "freq": "1h",
+  "contract": "fu2609",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "exit_mode": "channel",
+   "exit_channel_len": 10
+  },
+  "bars": 1474,
+  "totalReturn": 5.11,
+  "winRate": 15.56,
+  "tradeCount": 45,
+  "maxDrawdown": 1.5,
+  "finalEquity": 210216.21
+ },
+ {
+  "key": "trend_atr_v2|er_ch10|bu2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_ch10",
+  "freq": "1h",
+  "contract": "bu2609",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "exit_mode": "channel",
+   "exit_channel_len": 10
+  },
+  "bars": 1682,
+  "totalReturn": 0.76,
+  "winRate": 19.61,
+  "tradeCount": 51,
+  "maxDrawdown": 1.14,
+  "finalEquity": 201521.19
+ },
+ {
+  "key": "trend_atr_v2|er_ch10|pg2608|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_ch10",
+  "freq": "1h",
+  "contract": "pg2608",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "exit_mode": "channel",
+   "exit_channel_len": 10
+  },
+  "bars": 1489,
+  "totalReturn": 3.36,
+  "winRate": 18.87,
+  "tradeCount": 53,
+  "maxDrawdown": 2.83,
+  "finalEquity": 206725.86
+ },
+ {
+  "key": "trend_atr_v2|er_ch10|p2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_ch10",
+  "freq": "1h",
+  "contract": "p2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "exit_mode": "channel",
+   "exit_channel_len": 10
+  },
+  "bars": 1404,
+  "totalReturn": 2.3,
+  "winRate": 21.43,
+  "tradeCount": 28,
+  "maxDrawdown": 1.15,
+  "finalEquity": 204593.44
+ },
+ {
+  "key": "trend_atr_v2|er_ch10|y2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_ch10",
+  "freq": "1h",
+  "contract": "y2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "exit_mode": "channel",
+   "exit_channel_len": 10
+  },
+  "bars": 1404,
+  "totalReturn": -0.91,
+  "winRate": 15.38,
+  "tradeCount": 26,
+  "maxDrawdown": 1.69,
+  "finalEquity": 198183.08
+ },
+ {
+  "key": "trend_atr_v2|er_ch10|m2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_ch10",
+  "freq": "1h",
+  "contract": "m2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "exit_mode": "channel",
+   "exit_channel_len": 10
+  },
+  "bars": 1404,
+  "totalReturn": -0.47,
+  "winRate": 23.81,
+  "tradeCount": 21,
+  "maxDrawdown": 0.56,
+  "finalEquity": 199067.48
+ },
+ {
+  "key": "trend_atr_v2|er_ch10|c2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_ch10",
+  "freq": "1h",
+  "contract": "c2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "exit_mode": "channel",
+   "exit_channel_len": 10
+  },
+  "bars": 1404,
+  "totalReturn": -0.24,
+  "winRate": 15.38,
+  "tradeCount": 39,
+  "maxDrawdown": 0.28,
+  "finalEquity": 199519.55
+ },
+ {
+  "key": "trend_atr_v2|er_ch10|sr609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_ch10",
+  "freq": "1h",
+  "contract": "sr609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "exit_mode": "channel",
+   "exit_channel_len": 10
+  },
+  "bars": 1404,
+  "totalReturn": 0.2,
+  "winRate": 28.57,
+  "tradeCount": 28,
+  "maxDrawdown": 0.74,
+  "finalEquity": 200390.03
+ },
+ {
+  "key": "trend_atr_v2|er_ch10|cf609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_ch10",
+  "freq": "1h",
+  "contract": "cf609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "exit_mode": "channel",
+   "exit_channel_len": 10
+  },
+  "bars": 1404,
+  "totalReturn": -0.25,
+  "winRate": 16.67,
+  "tradeCount": 36,
+  "maxDrawdown": 1.95,
+  "finalEquity": 199492.6
+ },
+ {
+  "key": "trend_atr_v2|er_ch10|sp2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_ch10",
+  "freq": "1h",
+  "contract": "sp2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "exit_mode": "channel",
+   "exit_channel_len": 10
+  },
+  "bars": 1397,
+  "totalReturn": 0.89,
+  "winRate": 23.33,
+  "tradeCount": 30,
+  "maxDrawdown": 0.82,
+  "finalEquity": 201784.17
+ },
+ {
+  "key": "trend_atr_v2|er_trail4_tp2|ao2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_trail4_tp2",
+  "freq": "1h",
+  "contract": "ao2609",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0,
+   "tp_r": 2.0
+  },
+  "bars": 1788,
+  "totalReturn": -1.3,
+  "winRate": 21.43,
+  "tradeCount": 42,
+  "maxDrawdown": 3.93,
+  "finalEquity": 197396.72
+ },
+ {
+  "key": "trend_atr_v2|er_trail4_tp2|jm2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_trail4_tp2",
+  "freq": "1h",
+  "contract": "jm2609",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0,
+   "tp_r": 2.0
+  },
+  "bars": 1404,
+  "totalReturn": -3.88,
+  "winRate": 13.89,
+  "tradeCount": 36,
+  "maxDrawdown": 6.58,
+  "finalEquity": 192235.5
+ },
+ {
+  "key": "trend_atr_v2|er_trail4_tp2|i2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_trail4_tp2",
+  "freq": "1h",
+  "contract": "i2609",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0,
+   "tp_r": 2.0
+  },
+  "bars": 1404,
+  "totalReturn": -1.5,
+  "winRate": 14.71,
+  "tradeCount": 34,
+  "maxDrawdown": 2.45,
+  "finalEquity": 196998.08
+ },
+ {
+  "key": "trend_atr_v2|er_trail4_tp2|rb2610|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_trail4_tp2",
+  "freq": "1h",
+  "contract": "rb2610",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0,
+   "tp_r": 2.0
+  },
+  "bars": 1287,
+  "totalReturn": -0.37,
+  "winRate": 17.86,
+  "tradeCount": 28,
+  "maxDrawdown": 0.75,
+  "finalEquity": 199265.97
+ },
+ {
+  "key": "trend_atr_v2|er_trail4_tp2|fg609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_trail4_tp2",
+  "freq": "1h",
+  "contract": "fg609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0,
+   "tp_r": 2.0
+  },
+  "bars": 1404,
+  "totalReturn": 0.82,
+  "winRate": 23.08,
+  "tradeCount": 39,
+  "maxDrawdown": 0.56,
+  "finalEquity": 201642.02
+ },
+ {
+  "key": "trend_atr_v2|er_trail4_tp2|sa609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_trail4_tp2",
+  "freq": "1h",
+  "contract": "sa609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0,
+   "tp_r": 2.0
+  },
+  "bars": 1404,
+  "totalReturn": 0.49,
+  "winRate": 18.92,
+  "tradeCount": 37,
+  "maxDrawdown": 0.86,
+  "finalEquity": 200984.13
+ },
+ {
+  "key": "trend_atr_v2|er_trail4_tp2|sh609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_trail4_tp2",
+  "freq": "1h",
+  "contract": "sh609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0,
+   "tp_r": 2.0
+  },
+  "bars": 1404,
+  "totalReturn": 2.32,
+  "winRate": 25.0,
+  "tradeCount": 36,
+  "maxDrawdown": 2.93,
+  "finalEquity": 204641.11
+ },
+ {
+  "key": "trend_atr_v2|er_trail4_tp2|ma609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_trail4_tp2",
+  "freq": "1h",
+  "contract": "ma609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0,
+   "tp_r": 2.0
+  },
+  "bars": 1404,
+  "totalReturn": -1.51,
+  "winRate": 15.0,
+  "tradeCount": 40,
+  "maxDrawdown": 2.52,
+  "finalEquity": 196972.01
+ },
+ {
+  "key": "trend_atr_v2|er_trail4_tp2|eg2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_trail4_tp2",
+  "freq": "1h",
+  "contract": "eg2609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0,
+   "tp_r": 2.0
+  },
+  "bars": 1341,
+  "totalReturn": 2.08,
+  "winRate": 20.0,
+  "tradeCount": 50,
+  "maxDrawdown": 3.28,
+  "finalEquity": 204160.11
+ },
+ {
+  "key": "trend_atr_v2|er_trail4_tp2|ta609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_trail4_tp2",
+  "freq": "1h",
+  "contract": "ta609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0,
+   "tp_r": 2.0
+  },
+  "bars": 1404,
+  "totalReturn": 1.51,
+  "winRate": 23.33,
+  "tradeCount": 30,
+  "maxDrawdown": 1.47,
+  "finalEquity": 203023.68
+ },
+ {
+  "key": "trend_atr_v2|er_trail4_tp2|v2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_trail4_tp2",
+  "freq": "1h",
+  "contract": "v2609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0,
+   "tp_r": 2.0
+  },
+  "bars": 1404,
+  "totalReturn": -0.0,
+  "winRate": 22.22,
+  "tradeCount": 36,
+  "maxDrawdown": 0.92,
+  "finalEquity": 199997.77
+ },
+ {
+  "key": "trend_atr_v2|er_trail4_tp2|ec2608|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_trail4_tp2",
+  "freq": "1h",
+  "contract": "ec2608",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0,
+   "tp_r": 2.0
+  },
+  "bars": 1080,
+  "totalReturn": 1.51,
+  "winRate": 24.0,
+  "tradeCount": 25,
+  "maxDrawdown": 8.57,
+  "finalEquity": 203018.97
+ },
+ {
+  "key": "trend_atr_v2|er_trail4_tp2|sc2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_trail4_tp2",
+  "freq": "1h",
+  "contract": "sc2609",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0,
+   "tp_r": 2.0
+  },
+  "bars": 2623,
+  "totalReturn": -61.8,
+  "winRate": 18.75,
+  "tradeCount": 112,
+  "maxDrawdown": 78.06,
+  "finalEquity": 76391.84
+ },
+ {
+  "key": "trend_atr_v2|er_trail4_tp2|fu2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_trail4_tp2",
+  "freq": "1h",
+  "contract": "fu2609",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0,
+   "tp_r": 2.0
+  },
+  "bars": 1474,
+  "totalReturn": 3.11,
+  "winRate": 22.22,
+  "tradeCount": 54,
+  "maxDrawdown": 2.96,
+  "finalEquity": 206215.29
+ },
+ {
+  "key": "trend_atr_v2|er_trail4_tp2|bu2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_trail4_tp2",
+  "freq": "1h",
+  "contract": "bu2609",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0,
+   "tp_r": 2.0
+  },
+  "bars": 1682,
+  "totalReturn": 2.11,
+  "winRate": 19.67,
+  "tradeCount": 61,
+  "maxDrawdown": 1.05,
+  "finalEquity": 204223.22
+ },
+ {
+  "key": "trend_atr_v2|er_trail4_tp2|pg2608|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_trail4_tp2",
+  "freq": "1h",
+  "contract": "pg2608",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0,
+   "tp_r": 2.0
+  },
+  "bars": 1489,
+  "totalReturn": 7.25,
+  "winRate": 18.75,
+  "tradeCount": 64,
+  "maxDrawdown": 4.17,
+  "finalEquity": 214509.71
+ },
+ {
+  "key": "trend_atr_v2|er_trail4_tp2|p2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_trail4_tp2",
+  "freq": "1h",
+  "contract": "p2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0,
+   "tp_r": 2.0
+  },
+  "bars": 1404,
+  "totalReturn": -3.63,
+  "winRate": 13.89,
+  "tradeCount": 36,
+  "maxDrawdown": 4.26,
+  "finalEquity": 192733.17
+ },
+ {
+  "key": "trend_atr_v2|er_trail4_tp2|y2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_trail4_tp2",
+  "freq": "1h",
+  "contract": "y2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0,
+   "tp_r": 2.0
+  },
+  "bars": 1404,
+  "totalReturn": 0.1,
+  "winRate": 17.86,
+  "tradeCount": 28,
+  "maxDrawdown": 1.25,
+  "finalEquity": 200209.93
+ },
+ {
+  "key": "trend_atr_v2|er_trail4_tp2|m2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_trail4_tp2",
+  "freq": "1h",
+  "contract": "m2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0,
+   "tp_r": 2.0
+  },
+  "bars": 1404,
+  "totalReturn": -0.45,
+  "winRate": 14.29,
+  "tradeCount": 21,
+  "maxDrawdown": 0.95,
+  "finalEquity": 199104.52
+ },
+ {
+  "key": "trend_atr_v2|er_trail4_tp2|c2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_trail4_tp2",
+  "freq": "1h",
+  "contract": "c2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0,
+   "tp_r": 2.0
+  },
+  "bars": 1404,
+  "totalReturn": -0.25,
+  "winRate": 12.82,
+  "tradeCount": 39,
+  "maxDrawdown": 0.38,
+  "finalEquity": 199508.48
+ },
+ {
+  "key": "trend_atr_v2|er_trail4_tp2|sr609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_trail4_tp2",
+  "freq": "1h",
+  "contract": "sr609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0,
+   "tp_r": 2.0
+  },
+  "bars": 1404,
+  "totalReturn": -0.29,
+  "winRate": 16.13,
+  "tradeCount": 31,
+  "maxDrawdown": 1.33,
+  "finalEquity": 199416.87
+ },
+ {
+  "key": "trend_atr_v2|er_trail4_tp2|cf609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_trail4_tp2",
+  "freq": "1h",
+  "contract": "cf609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0,
+   "tp_r": 2.0
+  },
+  "bars": 1404,
+  "totalReturn": -1.65,
+  "winRate": 13.89,
+  "tradeCount": 36,
+  "maxDrawdown": 2.11,
+  "finalEquity": 196697.19
+ },
+ {
+  "key": "trend_atr_v2|er_trail4_tp2|sp2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_trail4_tp2",
+  "freq": "1h",
+  "contract": "sp2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0,
+   "tp_r": 2.0
+  },
+  "bars": 1397,
+  "totalReturn": -0.26,
+  "winRate": 18.75,
+  "tradeCount": 32,
+  "maxDrawdown": 1.63,
+  "finalEquity": 199485.74
+ },
+ {
+  "key": "trend_atr_v2|er45_trail4|ao2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_trail4",
+  "freq": "1h",
+  "contract": "ao2609",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1788,
+  "totalReturn": -0.4,
+  "winRate": 20.0,
+  "tradeCount": 20,
+  "maxDrawdown": 1.49,
+  "finalEquity": 199207.85
+ },
+ {
+  "key": "trend_atr_v2|er45_trail4|jm2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_trail4",
+  "freq": "1h",
+  "contract": "jm2609",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": -3.91,
+  "winRate": 16.67,
+  "tradeCount": 18,
+  "maxDrawdown": 4.17,
+  "finalEquity": 192175.51
+ },
+ {
+  "key": "trend_atr_v2|er45_trail4|i2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_trail4",
+  "freq": "1h",
+  "contract": "i2609",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": -2.91,
+  "winRate": 9.09,
+  "tradeCount": 22,
+  "maxDrawdown": 2.91,
+  "finalEquity": 194179.24
+ },
+ {
+  "key": "trend_atr_v2|er45_trail4|rb2610|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_trail4",
+  "freq": "1h",
+  "contract": "rb2610",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1287,
+  "totalReturn": -0.13,
+  "winRate": 22.22,
+  "tradeCount": 18,
+  "maxDrawdown": 0.33,
+  "finalEquity": 199731.13
+ },
+ {
+  "key": "trend_atr_v2|er45_trail4|fg609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_trail4",
+  "freq": "1h",
+  "contract": "fg609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": 0.45,
+  "winRate": 19.05,
+  "tradeCount": 21,
+  "maxDrawdown": 0.55,
+  "finalEquity": 200905.2
+ },
+ {
+  "key": "trend_atr_v2|er45_trail4|sa609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_trail4",
+  "freq": "1h",
+  "contract": "sa609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": 1.58,
+  "winRate": 38.46,
+  "tradeCount": 13,
+  "maxDrawdown": 0.06,
+  "finalEquity": 203160.09
+ },
+ {
+  "key": "trend_atr_v2|er45_trail4|sh609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_trail4",
+  "freq": "1h",
+  "contract": "sh609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": 0.46,
+  "winRate": 20.0,
+  "tradeCount": 20,
+  "maxDrawdown": 1.81,
+  "finalEquity": 200914.8
+ },
+ {
+  "key": "trend_atr_v2|er45_trail4|ma609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_trail4",
+  "freq": "1h",
+  "contract": "ma609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": -0.43,
+  "winRate": 22.22,
+  "tradeCount": 18,
+  "maxDrawdown": 1.57,
+  "finalEquity": 199142.29
+ },
+ {
+  "key": "trend_atr_v2|er45_trail4|eg2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_trail4",
+  "freq": "1h",
+  "contract": "eg2609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1341,
+  "totalReturn": 1.29,
+  "winRate": 20.0,
+  "tradeCount": 20,
+  "maxDrawdown": 2.24,
+  "finalEquity": 202572.39
+ },
+ {
+  "key": "trend_atr_v2|er45_trail4|ta609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_trail4",
+  "freq": "1h",
+  "contract": "ta609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": 0.27,
+  "winRate": 16.67,
+  "tradeCount": 18,
+  "maxDrawdown": 1.56,
+  "finalEquity": 200548.28
+ },
+ {
+  "key": "trend_atr_v2|er45_trail4|v2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_trail4",
+  "freq": "1h",
+  "contract": "v2609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": 0.43,
+  "winRate": 33.33,
+  "tradeCount": 18,
+  "maxDrawdown": 0.34,
+  "finalEquity": 200869.47
+ },
+ {
+  "key": "trend_atr_v2|er45_trail4|ec2608|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_trail4",
+  "freq": "1h",
+  "contract": "ec2608",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1080,
+  "totalReturn": -1.06,
+  "winRate": 15.38,
+  "tradeCount": 13,
+  "maxDrawdown": 2.51,
+  "finalEquity": 197883.28
+ },
+ {
+  "key": "trend_atr_v2|er45_trail4|sc2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_trail4",
+  "freq": "1h",
+  "contract": "sc2609",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 2623,
+  "totalReturn": -21.9,
+  "winRate": 15.79,
+  "tradeCount": 76,
+  "maxDrawdown": 44.23,
+  "finalEquity": 156192.4
+ },
+ {
+  "key": "trend_atr_v2|er45_trail4|fu2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_trail4",
+  "freq": "1h",
+  "contract": "fu2609",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1474,
+  "totalReturn": 7.32,
+  "winRate": 25.0,
+  "tradeCount": 20,
+  "maxDrawdown": 0.83,
+  "finalEquity": 214636.97
+ },
+ {
+  "key": "trend_atr_v2|er45_trail4|bu2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_trail4",
+  "freq": "1h",
+  "contract": "bu2609",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1682,
+  "totalReturn": 2.43,
+  "winRate": 23.68,
+  "tradeCount": 38,
+  "maxDrawdown": 0.83,
+  "finalEquity": 204859.9
+ },
+ {
+  "key": "trend_atr_v2|er45_trail4|pg2608|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_trail4",
+  "freq": "1h",
+  "contract": "pg2608",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1489,
+  "totalReturn": 4.43,
+  "winRate": 25.0,
+  "tradeCount": 44,
+  "maxDrawdown": 5.59,
+  "finalEquity": 208854.0
+ },
+ {
+  "key": "trend_atr_v2|er45_trail4|p2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_trail4",
+  "freq": "1h",
+  "contract": "p2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": -2.52,
+  "winRate": 5.0,
+  "tradeCount": 20,
+  "maxDrawdown": 2.72,
+  "finalEquity": 194953.22
+ },
+ {
+  "key": "trend_atr_v2|er45_trail4|y2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_trail4",
+  "freq": "1h",
+  "contract": "y2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": -2.81,
+  "winRate": 6.25,
+  "tradeCount": 16,
+  "maxDrawdown": 2.87,
+  "finalEquity": 194380.37
+ },
+ {
+  "key": "trend_atr_v2|er45_trail4|m2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_trail4",
+  "freq": "1h",
+  "contract": "m2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": -0.55,
+  "winRate": 16.67,
+  "tradeCount": 12,
+  "maxDrawdown": 0.67,
+  "finalEquity": 198903.88
+ },
+ {
+  "key": "trend_atr_v2|er45_trail4|c2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_trail4",
+  "freq": "1h",
+  "contract": "c2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": 0.39,
+  "winRate": 20.0,
+  "tradeCount": 15,
+  "maxDrawdown": 0.16,
+  "finalEquity": 200782.95
+ },
+ {
+  "key": "trend_atr_v2|er45_trail4|sr609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_trail4",
+  "freq": "1h",
+  "contract": "sr609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": -0.3,
+  "winRate": 17.39,
+  "tradeCount": 23,
+  "maxDrawdown": 1.16,
+  "finalEquity": 199408.02
+ },
+ {
+  "key": "trend_atr_v2|er45_trail4|cf609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_trail4",
+  "freq": "1h",
+  "contract": "cf609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": 0.34,
+  "winRate": 22.73,
+  "tradeCount": 22,
+  "maxDrawdown": 1.04,
+  "finalEquity": 200674.27
+ },
+ {
+  "key": "trend_atr_v2|er45_trail4|sp2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_trail4",
+  "freq": "1h",
+  "contract": "sp2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1397,
+  "totalReturn": -1.23,
+  "winRate": 13.64,
+  "tradeCount": 22,
+  "maxDrawdown": 1.52,
+  "finalEquity": 197545.15
+ },
+ {
+  "key": "trend_atr_v2|dc60_trail4|ao2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "dc60_trail4",
+  "freq": "1h",
+  "contract": "ao2609",
+  "sector": "黑色",
+  "params": {
+   "donchian_len": 60,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1788,
+  "totalReturn": -0.99,
+  "winRate": 15.79,
+  "tradeCount": 38,
+  "maxDrawdown": 2.43,
+  "finalEquity": 198013.93
+ },
+ {
+  "key": "trend_atr_v2|dc60_trail4|jm2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "dc60_trail4",
+  "freq": "1h",
+  "contract": "jm2609",
+  "sector": "黑色",
+  "params": {
+   "donchian_len": 60,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": -0.83,
+  "winRate": 17.86,
+  "tradeCount": 28,
+  "maxDrawdown": 4.44,
+  "finalEquity": 198345.27
+ },
+ {
+  "key": "trend_atr_v2|dc60_trail4|i2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "dc60_trail4",
+  "freq": "1h",
+  "contract": "i2609",
+  "sector": "黑色",
+  "params": {
+   "donchian_len": 60,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": -1.08,
+  "winRate": 17.65,
+  "tradeCount": 34,
+  "maxDrawdown": 2.65,
+  "finalEquity": 197846.32
+ },
+ {
+  "key": "trend_atr_v2|dc60_trail4|rb2610|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "dc60_trail4",
+  "freq": "1h",
+  "contract": "rb2610",
+  "sector": "黑色",
+  "params": {
+   "donchian_len": 60,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1287,
+  "totalReturn": -0.59,
+  "winRate": 15.62,
+  "tradeCount": 32,
+  "maxDrawdown": 0.77,
+  "finalEquity": 198828.46
+ },
+ {
+  "key": "trend_atr_v2|dc60_trail4|fg609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "dc60_trail4",
+  "freq": "1h",
+  "contract": "fg609",
+  "sector": "化工",
+  "params": {
+   "donchian_len": 60,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": 1.54,
+  "winRate": 24.14,
+  "tradeCount": 29,
+  "maxDrawdown": 0.68,
+  "finalEquity": 203076.97
+ },
+ {
+  "key": "trend_atr_v2|dc60_trail4|sa609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "dc60_trail4",
+  "freq": "1h",
+  "contract": "sa609",
+  "sector": "化工",
+  "params": {
+   "donchian_len": 60,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": 1.09,
+  "winRate": 22.22,
+  "tradeCount": 27,
+  "maxDrawdown": 0.74,
+  "finalEquity": 202184.5
+ },
+ {
+  "key": "trend_atr_v2|dc60_trail4|sh609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "dc60_trail4",
+  "freq": "1h",
+  "contract": "sh609",
+  "sector": "化工",
+  "params": {
+   "donchian_len": 60,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": 1.89,
+  "winRate": 17.86,
+  "tradeCount": 28,
+  "maxDrawdown": 2.13,
+  "finalEquity": 203781.88
+ },
+ {
+  "key": "trend_atr_v2|dc60_trail4|ma609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "dc60_trail4",
+  "freq": "1h",
+  "contract": "ma609",
+  "sector": "化工",
+  "params": {
+   "donchian_len": 60,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": -1.17,
+  "winRate": 12.5,
+  "tradeCount": 32,
+  "maxDrawdown": 2.19,
+  "finalEquity": 197668.67
+ },
+ {
+  "key": "trend_atr_v2|dc60_trail4|eg2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "dc60_trail4",
+  "freq": "1h",
+  "contract": "eg2609",
+  "sector": "化工",
+  "params": {
+   "donchian_len": 60,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1341,
+  "totalReturn": 2.23,
+  "winRate": 18.42,
+  "tradeCount": 38,
+  "maxDrawdown": 3.17,
+  "finalEquity": 204454.1
+ },
+ {
+  "key": "trend_atr_v2|dc60_trail4|ta609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "dc60_trail4",
+  "freq": "1h",
+  "contract": "ta609",
+  "sector": "化工",
+  "params": {
+   "donchian_len": 60,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": 0.91,
+  "winRate": 20.83,
+  "tradeCount": 24,
+  "maxDrawdown": 1.53,
+  "finalEquity": 201811.95
+ },
+ {
+  "key": "trend_atr_v2|dc60_trail4|v2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "dc60_trail4",
+  "freq": "1h",
+  "contract": "v2609",
+  "sector": "化工",
+  "params": {
+   "donchian_len": 60,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": 0.54,
+  "winRate": 18.75,
+  "tradeCount": 32,
+  "maxDrawdown": 0.8,
+  "finalEquity": 201089.16
+ },
+ {
+  "key": "trend_atr_v2|dc60_trail4|ec2608|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "dc60_trail4",
+  "freq": "1h",
+  "contract": "ec2608",
+  "sector": "能源",
+  "params": {
+   "donchian_len": 60,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1080,
+  "totalReturn": 1.91,
+  "winRate": 21.74,
+  "tradeCount": 23,
+  "maxDrawdown": 8.06,
+  "finalEquity": 203815.91
+ },
+ {
+  "key": "trend_atr_v2|dc60_trail4|sc2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "dc60_trail4",
+  "freq": "1h",
+  "contract": "sc2609",
+  "sector": "能源",
+  "params": {
+   "donchian_len": 60,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 2623,
+  "totalReturn": -67.32,
+  "winRate": 17.65,
+  "tradeCount": 102,
+  "maxDrawdown": 74.8,
+  "finalEquity": 65354.86
+ },
+ {
+  "key": "trend_atr_v2|dc60_trail4|fu2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "dc60_trail4",
+  "freq": "1h",
+  "contract": "fu2609",
+  "sector": "能源",
+  "params": {
+   "donchian_len": 60,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1474,
+  "totalReturn": 7.68,
+  "winRate": 21.05,
+  "tradeCount": 38,
+  "maxDrawdown": 1.1,
+  "finalEquity": 215360.1
+ },
+ {
+  "key": "trend_atr_v2|dc60_trail4|bu2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "dc60_trail4",
+  "freq": "1h",
+  "contract": "bu2609",
+  "sector": "能源",
+  "params": {
+   "donchian_len": 60,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1682,
+  "totalReturn": 3.8,
+  "winRate": 20.93,
+  "tradeCount": 43,
+  "maxDrawdown": 0.8,
+  "finalEquity": 207593.17
+ },
+ {
+  "key": "trend_atr_v2|dc60_trail4|pg2608|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "dc60_trail4",
+  "freq": "1h",
+  "contract": "pg2608",
+  "sector": "能源",
+  "params": {
+   "donchian_len": 60,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1489,
+  "totalReturn": 8.45,
+  "winRate": 23.21,
+  "tradeCount": 56,
+  "maxDrawdown": 6.37,
+  "finalEquity": 216902.95
+ },
+ {
+  "key": "trend_atr_v2|dc60_trail4|p2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "dc60_trail4",
+  "freq": "1h",
+  "contract": "p2609",
+  "sector": "农产品",
+  "params": {
+   "donchian_len": 60,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": 0.73,
+  "winRate": 22.73,
+  "tradeCount": 22,
+  "maxDrawdown": 1.52,
+  "finalEquity": 201457.26
+ },
+ {
+  "key": "trend_atr_v2|dc60_trail4|y2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "dc60_trail4",
+  "freq": "1h",
+  "contract": "y2609",
+  "sector": "农产品",
+  "params": {
+   "donchian_len": 60,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": 0.16,
+  "winRate": 15.0,
+  "tradeCount": 20,
+  "maxDrawdown": 1.48,
+  "finalEquity": 200313.22
+ },
+ {
+  "key": "trend_atr_v2|dc60_trail4|m2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "dc60_trail4",
+  "freq": "1h",
+  "contract": "m2609",
+  "sector": "农产品",
+  "params": {
+   "donchian_len": 60,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": -0.34,
+  "winRate": 16.0,
+  "tradeCount": 25,
+  "maxDrawdown": 0.65,
+  "finalEquity": 199313.44
+ },
+ {
+  "key": "trend_atr_v2|dc60_trail4|c2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "dc60_trail4",
+  "freq": "1h",
+  "contract": "c2609",
+  "sector": "农产品",
+  "params": {
+   "donchian_len": 60,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": 0.1,
+  "winRate": 9.68,
+  "tradeCount": 31,
+  "maxDrawdown": 0.31,
+  "finalEquity": 200202.6
+ },
+ {
+  "key": "trend_atr_v2|dc60_trail4|sr609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "dc60_trail4",
+  "freq": "1h",
+  "contract": "sr609",
+  "sector": "农产品",
+  "params": {
+   "donchian_len": 60,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": -0.69,
+  "winRate": 10.34,
+  "tradeCount": 29,
+  "maxDrawdown": 1.43,
+  "finalEquity": 198620.89
+ },
+ {
+  "key": "trend_atr_v2|dc60_trail4|cf609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "dc60_trail4",
+  "freq": "1h",
+  "contract": "cf609",
+  "sector": "农产品",
+  "params": {
+   "donchian_len": 60,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": -0.93,
+  "winRate": 16.67,
+  "tradeCount": 30,
+  "maxDrawdown": 2.57,
+  "finalEquity": 198143.95
+ },
+ {
+  "key": "trend_atr_v2|dc60_trail4|sp2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "dc60_trail4",
+  "freq": "1h",
+  "contract": "sp2609",
+  "sector": "农产品",
+  "params": {
+   "donchian_len": 60,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1397,
+  "totalReturn": -0.51,
+  "winRate": 17.86,
+  "tradeCount": 28,
+  "maxDrawdown": 1.55,
+  "finalEquity": 198970.26
+ },
+ {
+  "key": "trend_atr_v2|er_conf2_trail4|ao2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_conf2_trail4",
+  "freq": "1h",
+  "contract": "ao2609",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "confirm_bars": 2,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1788,
+  "totalReturn": -1.73,
+  "winRate": 12.5,
+  "tradeCount": 24,
+  "maxDrawdown": 2.63,
+  "finalEquity": 196538.46
+ },
+ {
+  "key": "trend_atr_v2|er_conf2_trail4|jm2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_conf2_trail4",
+  "freq": "1h",
+  "contract": "jm2609",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "confirm_bars": 2,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": -5.19,
+  "winRate": 10.0,
+  "tradeCount": 20,
+  "maxDrawdown": 5.68,
+  "finalEquity": 189616.44
+ },
+ {
+  "key": "trend_atr_v2|er_conf2_trail4|i2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_conf2_trail4",
+  "freq": "1h",
+  "contract": "i2609",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "confirm_bars": 2,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": -0.78,
+  "winRate": 11.54,
+  "tradeCount": 26,
+  "maxDrawdown": 1.6,
+  "finalEquity": 198439.0
+ },
+ {
+  "key": "trend_atr_v2|er_conf2_trail4|rb2610|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_conf2_trail4",
+  "freq": "1h",
+  "contract": "rb2610",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "confirm_bars": 2,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1287,
+  "totalReturn": -0.27,
+  "winRate": 27.78,
+  "tradeCount": 18,
+  "maxDrawdown": 0.37,
+  "finalEquity": 199464.71
+ },
+ {
+  "key": "trend_atr_v2|er_conf2_trail4|fg609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_conf2_trail4",
+  "freq": "1h",
+  "contract": "fg609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "confirm_bars": 2,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": 1.53,
+  "winRate": 36.84,
+  "tradeCount": 19,
+  "maxDrawdown": 0.22,
+  "finalEquity": 203051.42
+ },
+ {
+  "key": "trend_atr_v2|er_conf2_trail4|sa609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_conf2_trail4",
+  "freq": "1h",
+  "contract": "sa609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "confirm_bars": 2,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": 0.73,
+  "winRate": 23.53,
+  "tradeCount": 17,
+  "maxDrawdown": 0.43,
+  "finalEquity": 201464.41
+ },
+ {
+  "key": "trend_atr_v2|er_conf2_trail4|sh609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_conf2_trail4",
+  "freq": "1h",
+  "contract": "sh609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "confirm_bars": 2,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": 0.11,
+  "winRate": 25.0,
+  "tradeCount": 20,
+  "maxDrawdown": 3.18,
+  "finalEquity": 200213.06
+ },
+ {
+  "key": "trend_atr_v2|er_conf2_trail4|ma609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_conf2_trail4",
+  "freq": "1h",
+  "contract": "ma609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "confirm_bars": 2,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": -0.28,
+  "winRate": 10.0,
+  "tradeCount": 20,
+  "maxDrawdown": 1.85,
+  "finalEquity": 199434.66
+ },
+ {
+  "key": "trend_atr_v2|er_conf2_trail4|eg2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_conf2_trail4",
+  "freq": "1h",
+  "contract": "eg2609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "confirm_bars": 2,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1341,
+  "totalReturn": -0.19,
+  "winRate": 9.38,
+  "tradeCount": 32,
+  "maxDrawdown": 3.25,
+  "finalEquity": 199612.37
+ },
+ {
+  "key": "trend_atr_v2|er_conf2_trail4|ta609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_conf2_trail4",
+  "freq": "1h",
+  "contract": "ta609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "confirm_bars": 2,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": -0.97,
+  "winRate": 15.0,
+  "tradeCount": 20,
+  "maxDrawdown": 1.86,
+  "finalEquity": 198061.8
+ },
+ {
+  "key": "trend_atr_v2|er_conf2_trail4|v2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_conf2_trail4",
+  "freq": "1h",
+  "contract": "v2609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "confirm_bars": 2,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": 0.2,
+  "winRate": 20.0,
+  "tradeCount": 20,
+  "maxDrawdown": 0.45,
+  "finalEquity": 200394.07
+ },
+ {
+  "key": "trend_atr_v2|er_conf2_trail4|ec2608|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_conf2_trail4",
+  "freq": "1h",
+  "contract": "ec2608",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "confirm_bars": 2,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1080,
+  "totalReturn": 8.3,
+  "winRate": 33.33,
+  "tradeCount": 9,
+  "maxDrawdown": 0.59,
+  "finalEquity": 216600.4
+ },
+ {
+  "key": "trend_atr_v2|er_conf2_trail4|sc2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_conf2_trail4",
+  "freq": "1h",
+  "contract": "sc2609",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "confirm_bars": 2,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 2623,
+  "totalReturn": -34.87,
+  "winRate": 20.83,
+  "tradeCount": 72,
+  "maxDrawdown": 51.58,
+  "finalEquity": 130261.26
+ },
+ {
+  "key": "trend_atr_v2|er_conf2_trail4|fu2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_conf2_trail4",
+  "freq": "1h",
+  "contract": "fu2609",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "confirm_bars": 2,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1474,
+  "totalReturn": 5.66,
+  "winRate": 25.0,
+  "tradeCount": 24,
+  "maxDrawdown": 0.63,
+  "finalEquity": 211319.13
+ },
+ {
+  "key": "trend_atr_v2|er_conf2_trail4|bu2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_conf2_trail4",
+  "freq": "1h",
+  "contract": "bu2609",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "confirm_bars": 2,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1682,
+  "totalReturn": 1.88,
+  "winRate": 21.62,
+  "tradeCount": 37,
+  "maxDrawdown": 0.83,
+  "finalEquity": 203758.59
+ },
+ {
+  "key": "trend_atr_v2|er_conf2_trail4|pg2608|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_conf2_trail4",
+  "freq": "1h",
+  "contract": "pg2608",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "confirm_bars": 2,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1489,
+  "totalReturn": 2.91,
+  "winRate": 15.0,
+  "tradeCount": 40,
+  "maxDrawdown": 1.69,
+  "finalEquity": 205814.77
+ },
+ {
+  "key": "trend_atr_v2|er_conf2_trail4|p2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_conf2_trail4",
+  "freq": "1h",
+  "contract": "p2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "confirm_bars": 2,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": 0.44,
+  "winRate": 25.0,
+  "tradeCount": 16,
+  "maxDrawdown": 1.11,
+  "finalEquity": 200870.35
+ },
+ {
+  "key": "trend_atr_v2|er_conf2_trail4|y2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_conf2_trail4",
+  "freq": "1h",
+  "contract": "y2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "confirm_bars": 2,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": -0.51,
+  "winRate": 16.67,
+  "tradeCount": 12,
+  "maxDrawdown": 0.73,
+  "finalEquity": 198982.08
+ },
+ {
+  "key": "trend_atr_v2|er_conf2_trail4|m2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_conf2_trail4",
+  "freq": "1h",
+  "contract": "m2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "confirm_bars": 2,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": -0.32,
+  "winRate": 10.0,
+  "tradeCount": 10,
+  "maxDrawdown": 0.37,
+  "finalEquity": 199365.07
+ },
+ {
+  "key": "trend_atr_v2|er_conf2_trail4|c2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_conf2_trail4",
+  "freq": "1h",
+  "contract": "c2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "confirm_bars": 2,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": 0.24,
+  "winRate": 14.29,
+  "tradeCount": 21,
+  "maxDrawdown": 0.24,
+  "finalEquity": 200475.5
+ },
+ {
+  "key": "trend_atr_v2|er_conf2_trail4|sr609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_conf2_trail4",
+  "freq": "1h",
+  "contract": "sr609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "confirm_bars": 2,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": -0.1,
+  "winRate": 21.05,
+  "tradeCount": 19,
+  "maxDrawdown": 0.95,
+  "finalEquity": 199800.84
+ },
+ {
+  "key": "trend_atr_v2|er_conf2_trail4|cf609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_conf2_trail4",
+  "freq": "1h",
+  "contract": "cf609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "confirm_bars": 2,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1404,
+  "totalReturn": -0.24,
+  "winRate": 20.0,
+  "tradeCount": 20,
+  "maxDrawdown": 1.01,
+  "finalEquity": 199514.36
+ },
+ {
+  "key": "trend_atr_v2|er_conf2_trail4|sp2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er_conf2_trail4",
+  "freq": "1h",
+  "contract": "sp2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "confirm_bars": 2,
+   "init_sl_atr": 2.5,
+   "trail_atr": 4.0
+  },
+  "bars": 1397,
+  "totalReturn": -0.41,
+  "winRate": 20.0,
+  "tradeCount": 20,
+  "maxDrawdown": 1.26,
+  "finalEquity": 199174.54
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|ao2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "1h",
+  "contract": "ao2609",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 1788,
+  "totalReturn": 1.01,
+  "winRate": 20.0,
+  "tradeCount": 20,
+  "maxDrawdown": 0.81,
+  "finalEquity": 202021.32
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|jm2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "1h",
+  "contract": "jm2609",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 1404,
+  "totalReturn": -3.79,
+  "winRate": 5.56,
+  "tradeCount": 18,
+  "maxDrawdown": 4.72,
+  "finalEquity": 192419.26
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|i2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "1h",
+  "contract": "i2609",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 1404,
+  "totalReturn": -3.41,
+  "winRate": 0.0,
+  "tradeCount": 24,
+  "maxDrawdown": 3.41,
+  "finalEquity": 193175.75
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|rb2610|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "1h",
+  "contract": "rb2610",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 1287,
+  "totalReturn": 0.1,
+  "winRate": 33.33,
+  "tradeCount": 18,
+  "maxDrawdown": 0.27,
+  "finalEquity": 200206.84
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|fg609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "1h",
+  "contract": "fg609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 1404,
+  "totalReturn": 0.71,
+  "winRate": 17.39,
+  "tradeCount": 23,
+  "maxDrawdown": 0.42,
+  "finalEquity": 201410.74
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|sa609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "1h",
+  "contract": "sa609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 1404,
+  "totalReturn": 1.4,
+  "winRate": 46.67,
+  "tradeCount": 15,
+  "maxDrawdown": 0.01,
+  "finalEquity": 202809.27
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|sh609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "1h",
+  "contract": "sh609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 1404,
+  "totalReturn": 1.54,
+  "winRate": 25.0,
+  "tradeCount": 20,
+  "maxDrawdown": 0.85,
+  "finalEquity": 203079.0
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|ma609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "1h",
+  "contract": "ma609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 1404,
+  "totalReturn": -0.27,
+  "winRate": 22.22,
+  "tradeCount": 18,
+  "maxDrawdown": 1.14,
+  "finalEquity": 199453.18
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|eg2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "1h",
+  "contract": "eg2609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 1341,
+  "totalReturn": 2.87,
+  "winRate": 20.0,
+  "tradeCount": 20,
+  "maxDrawdown": 1.61,
+  "finalEquity": 205740.1
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|ta609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "1h",
+  "contract": "ta609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 1404,
+  "totalReturn": 0.71,
+  "winRate": 15.0,
+  "tradeCount": 20,
+  "maxDrawdown": 1.25,
+  "finalEquity": 201429.62
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|v2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "1h",
+  "contract": "v2609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 1404,
+  "totalReturn": 0.16,
+  "winRate": 33.33,
+  "tradeCount": 18,
+  "maxDrawdown": 0.61,
+  "finalEquity": 200322.36
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|ec2608|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "1h",
+  "contract": "ec2608",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 1080,
+  "totalReturn": 5.0,
+  "winRate": 23.08,
+  "tradeCount": 13,
+  "maxDrawdown": 1.5,
+  "finalEquity": 209996.93
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|sc2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "1h",
+  "contract": "sc2609",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 2623,
+  "totalReturn": -13.07,
+  "winRate": 17.07,
+  "tradeCount": 82,
+  "maxDrawdown": 36.42,
+  "finalEquity": 173850.73
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|fu2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "1h",
+  "contract": "fu2609",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 1474,
+  "totalReturn": 3.75,
+  "winRate": 25.0,
+  "tradeCount": 24,
+  "maxDrawdown": 0.71,
+  "finalEquity": 207502.21
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|bu2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "1h",
+  "contract": "bu2609",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 1682,
+  "totalReturn": 1.02,
+  "winRate": 25.0,
+  "tradeCount": 44,
+  "maxDrawdown": 0.6,
+  "finalEquity": 202039.07
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|pg2608|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "1h",
+  "contract": "pg2608",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 1489,
+  "totalReturn": 4.48,
+  "winRate": 22.0,
+  "tradeCount": 50,
+  "maxDrawdown": 6.64,
+  "finalEquity": 208966.03
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|p2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "1h",
+  "contract": "p2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 1404,
+  "totalReturn": -2.06,
+  "winRate": 13.64,
+  "tradeCount": 22,
+  "maxDrawdown": 2.43,
+  "finalEquity": 195885.1
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|y2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "1h",
+  "contract": "y2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 1404,
+  "totalReturn": -2.61,
+  "winRate": 0.0,
+  "tradeCount": 18,
+  "maxDrawdown": 2.61,
+  "finalEquity": 194779.47
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|m2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "1h",
+  "contract": "m2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 1404,
+  "totalReturn": -0.32,
+  "winRate": 16.67,
+  "tradeCount": 12,
+  "maxDrawdown": 0.43,
+  "finalEquity": 199354.93
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|c2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "1h",
+  "contract": "c2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 1404,
+  "totalReturn": -0.02,
+  "winRate": 23.81,
+  "tradeCount": 21,
+  "maxDrawdown": 0.17,
+  "finalEquity": 199962.79
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|sr609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "1h",
+  "contract": "sr609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 1404,
+  "totalReturn": -0.12,
+  "winRate": 28.57,
+  "tradeCount": 28,
+  "maxDrawdown": 0.74,
+  "finalEquity": 199763.24
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|cf609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "1h",
+  "contract": "cf609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 1404,
+  "totalReturn": -0.62,
+  "winRate": 25.0,
+  "tradeCount": 24,
+  "maxDrawdown": 1.27,
+  "finalEquity": 198765.66
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|sp2609|1h",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "1h",
+  "contract": "sp2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 1397,
+  "totalReturn": -0.41,
+  "winRate": 18.18,
+  "tradeCount": 22,
+  "maxDrawdown": 1.09,
+  "finalEquity": 199182.32
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|ao2609|30m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "30m",
+  "contract": "ao2609",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 3173,
+  "totalReturn": -0.78,
+  "winRate": 16.67,
+  "tradeCount": 42,
+  "maxDrawdown": 1.61,
+  "finalEquity": 198431.18
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|jm2609|30m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "30m",
+  "contract": "jm2609",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 2404,
+  "totalReturn": -7.45,
+  "winRate": 13.64,
+  "tradeCount": 44,
+  "maxDrawdown": 7.79,
+  "finalEquity": 185098.22
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|i2609|30m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "30m",
+  "contract": "i2609",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 2404,
+  "totalReturn": -1.66,
+  "winRate": 18.42,
+  "tradeCount": 38,
+  "maxDrawdown": 2.53,
+  "finalEquity": 196675.69
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|rb2610|30m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "30m",
+  "contract": "rb2610",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 2204,
+  "totalReturn": 0.09,
+  "winRate": 24.24,
+  "tradeCount": 33,
+  "maxDrawdown": 0.42,
+  "finalEquity": 200186.18
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|fg609|30m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "30m",
+  "contract": "fg609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 2404,
+  "totalReturn": -0.9,
+  "winRate": 17.65,
+  "tradeCount": 51,
+  "maxDrawdown": 1.26,
+  "finalEquity": 198196.7
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|sa609|30m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "30m",
+  "contract": "sa609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 2404,
+  "totalReturn": -0.39,
+  "winRate": 17.14,
+  "tradeCount": 35,
+  "maxDrawdown": 0.7,
+  "finalEquity": 199215.96
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|sh609|30m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "30m",
+  "contract": "sh609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 2404,
+  "totalReturn": -1.02,
+  "winRate": 23.68,
+  "tradeCount": 38,
+  "maxDrawdown": 2.7,
+  "finalEquity": 197961.85
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|ma609|30m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "30m",
+  "contract": "ma609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 2404,
+  "totalReturn": 0.4,
+  "winRate": 15.0,
+  "tradeCount": 40,
+  "maxDrawdown": 0.72,
+  "finalEquity": 200799.07
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|eg2609|30m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "30m",
+  "contract": "eg2609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 2295,
+  "totalReturn": -1.18,
+  "winRate": 21.15,
+  "tradeCount": 52,
+  "maxDrawdown": 2.71,
+  "finalEquity": 197630.34
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|ta609|30m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "30m",
+  "contract": "ta609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 2404,
+  "totalReturn": 0.06,
+  "winRate": 18.75,
+  "tradeCount": 32,
+  "maxDrawdown": 1.43,
+  "finalEquity": 200126.27
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|v2609|30m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "30m",
+  "contract": "v2609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 2404,
+  "totalReturn": -0.42,
+  "winRate": 21.43,
+  "tradeCount": 42,
+  "maxDrawdown": 0.79,
+  "finalEquity": 199168.27
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|ec2608|30m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "30m",
+  "contract": "ec2608",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 1728,
+  "totalReturn": 7.37,
+  "winRate": 22.22,
+  "tradeCount": 27,
+  "maxDrawdown": 2.78,
+  "finalEquity": 214744.79
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|sc2609|30m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "30m",
+  "contract": "sc2609",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 4527,
+  "totalReturn": -24.49,
+  "winRate": 17.26,
+  "tradeCount": 168,
+  "maxDrawdown": 44.62,
+  "finalEquity": 151027.89
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|fu2609|30m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "30m",
+  "contract": "fu2609",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 2524,
+  "totalReturn": 1.37,
+  "winRate": 25.0,
+  "tradeCount": 60,
+  "maxDrawdown": 1.32,
+  "finalEquity": 202739.23
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|bu2609|30m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "30m",
+  "contract": "bu2609",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 2880,
+  "totalReturn": 1.94,
+  "winRate": 25.0,
+  "tradeCount": 68,
+  "maxDrawdown": 0.34,
+  "finalEquity": 203879.72
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|pg2608|30m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "30m",
+  "contract": "pg2608",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 2549,
+  "totalReturn": 0.38,
+  "winRate": 15.69,
+  "tradeCount": 102,
+  "maxDrawdown": 4.39,
+  "finalEquity": 200757.28
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|p2609|30m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "30m",
+  "contract": "p2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 2404,
+  "totalReturn": -2.08,
+  "winRate": 11.54,
+  "tradeCount": 26,
+  "maxDrawdown": 2.17,
+  "finalEquity": 195840.05
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|y2609|30m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "30m",
+  "contract": "y2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 2404,
+  "totalReturn": -2.59,
+  "winRate": 14.71,
+  "tradeCount": 34,
+  "maxDrawdown": 2.62,
+  "finalEquity": 194821.25
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|m2609|30m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "30m",
+  "contract": "m2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 2404,
+  "totalReturn": -0.35,
+  "winRate": 6.67,
+  "tradeCount": 30,
+  "maxDrawdown": 0.39,
+  "finalEquity": 199300.24
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|c2609|30m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "30m",
+  "contract": "c2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 2404,
+  "totalReturn": -0.38,
+  "winRate": 8.11,
+  "tradeCount": 37,
+  "maxDrawdown": 0.49,
+  "finalEquity": 199235.44
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|sr609|30m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "30m",
+  "contract": "sr609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 2404,
+  "totalReturn": -0.47,
+  "winRate": 15.22,
+  "tradeCount": 46,
+  "maxDrawdown": 0.77,
+  "finalEquity": 199054.28
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|cf609|30m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "30m",
+  "contract": "cf609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 2404,
+  "totalReturn": -1.01,
+  "winRate": 21.05,
+  "tradeCount": 38,
+  "maxDrawdown": 1.59,
+  "finalEquity": 197984.98
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|sp2609|30m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "30m",
+  "contract": "sp2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 2392,
+  "totalReturn": -0.29,
+  "winRate": 19.57,
+  "tradeCount": 46,
+  "maxDrawdown": 1.85,
+  "finalEquity": 199415.61
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|ao2609|15m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "15m",
+  "contract": "ao2609",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 6145,
+  "totalReturn": -1.37,
+  "winRate": 19.81,
+  "tradeCount": 106,
+  "maxDrawdown": 1.7,
+  "finalEquity": 197255.24
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|jm2609|15m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "15m",
+  "contract": "jm2609",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 4606,
+  "totalReturn": -0.28,
+  "winRate": 20.27,
+  "tradeCount": 74,
+  "maxDrawdown": 2.94,
+  "finalEquity": 199443.32
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|i2609|15m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "15m",
+  "contract": "i2609",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 4606,
+  "totalReturn": 0.47,
+  "winRate": 24.14,
+  "tradeCount": 58,
+  "maxDrawdown": 1.48,
+  "finalEquity": 200946.49
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|rb2610|15m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "15m",
+  "contract": "rb2610",
+  "sector": "黑色",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 4223,
+  "totalReturn": -0.0,
+  "winRate": 19.12,
+  "tradeCount": 68,
+  "maxDrawdown": 0.52,
+  "finalEquity": 199995.29
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|fg609|15m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "15m",
+  "contract": "fg609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 4606,
+  "totalReturn": 0.61,
+  "winRate": 21.74,
+  "tradeCount": 69,
+  "maxDrawdown": 0.57,
+  "finalEquity": 201229.44
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|sa609|15m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "15m",
+  "contract": "sa609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 4606,
+  "totalReturn": -0.45,
+  "winRate": 16.07,
+  "tradeCount": 56,
+  "maxDrawdown": 1.42,
+  "finalEquity": 199103.98
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|sh609|15m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "15m",
+  "contract": "sh609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 4606,
+  "totalReturn": -4.85,
+  "winRate": 11.63,
+  "tradeCount": 86,
+  "maxDrawdown": 5.05,
+  "finalEquity": 190304.32
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|ma609|15m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "15m",
+  "contract": "ma609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 4606,
+  "totalReturn": -0.92,
+  "winRate": 19.77,
+  "tradeCount": 86,
+  "maxDrawdown": 1.43,
+  "finalEquity": 198155.01
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|eg2609|15m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "15m",
+  "contract": "eg2609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 4397,
+  "totalReturn": -2.85,
+  "winRate": 12.9,
+  "tradeCount": 124,
+  "maxDrawdown": 3.45,
+  "finalEquity": 194304.85
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|ta609|15m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "15m",
+  "contract": "ta609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 4606,
+  "totalReturn": -0.73,
+  "winRate": 17.57,
+  "tradeCount": 74,
+  "maxDrawdown": 0.96,
+  "finalEquity": 198530.97
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|v2609|15m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "15m",
+  "contract": "v2609",
+  "sector": "化工",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 4605,
+  "totalReturn": -0.38,
+  "winRate": 20.27,
+  "tradeCount": 74,
+  "maxDrawdown": 0.8,
+  "finalEquity": 199231.21
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|ec2608|15m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "15m",
+  "contract": "ec2608",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 3240,
+  "totalReturn": 12.74,
+  "winRate": 18.18,
+  "tradeCount": 55,
+  "maxDrawdown": 3.64,
+  "finalEquity": 225478.94
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|sc2609|15m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "15m",
+  "contract": "sc2609",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 7944,
+  "totalReturn": 48.11,
+  "winRate": 21.14,
+  "tradeCount": 298,
+  "maxDrawdown": 8.33,
+  "finalEquity": 296218.14
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|fu2609|15m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "15m",
+  "contract": "fu2609",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 4836,
+  "totalReturn": 4.45,
+  "winRate": 16.94,
+  "tradeCount": 124,
+  "maxDrawdown": 0.82,
+  "finalEquity": 208893.21
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|bu2609|15m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "15m",
+  "contract": "bu2609",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 5518,
+  "totalReturn": 0.46,
+  "winRate": 19.9,
+  "tradeCount": 196,
+  "maxDrawdown": 1.69,
+  "finalEquity": 200925.01
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|pg2608|15m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "15m",
+  "contract": "pg2608",
+  "sector": "能源",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 4883,
+  "totalReturn": -1.07,
+  "winRate": 20.27,
+  "tradeCount": 222,
+  "maxDrawdown": 7.37,
+  "finalEquity": 197851.7
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|p2609|15m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "15m",
+  "contract": "p2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 4606,
+  "totalReturn": -4.34,
+  "winRate": 15.38,
+  "tradeCount": 78,
+  "maxDrawdown": 5.37,
+  "finalEquity": 191325.4
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|y2609|15m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "15m",
+  "contract": "y2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 4605,
+  "totalReturn": -1.17,
+  "winRate": 17.14,
+  "tradeCount": 70,
+  "maxDrawdown": 2.17,
+  "finalEquity": 197660.03
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|m2609|15m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "15m",
+  "contract": "m2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 4606,
+  "totalReturn": -0.32,
+  "winRate": 18.52,
+  "tradeCount": 54,
+  "maxDrawdown": 0.68,
+  "finalEquity": 199366.33
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|c2609|15m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "15m",
+  "contract": "c2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 4606,
+  "totalReturn": -0.01,
+  "winRate": 22.22,
+  "tradeCount": 63,
+  "maxDrawdown": 0.2,
+  "finalEquity": 199979.65
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|sr609|15m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "15m",
+  "contract": "sr609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 4606,
+  "totalReturn": -0.47,
+  "winRate": 17.65,
+  "tradeCount": 68,
+  "maxDrawdown": 1.03,
+  "finalEquity": 199062.98
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|cf609|15m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "15m",
+  "contract": "cf609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 4606,
+  "totalReturn": -1.28,
+  "winRate": 14.06,
+  "tradeCount": 64,
+  "maxDrawdown": 1.94,
+  "finalEquity": 197438.58
+ },
+ {
+  "key": "trend_atr_v2|er45_v1|sp2609|15m",
+  "strategy": "trend_atr_v2",
+  "tag": "er45_v1",
+  "freq": "15m",
+  "contract": "sp2609",
+  "sector": "农产品",
+  "params": {
+   "use_er": 1,
+   "er_threshold": 0.45
+  },
+  "bars": 4583,
+  "totalReturn": -1.24,
+  "winRate": 15.22,
+  "tradeCount": 92,
+  "maxDrawdown": 1.7,
+  "finalEquity": 197512.32
+ }
+]

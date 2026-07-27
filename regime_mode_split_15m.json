@@ -1,0 +1,163 @@
+{
+ "ao2609": {
+  "ret": -2.23,
+  "trend_pnl": -3818.0,
+  "trend_n": 83,
+  "rev_pnl": -11.0,
+  "rev_n": 28
+ },
+ "jm2609": {
+  "ret": 0.38,
+  "trend_pnl": -1843.0,
+  "trend_n": 55,
+  "rev_pnl": 3168.0,
+  "rev_n": 19
+ },
+ "i2609": {
+  "ret": 1.4,
+  "trend_pnl": 1040.0,
+  "trend_n": 45,
+  "rev_pnl": 2363.0,
+  "rev_n": 34
+ },
+ "rb2610": {
+  "ret": -0.33,
+  "trend_pnl": -320.0,
+  "trend_n": 44,
+  "rev_pnl": -138.0,
+  "rev_n": 22
+ },
+ "fg609": {
+  "ret": 0.27,
+  "trend_pnl": 890.0,
+  "trend_n": 52,
+  "rev_pnl": -207.0,
+  "rev_n": 9
+ },
+ "sa609": {
+  "ret": -1.81,
+  "trend_pnl": -3019.0,
+  "trend_n": 53,
+  "rev_pnl": -428.0,
+  "rev_n": 12
+ },
+ "sh609": {
+  "ret": -4.96,
+  "trend_pnl": -9817.0,
+  "trend_n": 70,
+  "rev_pnl": 501.0,
+  "rev_n": 16
+ },
+ "ma609": {
+  "ret": -1.05,
+  "trend_pnl": -2064.0,
+  "trend_n": 55,
+  "rev_pnl": 133.0,
+  "rev_n": 12
+ },
+ "eg2609": {
+  "ret": -3.49,
+  "trend_pnl": -5997.0,
+  "trend_n": 80,
+  "rev_pnl": -608.0,
+  "rev_n": 9
+ },
+ "ta609": {
+  "ret": -2.65,
+  "trend_pnl": -4830.0,
+  "trend_n": 58,
+  "rev_pnl": -245.0,
+  "rev_n": 21
+ },
+ "v2609": {
+  "ret": -1.85,
+  "trend_pnl": -3531.0,
+  "trend_n": 68,
+  "rev_pnl": 62.0,
+  "rev_n": 21
+ },
+ "ec2608": {
+  "ret": 10.6,
+  "trend_pnl": 20622.0,
+  "trend_n": 38,
+  "rev_pnl": 1108.0,
+  "rev_n": 11
+ },
+ "sc2609": {
+  "ret": 3.71,
+  "trend_pnl": 23022.0,
+  "trend_n": 172,
+  "rev_pnl": -5987.0,
+  "rev_n": 17
+ },
+ "fu2609": {
+  "ret": 4.31,
+  "trend_pnl": 10206.0,
+  "trend_n": 82,
+  "rev_pnl": -1280.0,
+  "rev_n": 15
+ },
+ "bu2609": {
+  "ret": 1.87,
+  "trend_pnl": 5176.0,
+  "trend_n": 112,
+  "rev_pnl": -980.0,
+  "rev_n": 18
+ },
+ "pg2608": {
+  "ret": 11.63,
+  "trend_pnl": 27786.0,
+  "trend_n": 126,
+  "rev_pnl": -3340.0,
+  "rev_n": 8
+ },
+ "p2609": {
+  "ret": -5.39,
+  "trend_pnl": -8958.0,
+  "trend_n": 63,
+  "rev_pnl": -1114.0,
+  "rev_n": 16
+ },
+ "y2609": {
+  "ret": -4.27,
+  "trend_pnl": -7447.0,
+  "trend_n": 62,
+  "rev_pnl": -414.0,
+  "rev_n": 21
+ },
+ "m2609": {
+  "ret": -0.2,
+  "trend_pnl": -184.0,
+  "trend_n": 48,
+  "rev_pnl": -36.0,
+  "rev_n": 13
+ },
+ "c2609": {
+  "ret": -0.25,
+  "trend_pnl": -295.0,
+  "trend_n": 52,
+  "rev_pnl": -49.0,
+  "rev_n": 17
+ },
+ "sr609": {
+  "ret": -0.1,
+  "trend_pnl": 85.0,
+  "trend_n": 54,
+  "rev_pnl": 110.0,
+  "rev_n": 20
+ },
+ "cf609": {
+  "ret": -1.94,
+  "trend_pnl": -3570.0,
+  "trend_n": 52,
+  "rev_pnl": 232.0,
+  "rev_n": 20
+ },
+ "sp2609": {
+  "ret": -1.58,
+  "trend_pnl": -3396.0,
+  "trend_n": 60,
+  "rev_pnl": 628.0,
+  "rev_n": 17
+ }
+}

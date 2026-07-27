@@ -1,0 +1,110 @@
+[
+  {
+    "strategy": "eagle_ladder_k",
+    "pnl": -5796.15,
+    "trades": 374,
+    "win_rate": 21.39,
+    "note": "6.9s",
+    "final_equity": 4203.85,
+    "max_drawdown": 58.85
+  },
+  {
+    "strategy": "eagle_ladder_k_adx",
+    "pnl": -3366.03,
+    "trades": 316,
+    "win_rate": 22.15,
+    "note": "6.6s",
+    "final_equity": 6633.97,
+    "max_drawdown": 35.07
+  },
+  {
+    "strategy": "ladder_double_k",
+    "pnl": -3944.11,
+    "trades": 241,
+    "win_rate": 21.99,
+    "note": "6.5s",
+    "final_equity": 6055.89,
+    "max_drawdown": 51.06
+  },
+  {
+    "strategy": "ladder_double_k_be",
+    "pnl": -7301.36,
+    "trades": 415,
+    "win_rate": 10.84,
+    "note": "6.5s",
+    "final_equity": 2698.64,
+    "max_drawdown": 86.81
+  },
+  {
+    "strategy": "mean_revert",
+    "pnl": -669.87,
+    "trades": 72,
+    "win_rate": 29.17,
+    "note": "3.4s",
+    "final_equity": 9330.13,
+    "max_drawdown": 9.07
+  },
+  {
+    "strategy": "regime_adaptive",
+    "pnl": -1515.34,
+    "trades": 102,
+    "win_rate": 18.63,
+    "note": "3.3s",
+    "final_equity": 8484.66,
+    "max_drawdown": 18.5
+  },
+  {
+    "strategy": "regime_adaptive_final",
+    "pnl": -5852.61,
+    "trades": 149,
+    "win_rate": 13.42,
+    "note": "2.6s",
+    "final_equity": 4147.39,
+    "max_drawdown": 59.23
+  },
+  {
+    "strategy": "rsi2_revert",
+    "pnl": -1147.67,
+    "trades": 193,
+    "win_rate": 31.61,
+    "note": "9.4s",
+    "final_equity": 8852.33,
+    "max_drawdown": 13.43
+  },
+  {
+    "strategy": "streak_revert",
+    "pnl": -3841.38,
+    "trades": 452,
+    "win_rate": 29.87,
+    "note": "2.5s",
+    "final_equity": 6158.62,
+    "max_drawdown": 39.35
+  },
+  {
+    "strategy": "trend_atr",
+    "pnl": -2347.25,
+    "trades": 144,
+    "win_rate": 13.89,
+    "note": "3.9s",
+    "final_equity": 7652.75,
+    "max_drawdown": 28.28
+  },
+  {
+    "strategy": "trend_atr_v2",
+    "pnl": -1059.86,
+    "trades": 56,
+    "win_rate": 17.86,
+    "note": "4.3s",
+    "final_equity": 8940.14,
+    "max_drawdown": 14.82
+  },
+  {
+    "strategy": "vwap_revert",
+    "pnl": -1192.69,
+    "trades": 162,
+    "win_rate": 27.16,
+    "note": "2.6s",
+    "final_equity": 8807.31,
+    "max_drawdown": 12.76
+  }
+]

@@ -33,32 +33,36 @@
         <DatePicker v-model="localEndDate" type="date" size="small" :format="'yyyy-MM-dd' as any" />
       </div>
     </div>
-    <div class="action-buttons">
+    <!-- 仓位管理 -->
+    <div class="section-label" style="margin-top:6px;font-size:13px">仓位管理</div>
+    <div class="param-row">
+      <div class="param-item">
+        <label>满仓模式（自动算手数）</label>
+        <Switch v-model="localUseFullPosition" size="small" />
+      </div>
+      <div class="param-item">
+        <label>单笔风险上限 %</label>
+        <InputNumber :min="0.5" :max="100" :step="0.5" v-model="localMaxRiskPct" size="small" style="width:100%" :disabled="!localUseFullPosition" />
+      </div>
+    </div>
+
+    <!-- 操作按钮 -->
+    <div class="draw-line-row" style="margin-top:10px">
+      <span class="draw-label">回撤值</span>
+      <InputNumber :min="0.01" :max="20" :step="0.05" v-model="localDrawThreshold" size="small" style="width:80px" />
+      <Button type="default" size="small" @click="$emit('drawPolyline')">画折线</Button>
+    </div>
+    <div class="action-buttons" style="margin-top:8px">
       <Button type="primary" long @click="$emit('loadData')" :loading="loading" :disabled="!contract">
         加载数据
       </Button>
-    </div>
-    <div class="draw-line-row">
-      <span class="draw-label">回撤值</span>
-      <InputNumber :min="0.01" :max="20" :step="0.05" v-model="localDrawThreshold" size="small" style="width:80px" />
-      <Button type="default" @click="$emit('drawPolyline')">画折线</Button>
-    </div>
-    <div class="param-row" style="margin-top:6px">
-      <div class="param-item" style="width:48%">
-        <label>EMA快线</label>
-        <InputNumber :min="3" :max="60" v-model="localEmaFast" size="small" style="width:100%" />
-      </div>
-      <div class="param-item" style="width:48%">
-        <label>EMA慢线</label>
-        <InputNumber :min="10" :max="200" v-model="localEmaSlow" size="small" style="width:100%" />
-      </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref, watch } from 'vue'
-import { Button, Select, Option, DatePicker, InputNumber } from 'view-ui-plus'
+import { Button, Select, Option, DatePicker, InputNumber, Switch } from 'view-ui-plus'
 
 const props = defineProps<{
   contract: string
@@ -69,8 +73,8 @@ const props = defineProps<{
   initialCapital: number
   commissionRate: number
   drawThreshold: number
-  emaFast: number
-  emaSlow: number
+  useFullPosition: boolean
+  maxRiskPct: number
   loading: boolean
   running: boolean
 }>()
@@ -83,8 +87,8 @@ const emit = defineEmits<{
   'update:initialCapital': [v: number]
   'update:commissionRate': [v: number]
   'update:drawThreshold': [v: number]
-  'update:emaFast': [v: number]
-  'update:emaSlow': [v: number]
+  'update:useFullPosition': [v: boolean]
+  'update:maxRiskPct': [v: number]
   'loadData': []
   'runBacktest': []
   'drawPolyline': []
@@ -112,8 +116,8 @@ const localEndDate = ref<any>(props.endDate)
 const localInitialCapital = ref(props.initialCapital)
 const localCommissionRate = ref(props.commissionRate)
 const localDrawThreshold = ref(props.drawThreshold)
-const localEmaFast = ref(props.emaFast)
-const localEmaSlow = ref(props.emaSlow)
+const localUseFullPosition = ref(props.useFullPosition)
+const localMaxRiskPct = ref(props.maxRiskPct)
 
 watch(localFrequency, v => emit('update:frequency', v))
 watch(localDataSource, v => emit('update:dataSource', v))
@@ -122,8 +126,8 @@ watch(localEndDate, v => v && emit('update:endDate', v))
 watch(localInitialCapital, v => emit('update:initialCapital', v))
 watch(localCommissionRate, v => emit('update:commissionRate', v))
 watch(localDrawThreshold, v => emit('update:drawThreshold', v))
-watch(localEmaFast, v => emit('update:emaFast', v))
-watch(localEmaSlow, v => emit('update:emaSlow', v))
+watch(localUseFullPosition, v => emit('update:useFullPosition', v))
+watch(localMaxRiskPct, v => emit('update:maxRiskPct', v))
 </script>
 
 <style scoped>
